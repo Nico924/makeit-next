@@ -1,0 +1,21 @@
+import { connect } from 'react-redux';
+import { reduxForm } from 'redux-form';
+import {{pascalCase name}}, { StateProps, DispatchProps, FormData, OwnProps } from './{{pascalCase name}}';
+
+const createReduxForm = reduxForm<FormData, OwnProps>({
+  // a unique name for the form
+  form: '{{camelCase name}}',
+});
+
+const form = createReduxForm({{pascalCase name}});
+
+const mapStateToProps = (): Object => ({});
+
+const mapDispatchToProps = {};
+
+const Wrapped = connect<StateProps, DispatchProps, OwnProps>(
+  mapStateToProps,
+  mapDispatchToProps,
+)(form);
+
+export default Wrapped;

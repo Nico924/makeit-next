@@ -1,0 +1,202 @@
+@import '~styles/mixins';
+
+.CustomSelect {
+  .custom-select-wrapper {
+    position: relative;
+  }
+
+  $padding_arrow: 30px;
+  $padding_indication: 40px;
+
+  $decal_both: 10px;
+
+  .select-wrapper {
+    cursor: pointer;
+    position: relative;
+    &.disabled {
+      cursor: not-allowed;
+    }
+
+    .select-content-wrapper {
+      // Handle padding for the icons and indication
+
+      //1. Normal
+      padding-right: $padding_arrow;
+
+      &.centered {
+        padding-left: $padding_arrow;
+      }
+
+      &.multiple {
+        padding-right: $padding_arrow + $padding_indication - $decal_both;
+
+        &.centered {
+          padding-left: $padding_arrow + $padding_indication - $decal_both;
+        }
+      }
+
+      //2. No arrow
+      &.hide-arrow {
+        padding-right: $form_element_padding_h;
+        &.with-border-bottom {
+          padding-right: 0;
+        }
+
+        &.centered {
+          padding-left: $form_element_padding_h;
+          &.with-border-bottom {
+            padding-right: 0;
+          }
+        }
+
+        &.multiple {
+          padding-right: $padding_indication;
+
+          &.centered {
+            padding-left: $padding_indication;
+          }
+        }
+      }
+
+      //3. No mulitple indication
+      &.hide-indication {
+        padding-right: $padding_arrow;
+        &.centered {
+          padding-left: $padding_arrow;
+        }
+        &.multiple {
+          // to override
+          padding-right: $padding_arrow;
+          &.centered {
+            padding-left: $padding_arrow;
+          }
+        }
+      }
+
+      //4. No arrow & no mulitple indication
+      &.hide-arrow.hide-indication {
+        &,
+        &.centered,
+        &.multiple,
+        &.multiple.centered {
+          padding-left: $form_element_padding_h;
+          padding-right: $form_element_padding_h;
+          &.with-border-bottom {
+            padding-left: 0;
+            padding-right: 0;
+          }
+        }
+      }
+
+      // Case with value border
+      &.with-value-border.select-value {
+        min-height: $input_with_value_border_min_height;
+      }
+    }
+    &.small {
+      .with-value-border.select-value {
+        min-height: $input_min_height;
+      }
+    }
+  }
+
+  .select-value {
+    position: relative;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+
+    min-height: $input_min_height;
+    padding: $input_padding_v / 2 0;
+
+    letter-spacing: 0;
+
+    .placeholder {
+      opacity: $select_opacity_placeholder;
+      color: $select_color_placeholder;
+    }
+
+    .values-wrapper {
+      // avoid cropping letters
+      padding: $input_padding_v / 2 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      > * {
+        display: inline;
+      }
+    }
+  }
+
+  .fixed-elements {
+    @include v_align;
+    right: 0;
+    padding-right: 8px;
+
+    > * {
+      @include middle;
+      margin: 0 4px;
+    }
+
+    // For multiple
+    .indication {
+      background-color: $color_dark;
+      color: white;
+      // for the arrow
+      @include ball(20px);
+      font-weight: bold;
+      font-size: 10px;
+    }
+
+    .arrow {
+      font-size: 0;
+
+      opacity: $select_opacity_arrow;
+      color: $select_color_arrow;
+
+      > * {
+        font-size: 15px;
+        @include transition(transform);
+      }
+    }
+  }
+
+  &.active {
+    .arrow > * {
+      transform: rotateX(180deg);
+    }
+  }
+
+  .values-list {
+    margin-top: 10px;
+
+    .value-item {
+      margin-left: 10px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      font-size: 10px;
+      text-transform: uppercase;
+      padding: 5px 10px;
+      @include middle;
+      background-color: $color_dark;
+      border-radius: 3px;
+      color: white;
+
+      .delete {
+        cursor: pointer;
+        @include middle;
+        margin-left: 4px;
+      }
+    }
+  }
+
+  .info {
+    margin-bottom: 10px;
+    color: $color-grey-font;
+    font-size: 13px;
+  }
+}

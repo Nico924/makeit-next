@@ -1,0 +1,40 @@
+@import '~styles/mixins';
+
+.DateTimePicker {
+  :global .picker {
+    width: 100%;
+
+    th,
+    td {
+      vertical-align: middle !important;
+    }
+
+    .rdtPicker td.rdtActive {
+      background-color: $color_primary;
+      color: white;
+    }
+  }
+
+  .input {
+    position: relative;
+    min-height: $input_min_height;
+    display: flex;
+    align-items: center;
+
+    &.with-value-border {
+      min-height: $input_with_value_border_min_height;
+    }
+  }
+
+  .placeholder {
+    opacity: $select_opacity_placeholder;
+  }
+
+  .cancel {
+    opacity: 0.7;
+    cursor: pointer;
+    font-size: 12px;
+    @include v_align;
+    right: 0;
+  }
+}

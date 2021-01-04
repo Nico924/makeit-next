@@ -1,0 +1,15 @@
+.idea
+node_modules
+package-lock.json
+dist
+build
+
+sls/
+
+ssr/client
+ssr/server
+ssr/serverless
+
+.serverless/*
+src/server/manifest.json
+.DS_Store

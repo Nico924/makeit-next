@@ -1,0 +1,47 @@
+@mixin base {
+  .white {
+    @include text_color($color-white);
+  }
+
+  .black {
+    @include text_color($color-black);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin-top: 0 !important;
+    margin-bottom: 30px;
+  }
+
+  h1 {
+    @include font-size(55px, 3);
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: 1.13px;
+  }
+
+  h2 {
+    @include font-size(42px, 1);
+    font-weight: 900;
+    line-height: 1.33;
+    letter-spacing: 0.93;
+    font-style: italic;
+  }
+
+  h3 {
+    @include font-size(22px);
+    line-height: 1.55;
+    letter-spacing: 0.4px;
+  }
+
+  p {
+    @include font-size(18px, 0.5);
+    line-height: 2;
+    letter-spacing: 0.32px;
+  }
+}

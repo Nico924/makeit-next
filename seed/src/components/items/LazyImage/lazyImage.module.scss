@@ -1,0 +1,11 @@
+@import '~styles/mixins';
+
+.LazyImage {
+  position: relative;
+  font-size: 0;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}

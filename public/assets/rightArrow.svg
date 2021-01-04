@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="63px" height="63px" viewBox="0 0 63 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>Group 14</title>
+    <desc>Created with Sketch.</desc>
+    <g id="v3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="StaaS" transform="translate(-1182.000000, -4629.000000)" stroke="#000000">
+            <g id="Group-33" transform="translate(1069.000000, 4629.000000)">
+                <g id="Group-14" transform="translate(144.500000, 31.500000) rotate(-180.000000) translate(-144.500000, -31.500000) translate(113.000000, -0.000000)">
+                    <circle id="Oval" stroke-width="3.75" fill="#D9D9D9" cx="31.25" cy="31.25" r="29.375"></circle>
+                    <path d="M30.5331005,22.6483014 L37.5723152,36.9781312 C38.1810764,38.2173952 37.669953,39.7155155 36.4306891,40.3242768 C36.0876744,40.4927752 35.7105953,40.5803909 35.3284294,40.5803909 L21.25,40.5803909 C19.8692881,40.5803909 18.75,39.4611028 18.75,38.0803909 C18.75,37.698225 18.8376157,37.3211459 19.0061142,36.9781312 L26.0453289,22.6483014 C26.6540901,21.4090374 28.1522105,20.897914 29.3914744,21.5066752 C29.8878026,21.7504856 30.2892902,22.1519732 30.5331005,22.6483014 Z" id="Triangle" stroke-width="3.125" fill="#FAD843" fill-rule="nonzero" transform="translate(28.289495, 30.915195) scale(-1, 1) rotate(-270.000000) translate(-28.289495, -30.915195) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

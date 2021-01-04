@@ -1,0 +1,62 @@
+import { StoreAction } from 'store/utils/actions';
+import produce from 'immer';
+import {
+  handleRequest,
+  handleResponse,
+  handleUpdateResponse,
+  handleAddResponse,
+  handleDeleteResponse,
+} from 'store/utils/reducers';
+import auth from 'store/auth';
+import actions from './actions';
+
+interface {{pascalCase name}}State {
+  list: {} | null;
+  detail: {} | null;
+}
+
+export const initialState: {{pascalCase name}}State = {
+  list: null,
+  detail: null,
+};
+
+export const treatmentIn = values => {
+  const output = { ...values };
+
+  return output;
+};
+
+const reducer = (state: {{pascalCase name}}State = initialState, action: StoreAction): {{pascalCase name}}State => {
+  return produce(
+    state,
+    (draft): {{pascalCase name}}State => {
+      switch (action.type) {
+        case actions.list.request.constant:
+          handleRequest(draft, action, 'list', true);
+          break;
+        case actions.list.result.constant:
+          handleResponse(draft, action, 'list', treatmentIn);
+          break;
+        case actions.update.result.constant:
+          handleUpdateResponse(draft, action, 'list', treatmentIn);
+          break;
+        case actions.add.result.constant:
+          handleAddResponse(draft, action, 'list', treatmentIn);
+          break;
+        case actions.delete.result.constant:
+          handleDeleteResponse(draft, action, 'list');
+          break;
+        case actions.detail.result.constant:
+          handleResponse(draft, action, 'detail', treatmentIn);
+          break;
+        case auth.actions.logout.result.constant:
+          draft.list = null;
+          draft.detail = null;
+          break;
+        default:
+      }
+    },
+  );
+};
+
+export default reducer;

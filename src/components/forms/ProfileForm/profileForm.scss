@@ -1,0 +1,12 @@
+@import "~styles/mixins";
+
+.ProfileForm {
+  .button {
+    width: 100%;
+    margin-top: $form_spacing;
+  }
+
+  .small-margin {
+    margin-top: 20px;
+  }
+}

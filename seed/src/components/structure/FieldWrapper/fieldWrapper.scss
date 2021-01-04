@@ -1,0 +1,284 @@
+@import '~styles/mixins';
+
+.FieldWrapper {
+  position: relative;
+  color: $color_input;
+
+  .content-wrapper {
+    position: relative;
+  }
+
+  // Border bottom (default)
+  &.with-border-bottom {
+    border-bottom: $border_width solid $color_dark_border;
+
+    // &:after,
+    .error-bar,
+    .valid-bar,
+    .active-bar {
+      content: '';
+      z-index: 1;
+      width: 0%;
+      height: $border_width;
+      left: 0;
+      bottom: -1 * $border_width;
+      position: absolute;
+      @include transition(all);
+    }
+    // &.error:after,
+    .error-bar {
+      background-color: $color_error;
+    }
+    // &.active:after,
+    .active-bar {
+      z-index: 2;
+      background-color: $color_highlight_active;
+    }
+
+    // &.valid:after,
+    .valid-bar {
+      z-index: 3;
+      background-color: $color_highlight_valid;
+    }
+
+    // &.error,
+    // &.valid,
+    // &.active {
+    //   &:after {
+    //     width: 100%;
+    //   }
+    // }
+
+    &.error .error-bar,
+    &.valid .valid-bar,
+    &.active .active-bar {
+      width: 100%;
+    }
+
+    .content-wrapper {
+      &.disabled {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  // Wrapping border
+  &.with-border {
+    border: $border_width solid $color_border;
+    @include transition(border);
+    border-radius: $border_radius;
+
+    .content-wrapper {
+      border-radius: $border_radius;
+      padding: ($form_element_padding_v + $input_padding_v) $form_element_padding_h;
+      padding-bottom: $form_element_padding_v;
+
+      &.disabled {
+        background-color: $color_disabled;
+      }
+    }
+
+    &:before {
+      display: none;
+    }
+
+    &.no-label {
+      .content-wrapper {
+        padding-top: $form_element_padding_v;
+      }
+    }
+
+    &.small {
+      .content-wrapper {
+        padding-top: $input_padding_v;
+        padding-bottom: 0;
+      }
+
+      &.no-label .content-wrapper {
+        padding-top: 0;
+      }
+    }
+
+    &.active:not(.no-shadow) {
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05);
+    }
+
+    &.error {
+      border-color: $color_error;
+    }
+  }
+
+  // Style 3 (border arround value)
+  &.with-value-border {
+    border: none;
+
+    &:before {
+      display: none;
+    }
+
+    .content-wrapper {
+      position: relative;
+      margin-top: $form_element_vertical_spacing;
+      border: $border_width solid $color_border;
+      border-radius: $border_radius;
+
+      &.disabled {
+        background-color: $color_disabled;
+      }
+    }
+
+    .value {
+      padding: $form_element_padding_v $form_element_padding_h;
+    }
+
+    &.small .value {
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+
+    &.active:not(.no-shadow) .content-wrapper {
+      box-shadow: $box_shadow_active;
+    }
+
+    &.error .content-wrapper {
+      border-color: $color_error;
+    }
+  }
+
+  .centered {
+    &,
+    .value {
+      text-align: center;
+      justify-content: center;
+    }
+  }
+
+  // not for with value border
+  &.effect {
+    $effect_label_font_size: 12px;
+
+    &.with-border,
+    &.with-border-bottom {
+      .content-wrapper {
+        padding-top: $input_padding_v + $effect_label_font_size + $form_element_padding_v;
+      }
+
+      &.small {
+        .content-wrapper {
+          padding-top: $input_padding_v + $effect_label_font_size;
+        }
+      }
+
+      .label {
+        pointer-events: none;
+        font-size: inherit;
+        line-height: 1;
+        font-size: $effect_label_font_size;
+        text-transform: none;
+        @include transition(all);
+
+        transform-origin: left;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &.effect-active {
+        .label {
+          transform: translateY(0) scale($effect_scale);
+          top: $input_padding_v + $form_element_padding_v;
+        }
+      }
+
+      &.small.effect-active {
+        .label {
+          top: $input_padding_v;
+        }
+      }
+    }
+
+    &.with-border-bottom {
+      .content-wrapper {
+        padding-top: $input_padding_v + $form_element_padding_v;
+      }
+
+      .label {
+        // transform: translateY(calc(#{$input_padding_v + $form_element_padding_v} - 50%));
+        // top: calc(50% - #{($input_padding_v + $form_element_padding_v) / 2});
+        transform: translateY(0%);
+        top: $input_padding_v + $effect_label_font_size + $border_width;
+      }
+
+      &.effect-active {
+        .label {
+          transform: translateY(0%) scale($effect_scale);
+          top: 0;
+        }
+      }
+
+      &.no-label {
+        .content-wrapper {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+
+  &.with-left-icon {
+    &.with-border,
+    &.with-border-bottom,
+    &.with-value-border .content-wrapper {
+      padding-left: $width_lateral_icon;
+    }
+  }
+
+  &.with-right-icon {
+    &.with-border,
+    &.with-border-bottom,
+    &.with-value-border .content-wrapper {
+      padding-right: $width_lateral_icon;
+    }
+  }
+
+  .icon-left,
+  .icon-right {
+    height: 100%;
+    font-size: $field_icon_size;
+    width: $width_lateral_icon;
+    position: absolute;
+    display: flex;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+
+    &.actionable {
+      cursor: pointer;
+    }
+  }
+
+  .icon-left {
+    left: 0px;
+  }
+
+  .icon-right {
+    right: 0px;
+  }
+
+  &:not(.with-border-bottom) {
+    .icon-left {
+      // border for left not for right
+      border-right: $border_width solid $color-border;
+    }
+
+    .icon-right {
+      // border-left:$border_width solid $color-border;
+    }
+  }
+
+  &.with-text-before-input {
+    .value {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

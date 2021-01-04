@@ -1,0 +1,15 @@
+import { connect } from 'react-redux';
+import { StoreState } from 'store/rootReducer';
+
+import {{pascalCase name}}, { StateProps, DispatchProps, OwnProps } from './{{pascalCase name}}';
+
+const mapStateToProps = (state: StoreState): {} => ({});
+
+const mapDispatchToProps = {};
+
+const Wrapped = connect<StateProps, DispatchProps, OwnProps>(
+  mapStateToProps,
+  mapDispatchToProps,
+)({{pascalCase name}});
+
+export default Wrapped;

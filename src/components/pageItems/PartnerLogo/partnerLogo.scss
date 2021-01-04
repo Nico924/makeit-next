@@ -1,0 +1,26 @@
+@import "~styles/mixins";
+
+.PartnerLogo {
+  height: 55px;
+  width: 200px;
+  background-color: white;
+  border-radius: 6px;
+  border: 3px solid black;
+  padding: 5px 0;
+
+  .logo {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+
+    &.beangels {
+      background-image: url('./assets/beangels.jpg')
+    }
+
+    &.makeit {
+      background-image: url('./assets/logo.svg')
+    }
+  }
+}

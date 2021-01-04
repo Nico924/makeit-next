@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="895px" height="903px" viewBox="0 0 895 903" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-2.1%" y="-3.4%" width="104.2%" height="106.7%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="11" dy="11" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-7.0%" y="-7.0%" width="114.1%" height="114.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="8" dy="8" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-4.7%" y="-2.3%" width="109.5%" height="104.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="7" dy="7" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-7.0%" y="-14.8%" width="114.1%" height="129.7%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="11" dy="11" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="software" transform="translate(-545.000000, -423.000000)">
+            <g id="Group-5" transform="translate(545.000000, 423.000000)">
+                <circle id="Oval" stroke="#000000" stroke-width="3" fill="#3970AF" cx="649.5" cy="398.5" r="397"></circle>
+                <g id="Group-4" transform="translate(0.000000, 254.000000)" stroke="#000000" stroke-width="3">
+                    <g id="Group" filter="url(#filter-1)" transform="translate(17.000000, 0.000000)">
+                        <g id="Window-Text-Copy-12" transform="translate(0.000000, 40.500000)">
+                            <g id="Window-Body" fill="#FFFFFF" fill-rule="nonzero">
+                                <path d="M1.5,1.5 L1.5,586.5 C1.5,591.470563 5.52943725,595.5 10.5,595.5 L1020,595.5 C1024.97056,595.5 1029,591.470563 1029,586.5 L1029,1.5 L1.5,1.5 Z" id="Window-Background"></path>
+                            </g>
+                            <g id="Group-3" transform="translate(296.000000, 74.500000)">
+                                <rect id="Rectangle" fill="#D8D8D8" x="1.5" y="1.5" width="193" height="193" rx="7"></rect>
+                                <polygon id="Hexagon" fill="#FAD843" transform="translate(98.000000, 98.500000) rotate(-241.000000) translate(-98.000000, -98.500000) " points="97.9801372 52 137.980137 75.2673078 138 121.767308 98.0198628 145 58.0198628 121.732692 58 75.2326922"></polygon>
+                            </g>
+                            <g id="Group-3" transform="translate(788.000000, 75.000000)">
+                                <rect id="Rectangle" fill="#D8D8D8" x="1.5" y="1.5" width="193" height="193" rx="7"></rect>
+                                <polygon id="Square" fill="#F1A4AB" transform="translate(98.500000, 98.500000) rotate(45.000000) translate(-98.500000, -98.500000) " points="66 66 66.0013183 130.998681 131 131 130.998682 66.0013186"></polygon>
+                            </g>
+                            <g id="Group-3" transform="translate(541.000000, 75.000000)">
+                                <rect id="Rectangle" fill="#D8D8D8" x="1.5" y="1.5" width="193" height="193" rx="7"></rect>
+                                <polygon id="Triangle" fill="#64C1BE" transform="translate(88.000000, 80.500000) rotate(-42.000000) translate(-88.000000, -80.500000) " points="88 43 131 118 45 118"></polygon>
+                            </g>
+                            <g id="Group-3" transform="translate(49.000000, 320.500000)">
+                                <rect id="Rectangle" fill="#D8D8D8" x="1.5" y="1.5" width="193" height="193" rx="7"></rect>
+                                <path d="M98,120.655785 L80.2411068,129.180095 C78.0005703,130.255557 75.3124219,129.311078 74.2369593,127.070542 C73.8572346,126.279453 73.7170881,125.394602 73.8337677,124.52489 L76.4530681,105.001023 L76.4530681,105.001023 L62.8581681,90.745468 C61.1429784,88.9469274 61.2105477,86.0984863 63.0090883,84.3832967 C63.6441176,83.7776971 64.4423525,83.370976 65.3055538,83.2131891 L84.6832637,79.6710849 L84.6832637,79.6710849 L94.0400466,62.3363581 C95.2205376,60.1493362 97.9504461,59.3333817 100.137468,60.5138727 C100.909662,60.9306808 101.543145,61.5641637 101.959953,62.3363581 L111.316736,79.6710849 L111.316736,79.6710849 L130.694446,83.2131891 C133.139219,83.6600758 134.758826,86.0042293 134.31194,88.4490025 C134.154153,89.3122038 133.747432,90.1104387 133.141832,90.745468 L119.546932,105.001023 L119.546932,105.001023 L122.166232,124.52489 C122.496694,126.988103 120.767758,129.252824 118.304545,129.583286 C117.434833,129.699966 116.549983,129.559819 115.758893,129.180095 L98,120.655785 L98,120.655785 Z" id="Star" fill="#FAD843" fill-rule="nonzero"></path>
+                            </g>
+                            <g id="Group-3" transform="translate(295.000000, 320.500000)">
+                                <rect id="Rectangle" fill="#D8D8D8" x="1.5" y="1.5" width="193" height="193" rx="7"></rect>
+                                <circle id="Oval" fill="#64C1BE" cx="98.5" cy="98.5" r="45"></circle>
+                            </g>
+                            <g id="Group-3" transform="translate(541.000000, 321.000000)">
+                                <rect id="Rectangle" fill="#D8D8D8" x="1.5" y="1.5" width="193" height="193" rx="7"></rect>
+                                <polygon id="Triangle" fill="#F1A4AB" transform="translate(89.047625, 80.640547) rotate(-42.000000) translate(-89.047625, -80.640547) " points="89.0476252 43.140547 132.047625 118.140547 46.0476252 118.140547"></polygon>
+                            </g>
+                            <g id="Group-3" transform="translate(787.000000, 320.500000)">
+                                <rect id="Rectangle" fill="#D8D8D8" x="1.5" y="1.5" width="193" height="193" rx="7"></rect>
+                                <path d="M130,120 C130,96.2517593 110.524387,77 86.5,77 C62.4756141,77 43,96.2517593 43,120 C43,120 130,120 130,120 Z" id="Oval" fill="#4A90E2" transform="translate(86.500000, 98.500000) rotate(-103.000000) translate(-86.500000, -98.500000) "></path>
+                            </g>
+                        </g>
+                        <g id="Window-Title">
+                            <path d="M1.5,43.5 L1029,43.5 L1029,12 C1029,6.20101013 1024.29899,1.5 1018.5,1.5 L12,1.5 C6.20101013,1.5 1.5,6.20101013 1.5,12 L1.5,43.5 Z" id="Window-Title-Background" fill="#D8D8D8" fill-rule="nonzero"></path>
+                            <circle id="Oval" fill="#F1A4AB" cx="52.5" cy="22.5" r="6"></circle>
+                            <circle id="Oval" fill="#FAD843" cx="75" cy="22.5" r="6"></circle>
+                            <circle id="Oval" fill="#64C1BE" cx="97.5" cy="22.5" r="6"></circle>
+                        </g>
+                    </g>
+                    <g id="Group-3" filter="url(#filter-2)" transform="translate(0.000000, 36.000000)">
+                        <rect id="Rectangle" fill="#D8D8D8" x="1.5" y="1.5" width="223.379994" height="223.379994" rx="8.0849998"></rect>
+                        <path d="M150.149996,138.599997 C150.149996,111.170779 127.655664,88.9349978 99.9074975,88.9349978 C72.1593325,88.9349978 49.6649988,111.170779 49.6649988,138.599997 C49.6649988,138.599997 150.149996,138.599997 150.149996,138.599997 Z" id="Oval" fill="#4A90E2" transform="translate(99.907498, 113.767497) rotate(-103.000000) translate(-99.907498, -113.767497) "></path>
+                    </g>
+                </g>
+                <g id="Group-4" transform="translate(439.000000, 19.000000)">
+                    <g id="iphone-x-flat-no-buttons" filter="url(#filter-3)" transform="translate(163.500000, 333.000000) rotate(-360.000000) translate(-163.500000, -333.000000) ">
+                        <path d="M280.192628,-4.26325641e-13 L253.79359,-4.26325641e-13 C250.026709,-4.26325641e-13 247.340491,-4.26325641e-13 245.734936,-4.26325641e-13 L233.415385,-4.26325641e-13 C230.142521,-4.26325641e-13 227.672436,-4.26325641e-13 226.005128,-4.26325641e-13 L221.003205,-4.26325641e-13 L109.015705,-4.26325641e-13 L104.013782,-4.26325641e-13 C102.346474,-4.26325641e-13 99.8763889,-4.26325641e-13 96.6035256,-4.26325641e-13 L84.2839744,-4.26325641e-13 C82.6784188,-4.26325641e-13 79.9922009,-4.26325641e-13 76.2253205,-4.26325641e-13 L49.5483974,-4.26325641e-13 C33.3384615,0.0954000887 20,12.879012 20,29.4786274 L20,614.567372 C20,631.262387 33.3384615,645 49.5483974,645 L280.192628,645 C296.402564,645 309,631.262387 309,614.567372 L309,29.4786274 C309,12.879012 296.309936,-4.26325641e-13 280.192628,-4.26325641e-13 Z" id="XMLID_359_" fill="#FFFFFF"></path>
+                        <g id="Group-3" transform="translate(50.000000, 235.000000)" stroke="#000000" stroke-width="3">
+                            <rect id="Rectangle" fill="#D8D8D8" x="1.5" y="1.5" width="223.379994" height="104" rx="8.0849998"></rect>
+                            <rect id="Rectangle" fill="#000000" x="90.5" y="18.5" width="109" height="4" rx="2"></rect>
+                            <rect id="Rectangle" fill="#000000" x="90.5" y="35.5" width="109" height="4" rx="2"></rect>
+                            <rect id="Rectangle" fill="#000000" x="90.5" y="52.5" width="59" height="4" rx="2"></rect>
+                            <rect id="Rectangle" fill="#FFFFFF" x="90.5" y="74.5" width="59" height="17" rx="3.5"></rect>
+                            <polygon id="Square" fill="#F1A4AB" transform="translate(39.500000, 34.500000) rotate(-270.000000) translate(-39.500000, -34.500000) " points="23 18 23.0006693 50.9993306 56 51 55.9993307 18.0006694"></polygon>
+                        </g>
+                        <g id="Group-3" transform="translate(50.000000, 372.000000)" stroke="#000000" stroke-width="3">
+                            <rect id="Rectangle" fill="#D8D8D8" x="1.5" y="1.5" width="223.379994" height="104" rx="8.0849998"></rect>
+                            <rect id="Rectangle" fill="#000000" x="90.5" y="18.5" width="109" height="4" rx="2"></rect>
+                            <rect id="Rectangle" fill="#000000" x="90.5" y="35.5" width="109" height="4" rx="2"></rect>
+                            <rect id="Rectangle" fill="#000000" x="90.5" y="52.5" width="59" height="4" rx="2"></rect>
+                            <rect id="Rectangle" fill="#FFFFFF" x="90.5" y="74.5" width="59" height="17" rx="3.5"></rect>
+                            <path d="M41.5,48.8278925 L32.6205534,53.0900473 C31.5002852,53.6277786 30.156211,53.1555392 29.6184796,52.0352709 C29.4286173,51.6397263 29.358544,51.1973011 29.4168838,50.7624451 L30.726534,41.0005113 L30.726534,41.0005113 L23.929084,33.872734 C23.0714892,32.9734637 23.1052739,31.5492432 24.0045441,30.6916484 C24.3220588,30.3888485 24.7211763,30.185488 25.1527769,30.1065946 L34.8416319,28.3355425 L34.8416319,28.3355425 L39.5200233,19.668179 C40.1102688,18.5746681 41.4752231,18.1666909 42.568734,18.7569364 C42.9548312,18.9653404 43.2715726,19.2820818 43.4799767,19.668179 L48.1583681,28.3355425 L48.1583681,28.3355425 L57.8472231,30.1065946 C59.0696097,30.3300379 59.8794131,31.5021147 59.6559698,32.7245012 C59.5770763,33.1561019 59.3737158,33.5552194 59.070916,33.872734 L52.273466,41.0005113 L52.273466,41.0005113 L53.5831162,50.7624451 C53.7483471,51.9940516 52.8838789,53.1264121 51.6522724,53.2916431 C51.2174164,53.3499829 50.7749913,53.2799096 50.3794466,53.0900473 L41.5,48.8278925 L41.5,48.8278925 Z" id="Star" fill="#FAD843" fill-rule="nonzero"></path>
+                        </g>
+                        <g id="Group-3" transform="translate(51.000000, 509.000000)" stroke="#000000" stroke-width="3">
+                            <rect id="Rectangle" fill="#D8D8D8" x="1.5" y="1.5" width="223.379994" height="104" rx="8.0849998"></rect>
+                            <rect id="Rectangle" fill="#000000" x="90.5" y="18.5" width="109" height="4" rx="2"></rect>
+                            <rect id="Rectangle" fill="#000000" x="90.5" y="35.5" width="109" height="4" rx="2"></rect>
+                            <rect id="Rectangle" fill="#000000" x="90.5" y="52.5" width="59" height="4" rx="2"></rect>
+                            <rect id="Rectangle" fill="#FFFFFF" x="90.5" y="74.5" width="59" height="17" rx="3.5"></rect>
+                            <circle id="Oval" fill="#64C1BE" cx="42.5" cy="35.5" r="17"></circle>
+                        </g>
+                        <path d="M327,47.8629526 C327,21.1487465 305.508782,-2.00941486e-11 278.830028,-2.00941486e-11 L48.4478754,-2.00941486e-11 C21.7691218,-2.00941486e-11 -1.38697942e-11,21.2415042 -1.38697942e-11,47.8629526 L-1.38697942e-11,135.333426 L-1.38697942e-11,617.209471 C-1.38697942e-11,643.923677 21.7691218,666 48.4478754,666 L278.830028,666 C305.508782,666 327,643.923677 327,617.209471 L327,47.8629526 Z M198.330595,17.7167131 C200.553824,17.7167131 202.406516,19.5718663 202.406516,21.7980501 C202.406516,24.024234 200.553824,25.8793872 198.330595,25.8793872 C196.107365,25.8793872 194.254674,24.024234 194.254674,21.7980501 C194.254674,19.5718663 196.107365,17.7167131 198.330595,17.7167131 Z M147.288952,20.4066852 L183.416431,20.4066852 C184.991218,20.4066852 186.195467,21.3342618 186.195467,22.7256267 C186.195467,24.1169916 184.991218,25.0445682 183.416431,25.0445682 L147.288952,25.0445682 C145.714164,25.0445682 144.509915,24.1169916 144.509915,22.7256267 C144.509915,21.3342618 145.714164,20.4066852 147.288952,20.4066852 Z M309.399433,615.076045 C309.399433,631.308635 296.708499,644.665738 280.590085,644.665738 L49.9300283,644.665738 C33.7189802,644.665738 20.3796034,631.308635 20.3796034,615.076045 L20.3796034,46.1933148 C20.3796034,30.0534819 33.7189802,17.6206688 49.9300283,17.6206688 L76.6087819,17.6206688 C82.2594901,17.6206688 84.2974504,17.2529248 84.6679887,24.3952646 C85.0385269,31.8158774 90.1334278,36.6392758 96.9883853,38.7727019 C99.3042493,39.5147632 101.898017,39.8857939 104.39915,39.8857939 L109.401416,39.8857939 L221.211331,39.8857939 L226.213598,39.8857939 C228.714731,39.8857939 231.308499,39.3292479 233.624363,38.5871866 C240.47932,36.4537604 245.666856,32.0013928 245.944759,24.5807799 C246.315297,17.4384401 248.353258,17.6206688 254.003966,17.6206688 L280.404816,17.6206688 C296.615864,17.6206688 309.214164,30.0534819 309.214164,46.1933148 L309.214164,615.076045 L309.399433,615.076045 Z" id="XMLID_354_" stroke="#000000" stroke-width="3" fill="#D9D9D9" fill-rule="nonzero"></path>
+                    </g>
+                    <g id="Group-3" filter="url(#filter-4)" transform="translate(116.000000, 53.000000)" stroke="#000000">
+                        <rect id="Rectangle" stroke-width="2.7" fill="#D8D8D8" x="1.35" y="1.35" width="302.912992" height="141.75" rx="10.9147497"></rect>
+                        <rect id="Rectangle" stroke-width="4.05" fill="#000000" x="122.175" y="24.975" width="147.15" height="5.4" rx="2.7"></rect>
+                        <rect id="Rectangle" stroke-width="4.05" fill="#000000" x="122.175" y="47.925" width="147.15" height="5.4" rx="2.7"></rect>
+                        <rect id="Rectangle" stroke-width="4.05" fill="#000000" x="122.175" y="70.875" width="79.65" height="5.4" rx="2.7"></rect>
+                        <rect id="Rectangle" stroke-width="4.05" fill="#FFFFFF" x="122.175" y="100.575" width="79.65" height="22.95" rx="4.725"></rect>
+                        <path d="M85.05,76.95 C85.05,58.3103925 69.9396105,43.2 51.3,43.2 C32.6603902,43.2 17.55,58.3103925 17.55,76.95 C17.55,76.95 85.05,76.95 85.05,76.95 Z" id="Oval" stroke-width="3" fill="#4A90E2" transform="translate(51.300000, 60.075000) rotate(-103.000000) translate(-51.300000, -60.075000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

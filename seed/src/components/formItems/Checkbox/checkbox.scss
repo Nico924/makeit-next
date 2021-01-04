@@ -1,0 +1,174 @@
+@import '~styles/mixins';
+
+.Checkbox {
+  $size: 22px;
+
+  &.small {
+    $size: 18px;
+  }
+
+  margin-top: $form_spacing;
+
+  &.no-margin {
+    margin-top: 0px;
+  }
+
+  &.right {
+    padding-left: 0;
+    padding-right: $size * 1.7;
+  }
+
+  position: relative;
+  display: block;
+  text-align: left;
+  padding-left: $size * 1.7;
+
+  &.check-SendInvoice {
+    .label {
+      font-weight: 900 !important;
+      font-size: 20px !important;
+    }
+  }
+
+  &.disabled {
+    .label {
+      cursor: not-allowed !important;
+    }
+  }
+
+  .label {
+    position: initial;
+    //display:block;
+    text-align: left;
+    font-size: $font_size_form;
+    display: block;
+    user-select: none;
+
+    > * {
+      @include middle;
+    }
+
+    &.right {
+      text-align: right;
+    }
+  }
+
+  .label:hover {
+    cursor: pointer;
+  }
+
+  .label:before {
+    content: '';
+    width: $size;
+    height: $size;
+    position: absolute;
+    top: ($size) / 2;
+    transform: translateY(-50%);
+    //@include v_align;
+    line-height: $size;
+    left: 0;
+    background-color: #fff;
+    border-radius: 2px;
+    // background, fontsize, color, border
+    border: 1px solid $color_border;
+    color: $color-blue;
+    font-weight: 400;
+    font-size: $font_size_form;
+    text-align: center;
+  }
+
+  .label.right:before {
+    $rounded_size: calc(#{$size} + 2px);
+    right: 0;
+    left: auto;
+    width: $rounded_size;
+    height: $rounded_size;
+  }
+
+  .label.rounded:before {
+    border-radius: 100%;
+  }
+
+  .label.rounded.checked:before {
+    padding-left: 1px;
+  }
+
+  .label:hover:before {
+    //border: 1px solid #AAA;
+  }
+
+  &.centered {
+    .label:before {
+      top: 50%;
+    }
+  }
+
+  .input {
+    display: none;
+  }
+
+  &.red {
+    .label.checked:before {
+      color: $color-red;
+      border-color: $color-red;
+    }
+  }
+
+  &.dark {
+    .label.checked:before {
+      color: $color-dark;
+      border-color: $color-dark;
+    }
+  }
+
+  &.full-green {
+    .label.checked:before {
+      color: #fff;
+      background-color: $color-green;
+      border-color: $color-green;
+    }
+  }
+
+  .label.checked:before {
+    content: '\02713';
+    color: $color-blue;
+    border-color: $color-blue;
+  }
+
+  &.error {
+    //TODO...
+    .label {
+      color: $color-red !important;
+    }
+
+    .text {
+      a {
+        color: $color-red;
+      }
+    }
+  }
+
+  .link {
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  .disabled {
+    color: $color-grey;
+  }
+
+  .text {
+    p {
+      margin: 0;
+    }
+
+    a {
+      cursor: pointer;
+
+      &:hover {
+        color: $color-blue;
+      }
+    }
+  }
+}

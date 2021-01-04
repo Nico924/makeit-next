@@ -1,0 +1,379 @@
+@import "~styles/mixins";
+
+.LeftSub {
+  margin-top: -170px;
+
+  p {
+    margin: 0;
+  }
+
+  .container {
+    padding-top: 170px;
+    background-color: $color-dark-blue;
+
+    section {
+      border-bottom: $border_width solid black;
+
+      &>* {
+        max-width: $max-size-content;
+        margin: 0 auto;
+      }
+    }
+
+    .first {
+      color: white;
+      padding-top: 60px;
+
+      @include phone {
+        border-top: $border_width solid black;
+      }
+
+      .title {
+        font-size: 32px;
+        line-height: 1.5;
+        letter-spacing: 0.3px;
+        max-width: 700px;
+        font-weight: normal;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+
+        @include phone {
+          font-size: 20px;
+          padding: 0 30px;
+          line-height: 1.9;
+        }
+      }
+
+      .button {
+        width: auto;
+        min-width: 200px;
+        margin: 30px auto;
+
+        @include phone {
+          margin-bottom: 70px;
+        }
+      }
+
+      .illu-container {
+        position: relative;
+        padding-bottom: 150px;
+
+        @include phone {
+          display: none;
+        }
+
+        .unicorn {
+          max-width: 400px;
+          display: flex;
+          margin-left: auto;
+          margin-right: 15%;
+        }
+
+        .cloud {
+          position: absolute;
+          max-width: 200px;
+          width: 100%;
+          top: -70px;
+        }
+
+        .cloud-2 {
+          right: 60px;
+          top: -150px;
+          max-width: 130px;
+          width: 100%;
+          position: absolute;
+        }
+
+        .shape-1 {
+          position: absolute;
+          top: 25%;
+          left: -5%;
+        }
+
+        .shape-2 {
+          position: absolute;
+          bottom: 20%;
+        }
+
+        .shape-3 {
+          position: absolute;
+          left: 15%;
+          top: 40%;
+        }
+
+        .shape-4 {
+          position: absolute;
+          left: 35%;
+          top: 30%;
+        }
+
+        .rectangle {
+          width: 16px;
+          height: 60px;
+          background-color: white;
+          border: $border_width solid black;
+          position: absolute;
+          left: 30%;
+          bottom: 30%;
+          transform: rotate(30deg)
+        }
+
+        .star-1 {
+          width: 40px;
+          position: absolute;
+          right: 2%;
+          top: 0;
+        }
+
+        .star-2 {
+          width: 55px;
+          position: absolute;
+          right: -5%;
+          top: 12%;
+        }
+      }
+    }
+
+    // end first
+    .fifth,
+    .sixth,
+    .fourth,
+    .second,
+    .third {
+      background-color: $color-dark-blue;
+
+      .content {
+        display: flex;
+        padding: 100px 20px;
+
+        @include phone {
+          flex-direction: column;
+          align-items: center;
+          padding: 40px 0 70px;
+        }
+
+        &>* {
+          width: 50%;
+          object-fit: contain;
+        }
+
+        .illu {
+          max-height: 500px;
+          max-width: 500px;
+        }
+
+        .info {
+          margin-right: auto;
+          color: white;
+          max-width: 480px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          flex-shrink: 0;
+
+          @include phone {
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+            width: 100%;
+            padding: 0 30px;
+            align-items: center;
+            margin-top: 30px;
+          }
+
+          .button {
+            margin-top: 30px;
+            width: inherit;
+            min-width: 220px;
+
+            &>* {
+              margin-top: 0px;
+            }
+          }
+
+          .title {
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: black;
+            line-height: 2.75;
+            border: $border_width solid black;
+            letter-spacing: 4px;
+            margin-bottom: 30px;
+            text-align: center;
+            min-width: 200px;
+            padding: 0 25px;
+            background-color: white;
+            width: fit-content;
+            border-radius: $border_radius;
+
+            @include phone {
+              display: none;
+            }
+          }
+
+          .text {
+            font-size: 30px;
+            line-height: 1.7;
+            letter-spacing: 0.3px;
+
+            @include phone {
+              font-size: 20px;
+              line-height: 1.9;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+
+    .second {
+      background-color: $color-white-break;
+
+      .content {
+        flex-direction: row-reverse;
+
+        @include phone {
+          flex-direction: column;
+        }
+
+        .info {
+          .text {
+            color: black;
+          }
+        }
+      }
+    }
+
+    .fifth {
+      .content {
+        .illu {
+          max-height: 500px;
+        }
+
+        .form {
+          color: white;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-left: 100px;
+
+          .title {
+            line-height: 1.2;
+            font-size: 48px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            max-width: 460px;
+          }
+
+          .subtitle {
+            font-size: 14px;
+            line-height: 2.2;
+            letter-spacing: 0.2px;
+            font-weight: bold;
+            max-width: 460px;
+            margin: 20px 0;
+          }
+
+          @include phone {
+            margin-left: 0px;
+            width: 100%;
+            padding: 30px 20px 0 20px;
+
+            .title {
+              font-size: 36px;
+              text-align: center;
+              display: none;
+            }
+
+            .subtitle {
+              font-size: 20px;
+              line-height: 1.9;
+              text-align: center;
+              font-weight: normal;
+            }
+          }
+        }
+      }
+    }
+
+    .sixth {
+      background-color: $color-white-break;
+
+      .content {
+        .info {
+          .text {
+            color: black;
+          }
+        }
+
+        @include phone {
+          flex-direction: column-reverse;
+        }
+      }
+    }
+
+    .third {
+      background-color: $color-aqua;
+
+      .illu {
+        .illu_container {
+          margin-right: 80px;
+        }
+
+        .cloud_container {
+          position: relative;
+          display: flex;
+        }
+
+        .cloud {
+          height: 100%;
+          width: 100%;
+        }
+
+        .star-1 {
+          position: absolute;
+          right: 50%;
+          top: 10%;
+        }
+
+        .star-2 {
+          position: absolute;
+          right: 75%;
+          top: 75%;
+        }
+
+        .check {
+          right: 15%;
+          top: 25%;
+          position: absolute;
+        }
+
+        @include phone {
+          display: none;
+        }
+      }
+
+      .content {
+        .info {
+          margin-left: auto;
+          margin-right: 0;
+
+          .text {
+            color: black;
+          }
+        }
+      }
+    }
+
+    .fourth {
+      background-color: $color-pink;
+
+      .content {
+        @include phone {
+          flex-direction: column-reverse;
+        }
+      }
+    }
+  }
+}

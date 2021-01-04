@@ -1,0 +1,152 @@
+@import "~styles/mixins";
+
+.InvestingInIdeasOnboarding {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-top: 100px;
+  min-height: 100vh;
+
+  .illu {
+    position: absolute;
+  }
+
+  .content {
+    position: relative;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .container {
+    padding: 0 20px;
+    max-width: 1240px;
+    color: white;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    z-index: 1;
+    flex-wrap: wrap;
+
+    @include medium {
+      justify-content: center;
+    }
+
+    .col {
+      margin: 0 35px;
+      width: calc(50% - 35px);
+      min-width: 360px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      @include medium {
+        margin: 0;
+        width: 100%;
+        margin-bottom: 20px;
+
+        &:first-child {
+          text-align: center;
+        }
+      }
+
+      @include phone {
+        min-width: 300px;
+      }
+
+      .title {
+        font-size: 120px;
+        font-weight: 900;
+        font-style: italic;
+        max-width: 650px;
+        margin-bottom: 30px;
+
+        @include medium {
+          font-size: 100px;
+          margin: 0 auto;
+          margin-bottom: 30px;
+        }
+
+        @include tablet {
+          font-size: 90px;
+        }
+
+        @include phone {
+          font-size: 60px;
+        }
+      }
+
+      .text {
+        line-height: 1.7;
+        letter-spacing: 0.3px;
+        font-size: 18px;
+        margin-top: 30px;
+
+        @include tablet {
+          font-size: 16px;
+        }
+
+        @include phone {
+          font-size: 14px;
+        }
+      }
+
+      .by {
+        font-weight: bold;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+
+        img {
+          position: relative;
+          top: 2px;
+          margin: 0 15px;
+        }
+      }
+
+      .sub {
+        max-width: 500px;
+
+        @include medium {
+          margin: 0 auto;
+        }
+      }
+
+      .buttons {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .button {
+          margin: 10px 20px 0;
+          padding: 5px 25px;
+        }
+      }
+
+      .form {
+        border-radius: 8px;
+        box-shadow: 7px 7px 0 0 rgba(0, 0, 0, 0.07);
+        border: solid 3px black;
+        background-color: $color-light-grey;
+        padding: 40px 60px;
+
+        @include tablet {
+          padding: 40px;
+        }
+
+        @include phone {
+          padding: 20px;
+        }
+      }
+    }
+  }
+}

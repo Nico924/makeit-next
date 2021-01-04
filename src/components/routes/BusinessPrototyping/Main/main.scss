@@ -1,0 +1,189 @@
+@import "~styles/mixins";
+
+.Main {
+  position: relative;
+
+  .email-form {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 380px;
+    visibility: hidden;
+    z-index: 10;
+
+    .title {
+      font-weight: bold;
+      width: 90%;
+      line-height: 2;
+      font-size: 14px;
+    }
+
+    &.display {
+      visibility: visible;
+    }
+  }
+
+  section {
+    border-top: $border_width solid black;
+
+    .content {
+      max-width: $max-size-content;
+      margin: 0 auto;
+      padding: 100px 20px;
+      text-align: center;
+
+      @include phone {
+        padding: 50px 20px;
+      }
+
+      img {
+        max-width: 90%;
+      }
+
+      .form {
+        max-width: 550px;
+        margin: 0 auto;
+      }
+
+      .title {
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 1.4;
+        letter-spacing: 1px;
+        color: white;
+        text-align: center;
+        max-width: 650px;
+        margin: 0 auto;
+
+        @include phone {
+          font-size: 36px;
+        }
+      }
+
+      .white {
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        padding: 12px 20px;
+        background-color: white;
+        border: $border_width solid black;
+        display: inline-block;
+        margin: 40px auto 40px auto;
+      }
+
+      .text {
+        font-size: 16px;
+        color: white;
+        letter-spacing: 0.3px;
+        line-height: 2;
+        text-align: center;
+        font-weight: bold;
+        max-width: 480px;
+        font-style: italic;
+        margin: 30px auto;
+      }
+
+      .button {
+        width: auto;
+        margin-right: auto;
+        margin-left: auto;
+
+        span {
+          padding: 10px 15px;
+
+          @include phone {
+            padding: 0;
+          }
+        }
+      }
+
+      .button-container {
+        display: flex;
+        justify-content: center;
+
+        & > * {
+          margin-right: 10px;
+          margin-left: 10px;
+        }
+      }
+
+      .container-image {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin: 50px 0;
+
+        img {
+          outline: $border_width solid black;
+
+          &.atelier {
+            width: 50%;
+          }
+
+          &.david {
+            width: 45%;
+          }
+
+          &.sanou {
+            width: 50%;
+          }
+        }
+      }
+
+      .container-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 625px;
+        padding: 20px;
+        margin: 0 auto;
+
+        .box {
+          border-radius: 12px;
+          background-color: white;
+          border: $border_width solid black;
+          width: calc(50% - 15px);
+          margin-top: 30px;
+          padding: 30px;
+
+          img {
+            height: 80px;
+          }
+
+          .text {
+            color: black;
+            font-size: 14px;
+            margin-bottom: 0;
+          }
+        }
+
+        @include phone {
+          .box {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    &.top {
+      border-top: none;
+
+      .content {
+        padding-top: 50px;
+      }
+    }
+
+    &.pink {
+      background-color: $color-pink;
+    }
+
+    &.aqua {
+      background-color: $color-aqua;
+    }
+
+    &.bottom {
+      border-bottom: $border_width solid black;
+    }
+  }
+}

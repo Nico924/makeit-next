@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54">
+    <defs>
+        <linearGradient id="prefix__b" x1="9.154%" x2="90.846%" y1="90.847%" y2="9.153%">
+            <stop offset="0%" stop-color="#FFC107"/>
+            <stop offset="50.7%" stop-color="#F44336"/>
+            <stop offset="99%" stop-color="#9C27B0"/>
+        </linearGradient>
+        <linearGradient id="prefix__c" x1="14.646%" x2="85.354%" y1="85.354%" y2="14.646%">
+            <stop offset="0%" stop-color="#FFC107"/>
+            <stop offset="50.7%" stop-color="#F44336"/>
+            <stop offset="99%" stop-color="#9C27B0"/>
+        </linearGradient>
+        <linearGradient id="prefix__d" x1="14.648%" x2="85.352%" y1="85.361%" y2="14.648%">
+            <stop offset="0%" stop-color="#FFC107"/>
+            <stop offset="50.7%" stop-color="#F44336"/>
+            <stop offset="99%" stop-color="#9C27B0"/>
+        </linearGradient>
+        <filter id="prefix__a" width="118%" height="109.2%" x="-9%" y="-4.6%" filterUnits="objectBoundingBox">
+            <feOffset dx="7" dy="7" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feColorMatrix in="shadowOffsetOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.07 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd" filter="url(#prefix__a)" transform="translate(-51 -149)">
+        <g transform="translate(54 152)">
+            <rect width="44" height="44" x="-1.5" y="-1.5" fill="#FFF" stroke="#000" stroke-width="3" rx="4"/>
+            <g fill-rule="nonzero" transform="translate(11 10)">
+                <path fill="url(#prefix__b)" d="M13.728 0H6.24C2.794 0 0 2.794 0 6.24v7.488c0 3.446 2.794 6.24 6.24 6.24h7.488c3.446 0 6.24-2.794 6.24-6.24V6.24c0-3.446-2.794-6.24-6.24-6.24zm4.368 13.728c0 2.409-1.96 4.368-4.368 4.368H6.24c-2.409 0-4.368-1.96-4.368-4.368V6.24c0-2.409 1.96-4.368 4.368-4.368h7.488c2.409 0 4.368 1.96 4.368 4.368v7.488z"/>
+                <path fill="url(#prefix__c)" d="M9.984 4.992c-2.757 0-4.992 2.235-4.992 4.992s2.235 4.992 4.992 4.992 4.992-2.235 4.992-4.992-2.235-4.992-4.992-4.992zm0 8.112c-1.72 0-3.12-1.4-3.12-3.12 0-1.721 1.4-3.12 3.12-3.12 1.72 0 3.12 1.399 3.12 3.12 0 1.72-1.4 3.12-3.12 3.12z"/>
+                <circle cx="15.35" cy="4.618" r="1" fill="url(#prefix__d)"/>
+            </g>
+        </g>
+    </g>
+</svg>

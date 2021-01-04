@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="32px" viewBox="0 0 29 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>Group 44</title>
+    <desc>Created with Sketch.</desc>
+    <g id="v3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="StaaS" transform="translate(-974.000000, -2502.000000)">
+            <g id="Group-25" transform="translate(702.000000, 2091.000000)">
+                <g id="Group-24" transform="translate(272.000000, 411.000000)">
+                    <g id="Group-44">
+                        <g id="Group-43">
+                            <g id="Group-42" transform="translate(5.950000, 26.600000)" fill="#FAD843" stroke="#000000" stroke-width="0.7">
+                                <path d="M1.99037968,0.35 L0.509610454,4.2 L1.85962032,4.2 L3.34038955,0.35 L1.99037968,0.35 Z" id="Rectangle"></path>
+                                <path d="M14.5903797,0.35 L13.1096105,4.2 L14.4596203,4.2 L15.9403895,0.35 L14.5903797,0.35 Z" id="Rectangle" transform="translate(14.525000, 2.275000) scale(-1, 1) translate(-14.525000, -2.275000) "></path>
+                            </g>
+                            <g id="Group-41">
+                                <circle id="Oval" stroke="#000000" stroke-width="1.05" fill="#F1A4AB" cx="14.175" cy="14.175" r="13.65"></circle>
+                                <circle id="Oval" fill="#FFFFFF" cx="14.35" cy="14.35" r="10.15"></circle>
+                                <circle id="Oval" fill="#F1A4AB" cx="14.35" cy="14.35" r="7"></circle>
+                                <circle id="Oval" fill="#FFFFFF" cx="14.175" cy="14.175" r="4.375"></circle>
+                                <circle id="Oval" fill="#F1A4AB" cx="14.175" cy="14.175" r="1.925"></circle>
+                            </g>
+                        </g>
+                        <g id="Group-40" transform="translate(19.269454, 9.223744) rotate(-315.000000) translate(-19.269454, -9.223744) translate(16.769454, 1.223744)" stroke="#000000" stroke-width="0.7">
+                            <rect id="Rectangle" fill="#64C1BE" x="1.71499995" y="4.89999983" width="1.11999993" height="10.6749996" rx="0.559999967"></rect>
+                            <g id="Group-39">
+                                <path d="M0.623982735,0.249593094 L2.10601717,0.842406866 C2.21449418,0.885797672 2.33550565,0.885797672 2.44398267,0.842406866 L3.9260171,0.249593094 C4.15933359,0.156266497 4.42413013,0.26975073 4.51745673,0.503067221 C4.53895462,0.556811945 4.54999983,0.614165134 4.54999983,0.672049973 L4.54999983,4.24194985 C4.54999983,4.42800143 4.43672716,4.5953089 4.2639826,4.66440673 L2.44398267,5.3924067 C2.33550565,5.43579751 2.21449418,5.43579751 2.10601717,5.3924067 L0.286017232,4.66440673 C0.113272675,4.5953089 3.53278746e-16,4.42800143 0,4.24194985 L0,0.672049973 C-3.07740945e-17,0.420760421 0.203710431,0.217049989 0.454999983,0.217049989 C0.512884822,0.217049989 0.570238012,0.228095205 0.623982735,0.249593094 Z" id="Path-7" fill="#4A90E2"></path>
+                                <line x1="2.27499992" y1="0.909999967" x2="2.27499992" y2="5.41573452" id="Path-8"></line>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

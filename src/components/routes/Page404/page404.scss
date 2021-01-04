@@ -1,0 +1,112 @@
+@import "~styles/mixins";
+
+.Page404 {
+  background-color: $color-aqua;
+  margin-top: -170px;
+  padding-top: 170px;
+  border-bottom: $border_width solid black;
+
+  p {
+    margin: 0;
+  }
+
+  .content {
+    max-width: $max-size-blog;
+    margin: 0 auto;
+    padding: 100px 0 120px;
+    position: relative;
+
+    .top {
+      position: relative;
+
+      .card {
+        max-width: 500px;
+        min-width: 400px;
+        width: 100%;
+
+        .cloud {
+          display: block;
+          height: 100%;
+          width: 100%;
+        }
+
+        &.one {}
+
+        &.two {
+          position: absolute;
+          top: 40%;
+          z-index: 10;
+          left: 40%;
+        }
+
+        .title {
+          font-weight: bold;
+        }
+
+        .white {
+          height: 400px;
+          background-color: blue;
+        }
+
+        .text {
+          line-height: 1.6;
+          letter-spacing: 0.6px;
+        }
+      }
+
+      .number {
+        position: absolute;
+        font-size: 200px;
+        color: white;
+        z-index: 10;
+        right: 4%;
+        top: -10%;
+      }
+
+      @include phone {
+        padding: 0 20px;
+
+        .card {
+          &.one {
+            display: none;
+          }
+
+          &.two {
+            position: relative;
+            left: 0;
+            top: 0;
+            width: 100%;
+            min-width: 0;
+          }
+        }
+
+        .number {
+          position: relative;
+          right: 0;
+          top: 0;
+          width: 100%;
+          font-size: 0px;
+
+          img {
+            width: 100%;
+            padding: 30px;
+          }
+        }
+      }
+    }
+
+    .button {
+      width: auto;
+      padding: 0 30px;
+    }
+
+    @include phone {
+      padding: 0;
+      border-top: $border_width solid black;
+
+      .button {
+        margin: 30px auto;
+      }
+    }
+  }
+}

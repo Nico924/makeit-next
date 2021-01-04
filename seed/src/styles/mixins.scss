@@ -1,0 +1,827 @@
+@import 'seedVariables';
+@import 'breakpoints';
+//projet relative
+
+@import '~styles/variables';
+@import '~styles/typography';
+
+@mixin line-clamp($line, $line-height: 16px) {
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: $line;
+  line-height: $line-height;
+  max-height: $line * $line-height;
+}
+
+@mixin inline {
+  display: inline-block;
+  vertical-align: top;
+}
+
+@mixin middle {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@mixin inline-bottom {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+@mixin fixed-fill {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin absolute-fill {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+//Typography
+
+@mixin text_color($color) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  a,
+  label {
+    color: $color;
+  }
+  color: $color;
+}
+
+/*
+Black box shadow
+*/
+@mixin box-shadow($left: 0px, $bottom: 0px, $spread: 20px, $thickness: 0px, $opacity: 0.08) {
+  box-shadow: $left $bottom $spread $thickness rgba(0, 0, 0, $opacity);
+}
+
+/*
+Other color box shadow
+*/
+@mixin box-shadow-color(
+  $left: 0px,
+  $bottom: 0px,
+  $spread: 1px,
+  $thickness: 0px,
+  $color: rgba(0, 0, 0, 0.3)
+) {
+  box-shadow: $left $bottom $spread $thickness $color;
+}
+
+/*
+Responsive line height
+*/
+@mixin line-height($size, $rapp: 1) {
+  line-height: $size;
+
+  @include desktop {
+    line-height: $size - $rapp;
+  }
+
+  @include tablet {
+    line-height: ($size - (2 * $rapp));
+  }
+
+  @include phone {
+    line-height: ($size - (4 * $rapp));
+  }
+}
+
+/*
+Responsive font size
+*/
+@mixin font-size($size, $rapp: 1) {
+  font-size: $size;
+
+  @include desktop {
+    font-size: $size - $rapp;
+  }
+
+  @include tablet {
+    font-size: ($size - (2 * $rapp));
+  }
+
+  @include phone {
+    font-size: ($size - (4 * $rapp));
+  }
+}
+
+/*
+Responsive height (often linked to line-height)
+*/
+@mixin height($size, $rapp: 1) {
+  height: $size;
+
+  @include desktop {
+    height: $size - $rapp;
+  }
+
+  @include tablet {
+    height: ($size - (2 * $rapp));
+  }
+
+  @include phone {
+    height: ($size - (4 * $rapp));
+  }
+}
+
+/*
+Transform mixin
+*/
+@mixin transform($property) {
+  transform: $property;
+}
+
+/*
+Transition mixin
+default: opacity .7s
+*/
+@mixin transition($property: opacity, $duration: $transition_time, $function: '', $delay: '') {
+  //increase performance
+  //backface-visibility: hidden;
+  //transform: translateZ(0);
+  transition: $property $duration unquote($function) unquote($delay);
+}
+
+/*
+Arrow mixin
+*/
+@mixin arrow($direction, $color, $size) {
+  display: block;
+  height: 0;
+  width: 0;
+
+  @if $direction== 'top' {
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-bottom: $size solid $color;
+  } @else if $direction== 'right' {
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-left: $size solid $color;
+  } @else if $direction== 'bottom' {
+    border-top: $size solid $color;
+    border-right: $size solid transparent;
+    border-left: $size solid transparent;
+  } @else if $direction== 'left' {
+    border-top: $size solid transparent;
+    border-right: $size solid $color;
+    border-bottom: $size solid transparent;
+  } @else if $direction== 'top-left' {
+    border-top: $size solid $color;
+    border-right: $size solid transparent;
+  } @else if $direction== 'top-right' {
+    border-top: $size solid $color;
+    border-left: $size solid transparent;
+  } @else if $direction== 'bottom-left' {
+    border-bottom: $size solid $color;
+    border-right: $size solid transparent;
+  } @else if $direction== 'bottom-right' {
+    border-bottom: $size solid $color;
+    border-left: $size solid transparent;
+  }
+}
+
+@mixin arrow-border($direction, $color, $color_border, $size, $border-width: 1px) {
+  &:after,
+  &:before {
+    border: $border-width solid transparent;
+    content: ' ';
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  &:after {
+    border-width: $size;
+  }
+
+  &:before {
+    border-width: $size + $border-width;
+  }
+
+  $margin_var: $border-width;
+
+  @if $direction== 'top' {
+    &:after,
+    &:before {
+      bottom: 0;
+    }
+
+    &:after {
+      border-bottom-color: $color;
+    }
+
+    &:before {
+      margin-left: -$margin_var;
+      margin-top: -1px;
+      //bottom:1px;
+      border-bottom-color: $color_border;
+    }
+  } @else if $direction== 'right' {
+    &:after,
+    &:before {
+      left: 100%;
+    }
+
+    &:after {
+      border-left-color: $color;
+    }
+
+    &:before {
+      margin-right: -$margin_var;
+      border-left-color: $color_border;
+    }
+  } @else if $direction== 'bottom' {
+    &:after,
+    &:before {
+      top: 100%;
+    }
+
+    &:after {
+      border-top-color: $color;
+    }
+
+    &:before {
+      margin-top: $margin_var;
+      border-top-color: $color_border;
+    }
+  } @else if $direction== 'left' {
+    &:after,
+    &:before {
+      right: 100%;
+    }
+
+    &:after {
+      border-right-color: $color;
+    }
+
+    &:before {
+      margin-right: $margin_var;
+      border-right-color: $color_border;
+    }
+  }
+}
+
+/*
+Border-radius mixin
+*/
+@mixin border-radius($radius: 100%) {
+  border-radius: $radius;
+}
+
+/*
+Color placeholder mixin
+*/
+@mixin color-placeholder($color: #000) {
+  input,
+  textarea {
+    &::-webkit-input-placeholder {
+      color: $color;
+    }
+
+    &:-moz-placeholder {
+      color: $color;
+    }
+
+    &::-moz-placeholder {
+      color: $color;
+    }
+
+    &:-ms-input-placeholder {
+      color: $color;
+    }
+  }
+}
+
+/*
+Blur mixin
+*/
+@mixin blur($radius: 5px) {
+  filter: blur($radius);
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+/*
+Icon/asset mixin
+*/
+@mixin background-icon($url, $width, $height, $rapp: 1) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-size: ceil($width * $rapp) ceil($height * $rapp);
+  height: ceil($height * $rapp);
+  width: ceil($width * $rapp);
+}
+
+/*
+Mixin for fixed icons
+*/
+@mixin fixed-icon($height, $width, $url: '') {
+  @include background-icon($url, $width, $height);
+  margin-top: -$height / 2;
+  position: absolute;
+  top: 50%;
+}
+
+@mixin fixed-top($height: 16px, $font: false) {
+  @if $font==true {
+    font-size: $height;
+    line-height: $height;
+  } @else {
+    height: $height;
+  }
+
+  margin-top: -$height / 2;
+  position: absolute;
+  top: 50%;
+}
+
+@mixin sep($space: 25px, $color: white) {
+  border-bottom: 1px solid $color;
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  margin: $space 0px;
+}
+
+@mixin underline($color: black, $type: 2) {
+  @if $type==2 {
+    padding-bottom: 1px;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    @if $type==1 {
+      text-decoration: underline;
+    } @else if $type==2 {
+      padding-bottom: 0px;
+      border-bottom: 1px solid $color;
+    }
+  }
+}
+
+@mixin rotate($deg) {
+  transform: rotate($deg);
+  position: relative;
+}
+
+@mixin no-underline {
+  &,
+  &:hover {
+    padding-bottom: inherit;
+  }
+}
+
+@mixin forced-underline($color) {
+  //padding-bottom: 1px;
+  border-bottom: 1px solid $color;
+}
+
+@mixin vm($font-size: 12px, $rapp-font: 0) {
+  font-size: 0;
+  letter-spacing: 0;
+
+  &:before {
+    content: '';
+    height: 100%;
+    @include middle;
+  }
+
+  > * {
+    @include middle;
+    @include font-size($font-size, $rapp-font);
+    letter-spacing: normal;
+  }
+}
+
+@mixin vertical-abs-align($percentage: 25%) {
+  height: 100% - 2 * $percentage;
+  top: $percentage;
+}
+
+@mixin abs-icon($img-size, $rapp: 0.7) {
+  padding-left: $img-size + 10px;
+
+  .img {
+    @include transition(transform);
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: $img-size;
+    height: $img-size * $rapp;
+  }
+
+  @include phone {
+    padding-left: 0px;
+    text-align: center;
+
+    .img {
+      position: relative;
+      margin: 10px auto;
+      margin-top: 0px;
+    }
+  }
+}
+
+@mixin ball($dim) {
+  width: $dim;
+  height: $dim;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 100%;
+  line-height: $dim;
+  text-align: center;
+}
+
+@mixin active-hover($breakpoint: $breakpoint_tablet) {
+  &:hover {
+    @include min-breakpoint($breakpoint_tablet) {
+      @content;
+    }
+  }
+
+  &:active {
+    @content;
+  }
+}
+
+@mixin square($percent: 100%) {
+  &:before {
+    content: '';
+    padding-top: $percent;
+    display: block;
+  }
+}
+
+@mixin resp-row($margin_b: 20px) {
+  width: 100%;
+  margin-bottom: $margin_b;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+@mixin rating($dim: 20px, $spacing: 7px) {
+  font-size: 0;
+
+  &,
+  * {
+    user-select: none;
+  }
+
+  .notation {
+    margin-right: $spacing;
+    @include middle;
+    width: $dim;
+    height: $dim;
+
+    .overlay {
+      width: 0%;
+      overflow: hidden;
+    }
+
+    .img-wrapper {
+      line-height: 0;
+      @include absolute-fill();
+      right: auto;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $dim;
+        height: auto;
+        max-width: none;
+      }
+    }
+  }
+}
+
+@mixin v_align {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin center_align {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+@mixin cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin card {
+  border-radius: $border_radius;
+  background-color: #ffffff;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 48, 0.18);
+}
+
+@mixin grid($sep: $grid_aeration) {
+  // clear spacing
+  padding: 0;
+  font-size: 0;
+  letter-spacing: 0;
+  margin: 0 (-$sep);
+
+  [class*='col-'] {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 $sep;
+  }
+
+  &.no-space {
+    margin: 0;
+
+    [class*='col-'] {
+      padding: 0;
+    }
+  }
+
+  .col-1 {
+    width: 1/12 * 100%;
+  }
+
+  .col-1_5 {
+    width: 3/24 * 100%;
+  }
+
+  .col-2 {
+    width: 2/12 * 100%;
+  }
+
+  .col-2_5 {
+    width: 5/24 * 100%;
+  }
+
+  .col-3 {
+    width: 3/12 * 100%;
+  }
+
+  .col-3_5 {
+    width: 7/24 * 100%;
+  }
+
+  .col-4 {
+    width: 4/12 * 100%;
+  }
+
+  .col-4_5 {
+    width: 9/24 * 100%;
+  }
+
+  .col-5 {
+    width: 5/12 * 100%;
+  }
+
+  .col-5_5 {
+    width: 11/24 * 100%;
+  }
+
+  .col-6 {
+    width: 6/12 * 100%;
+  }
+
+  .col-6_5 {
+    width: 13/24 * 100%;
+  }
+
+  .col-7 {
+    width: 7/12 * 100%;
+  }
+
+  .col-7_5 {
+    width: 15/24 * 100%;
+  }
+
+  .col-8 {
+    width: 8/12 * 100%;
+  }
+
+  .col-8_5 {
+    width: 17/24 * 100%;
+  }
+
+  .col-9 {
+    width: 9/12 * 100%;
+  }
+
+  .col-9_5 {
+    width: 19/24 * 100%;
+  }
+
+  .col-10 {
+    width: 10/12 * 100%;
+  }
+
+  .col-10_5 {
+    width: 21/24 * 100%;
+  }
+
+  .col-11 {
+    width: 11/12 * 100%;
+  }
+
+  .col-11_5 {
+    width: 23/24 * 100%;
+  }
+
+  .col-12 {
+    width: 12/12 * 100%;
+  }
+}
+
+/*
+  table checkbox
+*/
+@mixin table-checkbox {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 14px;
+  user-select: none;
+
+  input {
+    display: none;
+
+    &:checked ~ .checkmark:after {
+      display: block;
+    }
+  }
+
+  .checkmark {
+    height: 14px;
+    width: 14px;
+    display: block;
+    background-color: #fff;
+    border: 1px solid #c5ccd6;
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: none;
+      left: 5px;
+      top: 0px;
+      width: 16px;
+      height: 8px;
+      border: solid $color-blue;
+      border-width: 0 1px 1px 0;
+      z-index: 99;
+      -webkit-transform: scaleX(-1) rotate(45deg) translateX(-1px) translateY(-4px);
+      -ms-transform: scaleX(-1) rotate(45deg) translateX(-1px) translateY(-4px);
+      transform: scaleX(-1) rotate(45deg) translateX(-1px) translateY(-4px);
+    }
+  }
+
+  &:hover input ~ .checkmark {
+    background-color: $color-grey-background;
+  }
+}
+
+@mixin customAppearTransition($name) {
+  display: block;
+
+  &:not([class*='#{$name}']) {
+    display: none;
+  }
+
+  &.#{$name} {
+    &-exit-done {
+      display: none;
+    }
+
+    &-enter-active,
+    &-enter-done {
+      @content;
+    }
+  }
+}
+
+@mixin activable($color: rgba(white, 0.1)) {
+  &:hover {
+    cursor: pointer;
+
+    &:before {
+      content: '';
+      background-color: $color;
+      @include absolute-fill;
+    }
+  }
+}
+
+%card {
+  border-radius: $border_radius;
+  background-color: #ffffff;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 48, 0.18);
+}
+
+@mixin container {
+  max-width: $max_width;
+  padding-left: $global_side_padding;
+  padding-right: $global_side_padding;
+  margin: auto;
+
+  @include phone {
+    padding-left: $global_side_padding_mobile;
+    padding-right: $global_side_padding_mobile;
+  }
+}
+
+@mixin warning($color: $color-dark-orange, $border: 1px) {
+  text-align: center;
+  display: inline-block;
+  border-radius: $border_radius;
+  border: $border solid $color;
+  color: $color;
+  background: rgba($color: $color, $alpha: 0.2);
+  padding: 5px 10px;
+  font-weight: 500;
+}
+
+@mixin socialButton {
+  $side_padding: 25px;
+
+  position: relative;
+
+  cursor: pointer;
+  border-radius: 100px;
+  height: 45px;
+  width: 100%;
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // for the logo/icon
+  padding-left: $side_padding + 20px;
+  padding-right: $side_padding;
+
+  @include transition(all);
+
+  &:hover {
+    box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  &.noMargin {
+    margin-top: 0;
+  }
+
+  .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+
+    width: $side_padding + 20px;
+    display: flex;
+    padding-left: $side_padding;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    img {
+      height: 18px;
+    }
+  }
+  .text {
+    font-size: 15px;
+    font-weight: 500;
+  }
+}

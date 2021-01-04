@@ -1,0 +1,72 @@
+@import "~styles/mixins";
+
+.TextInput {
+  .input-wrapper {
+    background-color: white;
+    border: $border_width solid black;
+    position: relative;
+
+    .input {
+      letter-spacing: 0.2px;
+      padding: 15px 20px;
+
+      input {
+        font-size: 18px;
+        color: #b7b7b7;
+        font-style: italic;
+        width: 100%;
+      }
+
+      textarea {
+        font-size: 18px;
+        color: #b7b7b7;
+        font-style: italic;
+        width: 100%;
+        padding: 15px 20px;
+      }
+
+      &.textarea-input {
+        padding: 0px;
+      }
+    }
+
+    .error {
+      color: $color-red;
+      position: absolute;
+      bottom: 2px;
+      right: 5px;
+      font-size: 12px;
+    }
+
+    .star-required {
+      color: black;
+      position: absolute;
+      right: 5px;
+      top: 2px;
+    }
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  color: #b7b7b7;
+  transition: color 5000s ease-in-out 0s;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #dcdcdc;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #dcdcdc;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #dcdcdc;
+}

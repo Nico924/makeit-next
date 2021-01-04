@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29" height="32" viewBox="0 0 29 32">
+    <g fill="none" fill-rule="evenodd">
+        <g fill="#FAD843" stroke="#000" stroke-width=".7">
+            <path d="M1.99.35L.51 4.2h1.35L3.34.35H1.99zM14.46.35l1.48 3.85h-1.35L13.11.35h1.35z" transform="translate(5.95 26.6)"/>
+        </g>
+        <circle cx="14.175" cy="14.175" r="13.65" fill="#F1A4AB" stroke="#000" stroke-width="1.05"/>
+        <circle cx="14.35" cy="14.35" r="10.15" fill="#FFF"/>
+        <circle cx="14.35" cy="14.35" r="7" fill="#F1A4AB"/>
+        <circle cx="14.175" cy="14.175" r="4.375" fill="#FFF"/>
+        <circle cx="14.175" cy="14.175" r="1.925" fill="#F1A4AB"/>
+        <g stroke="#000" stroke-width=".7" transform="rotate(45 9.408 28.854)">
+            <rect width="1.12" height="10.675" x="1.715" y="4.9" fill="#64C1BE" rx=".56"/>
+            <path fill="#4A90E2" d="M.624.25l1.482.592c.108.044.23.044.338 0L3.926.25c.233-.094.498.02.591.253.022.054.033.111.033.169v3.57c0 .186-.113.353-.286.422l-1.82.728c-.108.044-.23.044-.338 0l-1.82-.728C.113 4.595 0 4.428 0 4.242V.672C0 .421.204.217.455.217.513.217.57.228.624.25z"/>
+            <path d="M2.275.91v4.506"/>
+        </g>
+    </g>
+</svg>

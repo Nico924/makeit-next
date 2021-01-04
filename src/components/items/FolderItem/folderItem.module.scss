@@ -1,0 +1,11 @@
+@import "~styles/mixins";
+
+.FolderItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  line-height: 2.5;
+  text-transform: capitalize;
+}

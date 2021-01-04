@@ -1,0 +1,77 @@
+@import "~styles/mixins";
+
+.InvestHeader {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #4a90e2;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 10;
+  border-bottom: 3px solid black;
+
+  .logo {
+    .img {
+      height: 100%;
+    }
+  }
+
+  @include tablet {
+    height: 70px;
+
+    .logo {
+      height: 50px;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  .container {
+    max-width: 1240px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    .menu {
+      display: flex;
+      align-items: center;
+
+      .button {
+        display: flex;
+        width: auto;
+        color: white;
+      }
+
+      .item-menu {
+        padding: 0 20px;
+        color: white;
+        font-size: 16px;
+
+        @include medium {
+          padding: 0 10px;
+        }
+
+        &:last-child {
+          padding-right: 0;
+        }
+
+        &.active-item-menu {
+          font-weight: bold;
+        }
+
+        @include tablet {
+          display: none;
+          padding: 0 10px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,146 @@
+@import '~styles/mixins';
+@import '~styles/tom';
+
+$general_section_padding: 140px;
+$general_container_width: 1080px;
+$big_container_width: 1440px;
+$general_col_width: 47%;
+
+.IdeaApplication {
+  @include base;
+
+  section {
+    border-bottom: 3px solid black;
+
+    @include medium {
+      padding: 100px 0;
+    }
+  }
+
+  .title {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .card-wrapper  {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 100px 0 50px 0;
+    flex-wrap: wrap;
+    position: relative;
+
+    z-index: 2;
+  }
+
+  .card {
+    background-color: white;
+    border: solid 3px black;
+    width: 24%;
+    min-height: 270px;
+    padding: 0 30px 30px 30px;
+
+    @include medium {
+      max-width: 48%;
+      width: 48%;
+      margin-bottom: 50px;
+    }
+
+    @include phone {
+      max-width: 100%;
+      width: 100%;
+      margin: 0;
+
+      &:nth-child(1) {
+        border-bottom: 0;
+      }
+
+      &:nth-child(2) {
+        border-bottom: 0;
+      }
+
+      &:nth-child(3) {
+        border-bottom: 0;
+      }
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .card-icon {
+      position: relative;
+      top: -40px;
+    }
+  }
+
+  .second-text {
+    background-color: white;
+    padding: 10px;
+    border: solid 3px black;
+    text-align: center;
+    border-radius: 50px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    max-width: 520px;
+    margin: 0 auto 50px auto;
+
+    p {
+      margin: 0;
+    }
+
+    &::before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      background-color: $color-aqua;
+      border-radius: 20px;
+      border: solid 3px black;
+      margin-right: 20px;
+
+      @include phone {
+        display: none;
+      }
+    }
+  }
+
+  .section1 {
+    @include medium {
+    }
+  }
+
+  .form {
+    background-color: $color-light-grey;
+    border: solid 3px black;
+    border-radius: $border_radius;
+    padding: 30px;
+    box-shadow: $box_shadow;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .half_round,
+  .half_carre {
+    position: absolute;
+  }
+
+  .half_round {
+    right: 0;
+    bottom: 35%;
+
+    @include medium {
+      display: none;
+    }
+  }
+
+  .half_carre {
+    left: 0;
+    top: 15%;
+
+    @include medium {
+      display: none;
+    }
+  }
+}

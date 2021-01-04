@@ -1,0 +1,16 @@
+@import '~styles/mixins';
+
+.SimpleTooltip {
+  .content {
+    background-color: $color-dark;
+    color: white;
+    padding: 6px 10px;
+    font-size: 12px;
+    text-align: left;
+    min-width: 130px;
+    border-radius: $border_radius;
+    &.centered {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,110 @@
+// Mixins for typo
+@import "~styles/project";
+
+@mixin mainTitle {
+  font-weight: bold;
+  font-size: $title-size;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+@mixin linkHref {
+  padding: 0px;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 16px;
+  color: $color-link;
+  position: relative;
+  display: inline-block;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    bottom: 4px;
+    width: 100%;
+    border-bottom: 2px solid;
+    border-color: rgba($color: $color-link, $alpha: 0.5);
+  }
+
+  &:hover {
+    color: $color-pink;
+
+    &::before {
+      border-color: rgba($color: $color-pink, $alpha: 0.5);
+    }
+  }
+}
+
+@mixin animAndStay($name, $duration, $delay) {
+  animation: $name;
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+
+  @include phone {
+    animation-duration: 0s;
+    animation-delay: 0s;
+  }
+}
+
+@mixin modalTransition {
+
+  .wrapper,
+  .preview {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  .background {
+    opacity: 0;
+  }
+
+  &.success,
+  &.error {
+    .wrapper {
+      margin-top: $top-success-error;
+    }
+  }
+}
+
+@mixin modalProject {
+  overflow: hidden;
+
+  .preview,
+  .wrapper {
+    transform: translateY(0px);
+    opacity: 1;
+    max-height: 100%;
+    max-width: $max-size-content;
+  }
+
+  .modal-menu {
+    vertical-align: text-bottom;
+  }
+}
+
+@mixin text_color($color) {
+  color: $color !important;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  a,
+  span,
+  li,
+  p {
+    color: $color !important;
+  }
+}
+
+@mixin max_width($width) {
+  max-width: $width;
+  margin-left: auto;
+  margin-right: auto;
+}

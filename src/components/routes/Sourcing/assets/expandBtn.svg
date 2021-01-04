@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>Group 14</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-13.9%" y="-13.9%" width="127.8%" height="127.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="v3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Sourcing" transform="translate(-893.000000, -5671.000000)" stroke="#000000">
+            <g id="Group-46" transform="translate(0.000000, 5000.000000)">
+                <g id="Group-37" transform="translate(767.000000, 190.000000)">
+                    <g id="Group-34">
+                        <g id="Group-18">
+                            <g id="Group-2" transform="translate(40.000000, 479.000000)">
+                                <g id="Group">
+                                    <g id="Group-14" filter="url(#filter-1)" transform="translate(86.000000, 2.000000)">
+                                        <circle id="Oval" stroke-width="1.25" fill="#FAD843" cx="8.75" cy="8.75" r="8.125"></circle>
+                                        <path d="M8.75,5.4375 C8.30126864,5.4375 7.9375,5.80126864 7.9375,6.25 L7.9375,7.93615014 L7.50035,7.93649986 L6.25,7.9375 C5.80126864,7.9375 5.4375,8.30126864 5.4375,8.75 C5.4375,9.19873136 5.80126864,9.5625 6.25,9.5625 L7.9375,9.5625 L7.9375,11.25 C7.9375,11.6987314 8.30126864,12.0625 8.75,12.0625 C9.19873136,12.0625 9.5625,11.6987314 9.5625,11.25 L9.5625,9.5625 L11.25,9.5625 C11.6987314,9.5625 12.0625,9.19873136 12.0625,8.75 C12.0625,8.30126864 11.6987314,7.9375 11.25,7.9375 L9.5625,7.9375 L9.5625,6.25 C9.5625,5.80126864 9.19873136,5.4375 8.75,5.4375 Z" id="Combined-Shape" stroke-width="0.875" fill="#FFFFFF"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

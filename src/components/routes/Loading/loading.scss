@@ -1,0 +1,177 @@
+@import "~styles/mixins";
+
+.Loading {
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    margin: 0;
+  }
+
+  .disclaimer {
+    max-width: 1100px;
+    margin: 0 150px;
+
+    @include phone {
+      margin: 0 20px;
+    }
+
+    .button {
+      max-width: max-content;
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+
+    .content {
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 2;
+      color: black;
+      letter-spacing: 0.2px;
+      display: flex;
+      position: relative;
+
+      @include phone {
+        display: block;
+        text-align: center;
+        font-size: 16px;
+        letter-spacing: 0.4px;
+      }
+
+      img {
+        margin: 12px 35px 0 20px;
+        max-height: 75px;
+      }
+
+      .stars {
+        position: absolute;
+        height: 50px;
+        right: -60px;
+        bottom: 60px;
+      }
+
+      .drops {
+        position: absolute;
+        left: -95px;
+        bottom: -50px
+      }
+    }
+  }
+
+  .center {
+    max-width: 460px;
+    width: 100%;
+    position: relative;
+
+    .no-padding {
+      padding: 0;
+      height: 100%;
+
+      img {
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+
+      .image {
+        height: calc(100% - 50px);
+        width: 100%;
+        background-position: top;
+        background-size: cover;
+      }
+
+      .title {
+        height: 50px;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 22px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        &.aqua {
+          background-color: $color-aqua;
+        }
+
+        &.blue {
+          background-color: $color-dark-blue;
+        }
+      }
+    }
+
+    .first-pop {
+      position: absolute;
+      top: -75%;
+      left: -50%;
+      width: 525px;
+      height: 370px;
+      z-index: 1;
+      opacity: 0;
+
+      &.display {
+        opacity: 1;
+      }
+    }
+
+    .second-pop {
+      position: absolute;
+      width: 525px;
+      right: -40%;
+      bottom: -45%;
+      z-index: 1;
+      opacity: 0;
+      height: 370px;
+
+      &.display {
+        opacity: 1;
+      }
+    }
+
+    .card {
+      width: 100%;
+      position: relative;
+      z-index: 5;
+
+      .text-card {
+        line-height: 1.8;
+      }
+
+      .progress-container {
+        background-color: $color-light-grey;
+        border: $border_width solid black;
+        height: 40px;
+        margin: 20px 0 10px;
+        position: relative;
+
+        .indic {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          letter-spacing: 1px;
+          z-index: 10;
+          position: relative;
+        }
+
+        .progress {
+          z-index: 5;
+          width: 100%;
+          max-width: 0;
+          position: absolute;
+          background-color: $color-aqua;
+          height: 100%;
+          top: 0;
+          z-index: 1;
+          transition: max-width linear 0.1s;
+        }
+      }
+    }
+  }
+}

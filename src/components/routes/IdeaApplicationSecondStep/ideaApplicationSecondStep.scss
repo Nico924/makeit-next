@@ -1,0 +1,64 @@
+@import '~styles/mixins';
+@import '~styles/tom';
+
+$general_section_padding: 140px;
+$general_container_width: 1080px;
+$big_container_width: 1440px;
+$general_col_width: 47%;
+
+.IdeaApplicationSecondStep {
+  @include base;
+
+  section {
+    border-bottom: 3px solid black;
+
+    @include medium {
+      padding: 100px 15px;
+    }
+  }
+
+  .container {
+    @include container;
+  }
+
+  .title {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .section1 {
+    @include medium {
+      padding-top: 240px;
+    }
+  }
+
+  .form {
+    background-color: $color-light-grey;
+    border: solid 3px black;
+    border-radius: $border_radius;
+    padding: 30px;
+    box-shadow: $box_shadow;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .half_round,
+  .half_carre {
+    position: absolute;
+  }
+
+  .half_round {
+    right: 0;
+    bottom: 35%;
+
+    @include medium {
+      display: none;
+    }
+  }
+
+  .half_carre {
+    left: 0;
+    top: 15%;
+  }
+}

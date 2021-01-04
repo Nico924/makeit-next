@@ -1,0 +1,51 @@
+@mixin border($direction: 'null') {
+  @if $direction== 'top' {
+    border-top: $border_width solid black;
+  } @else if $direction== 'bottom' {
+    border-bottom: $border_width solid black;
+  } @else if $direction== 'left' {
+    border-left: $border_width solid black;
+  } @else if $direction== 'right' {
+    border-right: $border_width solid black;
+  } @else if $direction== 'null' {
+    border: $border_width solid black;
+  }
+}
+
+@mixin boxShadow {
+  -webkit-box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 0.07);
+  box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 0.07);
+}
+
+@mixin sectionTitle {
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+@mixin sectionInvestTitle {
+  font-size: 40px;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1.5;
+  letter-spacing: 0.8px;
+
+  @include tablet {
+    font-size: 32px;
+  }
+
+  @include phone {
+    font-size: 24px;
+  }
+}
+
+@mixin sectionText($bold: 'null') {
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.25px;
+
+  @if $bold != 'null' {
+    font-weight: bold;
+  }
+}

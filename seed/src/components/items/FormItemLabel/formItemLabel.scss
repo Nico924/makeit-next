@@ -1,0 +1,35 @@
+@import '~styles/mixins';
+
+.FormItemLabel {
+  display: block;
+  color: $color_label;
+  text-transform: uppercase;
+  font-size: $font_size_label;
+  font-weight: $font_weight_input_label;
+
+  pointer-events: none;
+
+  .notRequired {
+    font-size: 13px;
+    margin-left: 10px;
+    font-style: italic;
+  }
+
+  > * {
+    @include middle;
+  }
+
+  &.required {
+    > * {
+      display: inline;
+    }
+  }
+
+  .label-icon {
+    margin-right: 7px;
+  }
+
+  .star {
+    color: $color_red;
+  }
+}

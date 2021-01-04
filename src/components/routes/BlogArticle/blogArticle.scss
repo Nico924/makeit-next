@@ -1,0 +1,242 @@
+@import '~styles/mixins';
+
+.BlogArticle {
+  .half_carre_pink {
+    position: absolute;
+    right: 0;
+    top: 30%;
+
+    @include medium {
+      max-width: 150px;
+      top: 28%;
+      display: none;
+    }
+  }
+
+  .loading {
+    .article {
+      text-align: center;
+      min-height: 30vh;
+
+      .image-loading {
+        height: 14px;
+      }
+    }
+  }
+
+  .top {
+    max-width: $max-size-blog;
+    margin: 100px auto 150px auto;
+    position: relative;
+    z-index: 3;
+
+    .info {
+      display: flex;
+      align-items: center;
+
+      .date {
+        margin-left: 25px;
+        font-style: italic;
+        font-size: 16px;
+        letter-spacing: 0.2px;
+        color: white;
+      }
+    }
+
+    .title {
+      font-size: 50px;
+      font-weight: 900;
+      font-style: italic;
+      letter-spacing: 0.2px;
+      line-height: 1.4;
+      color: white;
+      margin-top: 30px;
+    }
+  }
+
+  .content {
+    background-color: white;
+    padding: 50px 0;
+    border-top: $border_width solid black;
+    border-bottom: $border_width solid black;
+    padding-bottom: 0;
+
+    &>* {
+      max-width: $max-size-blog;
+    }
+
+    .cta {
+      margin: 0 auto;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      border-radius: $border_radius;
+      box-shadow: $box_shadow;
+    }
+
+    .article {
+      position: relative;
+      margin: 0 auto;
+      top: -180px;
+
+      @include medium {
+        top: inherit;
+      }
+
+      h2 {
+        font-size: 38px;
+        font-style: italic;
+        font-weight: 900;
+      }
+
+      h3 {
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      .share-container {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        height: 100%;
+        width: 150px;
+
+        .share-sticky {
+          position: sticky;
+          top: 20px;
+          display: block;
+          margin-left: 10px;
+
+          &>* {
+            border: $border_width solid black;
+            border-top: none;
+
+            &:nth-child(1) {
+              border-top: $border_width solid black;
+              border-radius: $border_radius $border_radius 0 0;
+
+              &>* {
+                &:nth-child(1) {
+                  border-radius: $border_radius_less_width 0 0 0;
+                }
+              }
+            }
+
+            &:last-child {
+              border-radius: 0 0 $border_radius $border_radius;
+
+              &>* {
+                &:nth-child(1) {
+                  border-radius: 0 0 0 $border_radius_less_width;
+                }
+              }
+            }
+          }
+        }
+
+        @media screen and (max-width: 1100px) {
+          position: sticky;
+          left: 0;
+          width: 100%;
+          z-index: 10;
+
+          .share-sticky {
+            margin-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+
+            &>* {
+              border: $border_width solid black;
+              border-left: none;
+
+              &:nth-child(1) {
+                border-left: $border_width solid black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .related {
+    background-color: $color-aqua;
+    border-bottom: $border_width solid black;
+    padding: 80px 0;
+
+    .related-container {
+      max-width: $max-size-blog;
+      margin: 0 auto;
+
+      .related-title {
+        font-size: 38px;
+        font-weight: 900;
+        color: white;
+        line-height: 1.4;
+        letter-spacing: 0.2px;
+        font-style: italic;
+      }
+
+      .related-post {
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &>* {
+          width: calc((100% / 2) - 20px);
+          margin-bottom: 40px;
+
+          @include phone {
+            width: 100%;
+          }
+        }
+      }
+
+      @include tablet {
+        padding: 0 20px;
+      }
+    }
+  }
+
+  @include tablet {
+    .top {
+      margin: 0;
+
+      .info {
+        position: relative;
+        top: -3px;
+        display: block;
+
+        .date {
+          padding: 20px 20px 0;
+          margin: 10px 0 0;
+        }
+      }
+
+      .title {
+        font-size: 24px;
+        padding: 20px;
+        margin: 0 0 30px;
+      }
+    }
+
+    .content {
+      padding: 20px;
+
+      .article {
+        .image-article {
+          margin: 20px 0;
+        }
+
+        h2 {
+          font-size: 20px;
+          margin-bottom: 15px;
+        }
+
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

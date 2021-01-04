@@ -1,0 +1,35 @@
+// Main project style
+// Can be used to override html for example
+
+html,
+body {
+  // to complete
+  color: black;
+  overflow: unset;
+  background: #4a90e2;
+
+  min-height: 100vh;
+}
+
+:global .white {
+  @include text_color(#fff);
+}
+
+:global .third {
+  width: 30%;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+
+  @include tablet {
+    width: 100%;
+    margin: 0 auto 30px;
+  }
+}
+
+:global .text-center {
+  text-align: center;
+}
+
+:global .bold {
+  font-weight: bold;
+}

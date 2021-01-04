@@ -1,0 +1,75 @@
+// @import './tom';
+
+//FONTS
+$font: 'Chivo', sans-serif;
+
+// Couleurs
+$color-dark: #343944;
+$color-black: #1d1d26;
+$color-dark-2: #24252a;
+$color-dark-grey: #616b77;
+$color-light-grey: #c5ccd6;
+$color-title-grey: #8c96a3;
+
+$color-blue: #0e5cad;
+$color-blue-2: #3964ae;
+
+$color-red: rgba(245, 72, 72, 0.95);
+$color-dark-orange: #eb6d2f;
+$color-orange: #ebac2f;
+$color-yellow: #fad843;
+$color-green: #2ce1be;
+$color-pink: #f1a4ab;
+$color-aqua: #64c1be;
+$color-dark-blue: #3970af;
+$color-white-break: #f8f8f8;
+$color-link: #4a90e2;
+$color-grey-font: hsl(214, 11%, 59%);
+$color-grey-background: #f8f8f9;
+$color-light-grey: #d9d9d9;
+$color-grey: #979797;
+$color-white: #fff;
+
+$color-border: #e8e8e8;
+
+//Components sizes
+$form_spacing: 30px;
+$font_size_form: 14px;
+
+//Use in tables
+$spacing_table_h: 12px;
+$default_spacing: 18px;
+//globla sizing
+$height_global_header: 72px;
+$grid_aeration: 10px;
+
+//font
+$big-title-size: 55px;
+$title-size: 45px;
+$medium-title-size: 32px;
+$medium-text-size: 22px;
+$text-size: 18px;
+$small-text-size: 16px;
+$tag-text-size: 10px;
+$tag-line-height: 10px;
+$big-title-line-height: 65px;
+$title-line-height: 55px;
+$medium-title-line-height: 48px;
+$text-line-height: 36px;
+$small-text-line-height: 28px;
+$big-title-font-weight: 900;
+
+$max-size-app: 1080px;
+$max-size-content: 960px;
+$max-size-blog: 780px;
+$max-size-use-case: 684px;
+$height_header: 170px;
+
+// border
+$border_radius: 0;
+$border_width: 3px;
+$border_radius_less_width: calc(#{$border_radius} - #{$border_width});
+$border_radius_button: 50px;
+
+//shadow
+$box_shadow: 7px 7px 0 rgba(0, 0, 0, 1);

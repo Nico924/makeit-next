@@ -1,0 +1,57 @@
+@import "~styles/mixins";
+
+.DateSelector {
+  input {
+    cursor: pointer;
+  }
+
+  .label{
+    margin-bottom:5px;
+  }
+
+  .value{
+    display: flex;
+  }
+  
+  :global .calendar {
+    button {
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 0.3px;
+      &:focus,
+      &:hover {
+        background: rgb(245, 245, 245);
+      }
+    }
+    .react-calendar__tile--hasActive,
+    .react-calendar__tile--active {
+      background-color: $color_primary !important;
+      color: white !important;
+    }
+    .react-calendar__month-view__days__day--weekend {
+      color: $color-red;
+    }
+  }
+  :global .picker {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+    input {
+      padding: 0;
+      min-width: 24px;
+      text-align: center;
+    }
+    .react-date-picker__inputGroup__year {
+      min-width: 43px;
+    }
+    .react-date-picker__wrapper {
+      border: none;
+    }
+    &.react-date-picker--disabled {
+      background-color: transparent;
+      cursor: not-allowed;
+    }
+  }
+}

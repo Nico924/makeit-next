@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="536" height="213" viewBox="0 0 536 213">
+    <defs>
+        <path id="b" d="M537 378.1v-33.9l83.4-116.7h40.5v123.3h33.3v27.3h-33.3v43.8h-28.5v-43.8H537zm95.4-27.3v-95.1L564 350.8h68.4zm116.571-26.1c0 29.7 5.4 50.7 17.1 63 7.5 7.8 17.1 12.6 30.9 12.6 13.8 0 23.4-4.8 30.9-12.6 11.7-12.3 17.1-33.3 17.1-63 0-29.7-5.4-50.7-17.1-63-7.5-7.8-17.1-12.6-30.9-12.6-13.8 0-23.4 4.8-30.9 12.6-11.7 12.3-17.1 33.3-17.1 63zm-29.1 0c0-26.7 4.5-51.3 17.4-70.5 12.6-18.9 32.1-31.2 59.7-31.2s47.1 12.3 59.7 31.2c12.9 19.2 17.4 43.8 17.4 70.5 0 26.7-4.5 51.3-17.4 70.5-12.6 18.9-32.1 31.2-59.7 31.2s-47.1-12.3-59.7-31.2c-12.9-19.2-17.4-43.8-17.4-70.5zm185.872 53.4v-33.9l83.4-116.7h40.5v123.3h33.3v27.3h-33.3v43.8h-28.5v-43.8h-95.4zm95.4-27.3v-95.1l-68.4 95.1h68.4z"/>
+        <filter id="a" width="102.9%" height="107.4%" x="-.9%" y="-2.2%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" operator="dilate" radius="3" result="shadowSpreadOuter1"/>
+            <feOffset dx="3" dy="3" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"/>
+            <feColorMatrix in="shadowOffsetOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.07 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(-535 -221)">
+        <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+        <use fill="#FFF" xlink:href="#b"/>
+    </g>
+</svg>

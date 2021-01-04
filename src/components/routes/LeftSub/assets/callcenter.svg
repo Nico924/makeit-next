@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="551px" height="465px" viewBox="0 0 551 465" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="276.5" cy="215.5" r="215.5"></circle>
+        <filter x="-1.0%" y="-1.0%" width="103.5%" height="103.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="3" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="3" dy="3" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Left-Sub-Page" transform="translate(-190.000000, -1777.000000)">
+            <g id="Group-9-Copy" transform="translate(0.000000, 1687.000000)">
+                <g id="Group" transform="translate(185.000000, 92.000000)">
+                    <g id="Oval" fill-rule="nonzero">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use stroke="#000000" stroke-width="3" fill="#4A90E2" xlink:href="#path-1"></use>
+                    </g>
+                    <path d="M361.309911,208.669922 L332,208.669922 L355.475215,189.962225 C354.108662,183.355537 353.390625,176.511622 353.390625,169.5 C353.390625,113.995383 398.386008,69 453.890625,69 C509.395242,69 554.390625,113.995383 554.390625,169.5 C554.390625,225.004617 509.395242,270 453.890625,270 C412.281702,270 376.578675,244.713852 361.309911,208.669922 Z" id="Combined-Shape" stroke="#000000" stroke-width="3" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    <g id="Group-6" transform="translate(389.000000, 126.000000)" fill="#F5F5F5" fill-rule="nonzero">
+                        <rect id="Rectangle" x="14" y="0" width="98" height="12" rx="6"></rect>
+                        <rect id="Rectangle-Copy-2" x="34" y="26" width="98" height="12" rx="6"></rect>
+                        <rect id="Rectangle-Copy-5" x="0" y="52" width="98" height="12" rx="6"></rect>
+                        <rect id="Rectangle-Copy-3" x="34" y="78" width="71" height="12" rx="6"></rect>
+                    </g>
+                    <path d="M352.235822,461.090698 C352.202643,378.231092 284.965672,311.033191 202.057842,311.000012 C119.150015,310.966833 51.9668335,378.110941 52.0000123,460.970547 C52.0000123,460.970547 352.235822,461.090698 352.235822,461.090698 Z" id="Oval" stroke="#000000" stroke-width="3" fill="#64C1BE"></path>
+                    <path d="M229.5,313 L229.5,297.5 L231,297.5 C268.831505,297.5 299.5,266.831505 299.5,229 L299.5,177 C299.5,139.168495 268.831505,108.5 231,108.5 C193.168495,108.5 162.5,139.168495 162.5,177 L162.5,313 C162.5,331.501539 177.498461,346.5 196,346.5 C214.501539,346.5 229.5,331.501539 229.5,313 Z" id="Combined-Shape" stroke="#000000" stroke-width="3" fill="#FAD843" fill-rule="nonzero"></path>
+                    <circle id="Oval" stroke="#000000" stroke-width="3" fill="#FFFFFF" fill-rule="nonzero" cx="216" cy="179" r="10"></circle>
+                    <circle id="Oval-Copy" stroke="#000000" stroke-width="3" fill="#FFFFFF" fill-rule="nonzero" cx="266" cy="179" r="10"></circle>
+                    <polygon id="Triangle" stroke="#000000" stroke-width="2.5" fill="#FAD843" points="241 191 261 215.848459 241 215.848459"></polygon>
+                    <path d="M256.235822,253.090698 C256.231928,243.655546 248.340964,236.003779 238.610861,236.000001 C228.880758,235.996223 220.996108,243.641865 221.000001,253.077016 C221.000001,253.077016 256.235822,253.090698 256.235822,253.090698 Z" id="Oval-Copy-2" stroke="#000000" stroke-width="3" fill="#FFFFFF" transform="translate(238.617911, 244.545349) rotate(-180.000000) translate(-238.617911, -244.545349) "></path>
+                    <path d="M170.66326,206.66326 C170.659698,198.332235 163.440576,191.575899 154.538899,191.572563 C145.637224,191.569227 138.423877,198.320155 138.427439,206.651179 C138.427439,206.651179 170.66326,206.66326 170.66326,206.66326 Z" id="Oval-Copy-3" stroke="#000000" stroke-width="3" fill="#FAD843" transform="translate(154.545349, 199.117911) rotate(-90.000000) translate(-154.545349, -199.117911) "></path>
+                    <path d="M162.936523,200.4876 C163.339716,214.649649 167.661005,226.978534 175.900391,237.474256 C184.139776,247.969978 195.230271,254.811893 209.171875,258" id="Path-14" stroke="#000000" stroke-width="3" fill-rule="nonzero"></path>
+                    <circle id="Oval" stroke="#000000" stroke-width="3" fill="#D8D8D8" fill-rule="nonzero" cx="162.5" cy="199.5" r="7.5"></circle>
+                    <circle id="Oval-Copy-5" stroke="#000000" stroke-width="3" fill="#D8D8D8" fill-rule="nonzero" cx="209.5" cy="257.5" r="7.5"></circle>
+                    <g id="bar" transform="translate(61.000000, 222.500000) rotate(-105.000000) translate(-61.000000, -222.500000) translate(31.500000, 186.500000)" fill="#FFFFFF" stroke="#000000" stroke-width="3">
+                        <rect id="Rectangle" transform="translate(29.307687, 35.834024) rotate(36.000000) translate(-29.307687, -35.834024) " x="20.807687" y="-2.165976" width="17" height="76" rx="8.5"></rect>
+                    </g>
+                    <g id="bar-copy" transform="translate(43.000000, 173.500000) rotate(-105.000000) translate(-43.000000, -173.500000) translate(13.500000, 137.500000)" fill="#FFFFFF" stroke="#000000" stroke-width="3">
+                        <rect id="Rectangle" transform="translate(29.307687, 35.834024) rotate(36.000000) translate(-29.307687, -35.834024) " x="20.807687" y="-2.165976" width="17" height="76" rx="8.5"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

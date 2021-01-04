@@ -1,0 +1,156 @@
+@import '~styles/mixins';
+
+$h_item: 47px;
+$h_small_item: 47px;
+
+$h_filter: 45px;
+$h_small_filter: 35px;
+$num_elem: 5;
+
+.Suggestions {
+  position: relative;
+
+  $decal: 5px;
+
+  // Content cannot have no border style, ...
+  .items-content-wrapper {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: calc(100% - #{$border_width});
+    // Should not be too high
+    z-index: 9;
+
+    overflow: hidden;
+    max-height: 0;
+    @include transition(all);
+
+    &.right {
+      left: auto;
+      right: 0;
+    }
+  }
+
+  // .items has can have border style
+  .items {
+    overflow: hidden;
+    background-color: white;
+    border: $border_width solid $color_border;
+    border-radius: $border_radius_suggestions;
+
+    .items-wrapper {
+      position: relative;
+      &.scrollable {
+        overflow: auto;
+        max-height: $num_elem * $h_item;
+      }
+    }
+
+    .item {
+      cursor: pointer;
+      font-size: $font_size_form;
+      padding: 0px $default_spacing;
+      min-height: $h_item;
+      display: flex;
+      align-items: center;
+      line-height: 1.4;
+      position: relative;
+
+      &.with-icon {
+        padding-right: $default_spacing + 20px;
+      }
+
+      .check-wrapper {
+        @include v_align;
+        pointer-events: none;
+        right: 10px;
+
+        background-color: $color_green;
+        color: white;
+        // for the arrow
+        @include ball(20px);
+        font-weight: bold;
+        font-size: 9px;
+      }
+
+      .icon {
+        display: none;
+        @include v_align;
+        right: 10px;
+        line-height: 1;
+      }
+
+      &.cursor-hover {
+        background-color: rgba(0, 0, 0, 0.03);
+      }
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+      }
+
+      &.active {
+        background-color: rgba(0, 0, 0, 0.04);
+        font-weight: bold;
+
+        .icon {
+          display: block;
+        }
+      }
+      &.disabled {
+        background-color: rgba(0, 0, 0, 0.04);
+        font-style: italic;
+        cursor: not-allowed;
+      }
+    }
+
+    .filter {
+      width: 100%;
+      font-size: $font_size_form;
+      border-bottom: $border_width solid $color_border;
+      max-width: none;
+      height: $h_filter;
+      line-height: $h_filter - $border_width;
+      padding: 0 $default_spacing;
+
+      &.dark {
+        color: #fff;
+      }
+    }
+
+    &.small {
+      .item {
+        padding: 0px 12px;
+        font-size: 12px;
+        min-height: $h_small_item;
+        pointer-events: none;
+      }
+
+      .filter {
+        font-size: 12px;
+        height: $h_small_filter;
+        line-height: $h_small_filter - $border_width;
+        padding: 0px 12px;
+      }
+    }
+  }
+
+  &.active {
+    .items-content-wrapper {
+      // 2 * $border-width allows to have a top border
+      max-height: ($num_elem * $h_item) + $h_filter + (2 * $border_width);
+
+      .item {
+        pointer-events: auto;
+      }
+    }
+  }
+
+  &.decal {
+    .items-content-wrapper {
+      top: calc(100% + #{$decal});
+    }
+    &.active .items-content-wrapper {
+      max-height: ($num_elem * $h_item) + $h_filter + (2 * $border_width) + $decal;
+    }
+  }
+}

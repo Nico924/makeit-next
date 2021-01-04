@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>Triangle</title>
+    <desc>Created with Sketch.</desc>
+    <g id="v3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="StaaS" transform="translate(-591.000000, -534.000000)" fill="#FAD843" fill-rule="nonzero" stroke="#000000" stroke-width="2.5">
+            <g id="Group-5" transform="translate(195.000000, 243.000000)">
+                <g id="Group-2" transform="translate(138.000000, 268.000000)">
+                    <g id="Group" transform="translate(42.000000, 22.000000)">
+                        <path d="M227.42648,4.11864109 L233.057852,15.582505 C233.544861,16.5739161 233.135962,17.7724124 232.144551,18.2594214 C231.870139,18.3942202 231.568476,18.4643128 231.262743,18.4643128 L220,18.4643128 C218.895431,18.4643128 218,17.5688823 218,16.4643128 C218,16.15858 218.070093,15.8569168 218.204891,15.582505 L223.836263,4.11864109 C224.323272,3.12722995 225.521768,2.71833122 226.51318,3.20534019 C226.910242,3.40038847 227.231432,3.72157853 227.42648,4.11864109 Z" id="Triangle" transform="translate(225.631596, 10.732156) scale(-1, 1) rotate(-90.000000) translate(-225.631596, -10.732156) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

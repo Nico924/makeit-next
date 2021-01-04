@@ -1,0 +1,155 @@
+@import '~styles/mixins';
+
+.CtaNewsletter {
+  width: 100%;
+  box-shadow: $box_shadow;
+  border-radius: $border_radius;
+
+  @include medium {
+  }
+
+  p {
+    margin: 0;
+  }
+
+  ul {
+    list-style-image: none !important;
+
+    li {
+      line-height: 1 !important;
+    }
+  }
+
+  .top {
+    border: $border_width solid black;
+    background-color: $color-dark-blue;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
+    position: relative;
+    border-radius: $border_radius $border_radius 0 0;
+
+    .letter {
+      position: absolute;
+      bottom: -55px;
+      right: -40px;
+    }
+
+    .letterbox {
+      position: absolute;
+      bottom: -10px;
+      left: 70px;
+    }
+
+    .title {
+      padding: 50px 0;
+      margin-right: 5%;
+      line-height: 1.5;
+      margin-left: 300px;
+
+      p {
+        line-height: 1.5 !important;
+        margin: 0 !important;
+        color: white !important;
+        font-size: 28px !important;
+      }
+    }
+  }
+
+  .bottom {
+    background-color: $color-link;
+    padding: 60px;
+    border: $border_width solid black;
+    border-top: none;
+    border-radius: 0 0 $border_radius $border_radius;
+
+    &.bottom-article {
+      padding: 40px 60px;
+    }
+
+    .content-form {
+      justify-content: center;
+      display: flex;
+
+      & > * {
+        max-width: none;
+
+        &button {
+          max-width: 200px;
+        }
+      }
+    }
+
+    & > * {
+      justify-content: center;
+      margin: 0 auto;
+    }
+
+    &.no-margin-auto {
+      & > * {
+        margin: 0;
+      }
+    }
+
+    .subtitle {
+      font-size: 18px;
+      line-height: 1.8;
+      color: white;
+      letter-spacing: 0.2px;
+      margin-bottom: 30px;
+
+      p {
+        font-size: 18px !important;
+        line-height: 1.8 !important;
+        color: white !important;
+        letter-spacing: 0.2px !important;
+        margin: 0 !important;
+      }
+    }
+  }
+
+  @include tablet {
+    .top {
+      padding: 20px;
+
+      img {
+        display: none;
+      }
+
+      .title {
+        padding: 10px 0;
+        font-size: 20px;
+        margin: 0 auto;
+        max-width: none;
+      }
+
+      & > * {
+        width: 100%;
+      }
+    }
+
+    .bottom {
+      padding: 20px;
+
+      .content-form {
+        display: block;
+      }
+
+      &.bottom-article {
+        padding: 20px;
+      }
+
+      .subtitle {
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+    }
+
+    &.no-margin {
+      .bottom {
+        border-bottom: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,154 @@
+@import '~styles/mixins';
+
+$general_section_padding: 100px;
+$general_container_width: 1080px;
+$big_container_width: 1440px;
+$general_col_width: 48%;
+
+.thanksStaas {
+  h1 {
+    font-size: $big-title-size;
+    line-height: $big-title-line-height;
+    font-weight: $big-title-font-weight;
+    font-style: italic;
+    margin-top: 0;
+
+    @include phone {
+      font-size: $title-size;
+      line-height: $title-line-height;
+    }
+  }
+
+  p {
+    font-size: $text-size;
+    line-height: $text-line-height;
+  }
+
+  button {
+    width: auto;
+    height: auto;
+
+    span {
+      padding: 0 40px;
+      color: white;
+      font-weight: 700;
+    }
+  }
+
+  .button_icon {
+    position: relative;
+    padding-right: 65px;
+    &::after {
+      content: url(../Staas/assets/btn_icon.svg);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 25px;
+    }
+
+    @include medium {
+      margin: 0 auto;
+    }
+  }
+
+  section {
+    padding: $general_section_padding 0;
+    text-align: left;
+    border-bottom: $border_width solid black;
+    position: relative;
+    width: 100%;
+    // display: block;
+
+    @include phone {
+      padding: 70px 15px;
+    }
+
+    @include tablet {
+      padding: 70px 30px;
+      text-align: center;
+    }
+  }
+
+  .left,
+  .right {
+    width: $general_col_width;
+    margin: 0 15px;
+
+    @include phone {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    @include tablet {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  .first {
+    .container {
+      max-width: $general_container_width;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+      display: flex;
+
+      @include phone {
+        display: block;
+      }
+
+      @include tablet {
+        display: block;
+        text-align: center;
+      }
+    }
+
+    .section_heading {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .right {
+      text-align: center;
+
+      @include phone {
+        padding-top: 50px;
+      }
+
+      @include tablet {
+        padding-top: 50px;
+      }
+
+      img {
+        width: 100%;
+        max-width: 90%;
+
+        @include medium {
+          max-width: 100%;
+        }
+      }
+    }
+
+    img.illu_shape_1 {
+      position: absolute;
+      top: 0;
+      left: -15%;
+
+      @include phone {
+        left: -50%;
+        transform: scale(0.7);
+      }
+    }
+
+    img.illu_shape_2 {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      @include phone {
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+}

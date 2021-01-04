@@ -1,0 +1,199 @@
+//transition
+$transition_time: 300ms;
+
+// Responsive size
+$breakpoint_phone: 480px;
+$breakpoint_tablet: 800px;
+$breakpoint_medium: 1060px;
+$breakpoint_desktop: 1400px;
+$max_width: $breakpoint_desktop;
+
+// DEFAULT COLORS
+
+$color_dark: #343944;
+$color-black: #1d1d26;
+$color_dark_2: #24252a;
+$color_dark_grey: #616b77;
+$color-light-grey: #c5ccd6;
+$color-title-grey: #8c96a3;
+$color_middle_grey: #8c96a3;
+
+$color-blue: #0e5cad;
+$color-blue-2: #3964ae;
+$color_dark_blue: #0f358e;
+
+$color-red: rgba(245, 72, 72, 0.95);
+$color_dark_orange: #eb6d2f;
+$color-orange: #ebac2f;
+$color-yellow: #ffb61e;
+$color-green: #2ce1be;
+$color_dark_green: #024442;
+
+$color-grey-font: hsl(214, 11%, 59%);
+$color-font: $color-black;
+$color-grey-background: #f8f8f9;
+$color-grey: #bbb;
+$color-pink: rgba(230, 121, 125, 0.15);
+
+//DEFAULT VARIABLES (can be overidden in parent project)
+
+// GENERAL
+
+//used by mixins
+$grid_aeration: 10px;
+//used in CustomTable for the cells
+$table_cell_spacing: 12px 10px;
+$table_head_spacing: 0px 10px;
+
+// default border radius of inputs
+$border_radius: 4px;
+// border radius suggestion
+$border_radius_suggestions: 0;
+
+//spacing used on the edges (padding: 0 $default_spacing) for wrappers for example
+$default_spacing: 18px;
+
+// FORM ELEMENT
+
+// Between label, error, value
+$form_element_vertical_spacing: 8px;
+//Components sizes
+$form_spacing: 20px;
+$font_size_form: 14px;
+//Default padding for input/textarea
+$input_padding_v: 8px;
+//Font size for field message (error/warning/...)
+$font_size_field_message: 12px;
+
+// FIELD WRAPPER
+
+$box_shadow_active: 0 0 10px 0 rgba(0, 0, 0, 0.05);
+//bordered horizontal padding
+$form_element_padding_h: 12px;
+//bordered vertical padding (carefull it does not include $input_padding_v)
+$form_element_padding_v: 4px;
+//icon size for icon left and icon right
+$field_icon_size: inherit;
+// Width for lateral icons
+$width_lateral_icon: 35px;
+// effect scale
+$effect_scale: 0.75;
+
+// LABEL FORM ELEMENT
+
+// Font size of input label
+$font_size_label: 10px;
+// Color of input labels
+$color_label: #8c96a3;
+$font_weight_input_label: 600;
+
+// ICON
+$width_outside_icon_form: 25px;
+
+// CUSTOM SELECT
+
+// Color for select arrow
+$select_color_arrow: inherit;
+// opacity of the arrow according to the parent color
+$select_opacity_arrow: 0.6;
+// Color for select placeholder
+$select_color_placeholder: inherit;
+// opacity of the placeholder
+$select_opacity_placeholder: 0.6;
+//select min height
+$input_min_height: 35px;
+//select withValueBorder min height
+$input_with_value_border_min_height: 43px;
+
+// Modal margin
+$modal_margin_v: 40px;
+
+// SPECIFIC COLORS
+
+// Color for errors
+$color_error: $color-red;
+$color_warning: $color-orange;
+$color_info_message: $color-blue-2;
+$color_success: $color-green;
+
+// primary color of the app
+$color_primary: $color-blue-2;
+// secondary color of the app
+$color_secondary: $color_middle_grey;
+// ternary color of the app (dedicated to Hadrien Robert)
+$color_ternary: $color-blue-2;
+
+// Default border color used everywhere
+$color_border: #e8e8e8;
+// Color used in bottom bordered inputs
+$color_dark-border: $color_dark;
+// Color of the links
+$color_link: $color-blue;
+// Default color of the buttons
+$default_color_button: $color-blue;
+
+// For bottom bordered inputs
+$color_highlight_active: initial; //$color_border;
+$color_highlight_valid: initial; // $color_border;
+
+// Color font
+$color_font: $color_dark;
+
+// Color input radio checked
+$color_radio_checked: $color-green;
+
+// Background Modal opacity
+$background_opacity: rgba(0, 0, 0, 0.8);
+$color-modal-background: #fff;
+$color-modal-font: $color_dark;
+
+//Color subname header in admin
+$color_header_subname: $color-green;
+
+//Color name header in admin
+$color_header_name: inherit;
+
+//Color scrollbar
+$color_scroll_bar: #ccc;
+
+$color_disabled: rgb(248, 248, 248);
+
+$color_header_admin: $color-grey;
+
+//SideMenu variables
+$background_color_sidemenu: white;
+$min_width_sidemenu: 0px;
+
+//Size rounded upload image preview
+$rounded_preview_size: 100px;
+
+// color of inputs
+$color_input: $color_dark;
+
+$color_dark_loader_background: rgba(0, 0, 0, 0.5);
+
+$fonts_folder_path: '../../../src/styles/fonts/';
+
+//button letter spacing
+$button_letter_spacing: 0.7px;
+
+//Header height
+$height_global_header: 200px;
+
+//Max width content
+$max-width-content: 1980px;
+
+// Input border width
+$border_width: 1px;
+
+// Form element letter spacing
+$form_element_letter_spacing: 1px;
+
+// GLoal side spacing
+$global_side_padding: 20px;
+$global_side_padding_mobile: 20px;
+
+// Dropdown size arrow
+$dropdown_size_arrow: 12px;
+
+$default_color_dropdown_arrow: white;

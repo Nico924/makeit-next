@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="634px" height="374px" viewBox="0 0 634 374" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>Group 48</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M34.7214345,2.09822853 L2.09822853,34.7214345 C0.754755367,36.0649077 1.13136417e-14,37.8870483 0,39.7870063 L0,269.154212 C4.84526322e-16,273.11067 3.20734265,276.318012 7.16380032,276.318012 L236.531006,276.318012 C238.430964,276.318012 240.253105,275.563257 241.596578,274.219784 L274.219784,241.596578 C275.563257,240.253105 276.318012,238.430964 276.318012,236.531006 L276.318012,7.16380032 C276.318012,3.20734265 273.11067,1.93774578e-15 269.154212,0 L39.7870063,0 C37.8870483,1.00301241e-14 36.0649077,0.754755367 34.7214345,2.09822853 Z" id="path-1"></path>
+        <filter x="-3.3%" y="-1.1%" width="104.3%" height="104.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="-6" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M96.1996043,175.309581 L96.1996043,77.4702303 C96.1996043,76.2781497 97.1659766,75.3117773 98.3580573,75.3117773 C98.7448218,75.3117773 99.1244816,75.4156988 99.4573299,75.6126731 L155.480934,108.766544 C156.158875,109.167738 157.001539,109.167738 157.67948,108.766544 L213.703084,75.6126731 C214.728985,75.0055616 216.052802,75.3450572 216.659914,76.3709577 C216.856888,76.7038059 216.96081,77.0834658 216.96081,77.4702303 L216.96081,175.309581 C216.96081,176.501662 215.994437,177.468034 214.802357,177.468034 C214.415592,177.468034 214.035932,177.364112 213.703084,177.167138 L187.829689,161.855678 C187.173181,161.467167 186.770508,160.760972 186.770508,159.99812 L186.770508,129.282026 C186.770508,128.089945 185.804136,127.123573 184.612055,127.123573 C184.225291,127.123573 183.845631,127.227494 183.512783,127.424469 L157.67948,142.712203 C157.001539,143.113398 156.158875,143.113398 155.480934,142.712203 L129.647631,127.424469 C128.621731,126.817357 127.297913,127.156853 126.690801,128.182753 C126.493827,128.515601 126.389906,128.895261 126.389906,129.282026 L126.389906,159.99812 C126.389906,160.760972 125.987232,161.467167 125.330725,161.855678 L99.4573299,177.167138 C98.4314293,177.77425 97.1076115,177.434754 96.5005,176.408854 C96.3035258,176.076005 96.1996043,175.696346 96.1996043,175.309581 Z" id="path-3"></path>
+        <filter x="-8.8%" y="-2.9%" width="112.7%" height="111.4%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="1.64767409" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="-6" dy="6" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="v3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="StaaS" transform="translate(-401.000000, -8152.000000)">
+            <g id="Group-Copy" transform="translate(207.000000, 7987.000000)">
+                <g id="Group-48" transform="translate(196.000000, 165.000000)">
+                    <path d="M315,47 C488.969696,47 630,188.187505 630,362.351119 C630,365.57888 629.95156,368.795314 629.855369,371.999734 L0.144630654,371.999734 C0.0484395685,368.795314 0,365.57888 0,362.351119 C0,188.187505 141.030304,47 315,47 Z" id="Combined-Shape" stroke="#000000" stroke-width="3" fill="#3970AF" fill-rule="nonzero"></path>
+                    <g id="Group" transform="translate(177.000000, 0.000000)">
+                        <g id="Group-30" transform="translate(0.000000, 0.723803)">
+                            <g id="Path-17">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                <path stroke="#1F1B24" stroke-width="3.07020014" d="M35.8069142,3.1837082 L3.1837082,35.8069142 C2.12812214,36.8625002 1.53510007,38.2941822 1.53510007,39.7870063 L1.53510007,269.154212 C1.53510007,272.262857 4.05515501,274.782912 7.16380032,274.782912 L236.531006,274.782912 C238.02383,274.782912 239.455512,274.18989 240.511098,273.134304 L273.134304,240.511098 C274.18989,239.455512 274.782912,238.02383 274.782912,236.531006 L274.782912,7.16380032 C274.782912,4.05515501 272.262857,1.53510007 269.154212,1.53510007 L39.7870063,1.53510007 C38.2941822,1.53510007 36.8625002,2.12812214 35.8069142,3.1837082 Z" stroke-linejoin="square" fill="#459593" fill-rule="evenodd"></path>
+                            </g>
+                            <rect id="Rectangle" stroke="#1F1B24" stroke-width="3.07020014" fill="#64C1BE" fill-rule="nonzero" x="38.3775017" y="1.53510007" width="236.405411" height="236.405411"></rect>
+                            <g id="Path-2">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                                <use stroke="#1F1B24" stroke-width="3.29534818" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            </g>
+                            <path d="M3.07020014,273.247812 L39.9126018,236.405411 L3.07020014,273.247812 Z" id="Path-18" stroke="#1F1B24" stroke-width="3.07020014"></path>
+                        </g>
+                    </g>
+                    <g id="bar" transform="translate(61.503827, 210.000000) rotate(-105.000000) translate(-61.503827, -210.000000) translate(31.503827, 173.000000)" fill="#FFFFFF" stroke="#000000" stroke-width="3.07020014">
+                        <rect id="Rectangle" transform="translate(29.993488, 36.672542) rotate(36.000000) translate(-29.993488, -36.672542) " x="21.2945878" y="-2.21665994" width="17.3978008" height="77.7784035" rx="8.69890039"></rect>
+                    </g>
+                    <g id="bar-copy" transform="translate(43.503827, 160.000000) rotate(-105.000000) translate(-43.503827, -160.000000) translate(13.503827, 123.000000)" fill="#FFFFFF" stroke="#000000" stroke-width="3.07020014">
+                        <rect id="Rectangle" transform="translate(29.993488, 36.672542) rotate(36.000000) translate(-29.993488, -36.672542) " x="21.2945878" y="-2.21665994" width="17.3978008" height="77.7784035" rx="8.69890039"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,48 @@
+import React from 'react';
+import { Field } from 'react-final-form';
+
+// Redux part
+import { useSelector, useDispatch } from 'react-redux';
+import { StoreState } from 'store/rootReducer';
+
+// Import actions here
+
+import classNames from 'classnames/bind';
+import Input from 'components/formItems/Input';
+import Button from 'components/items/Button';
+import { required, email, composeValidators } from 'store/utils/validation';
+import styleIdentifiers from './{{camelCase name}}.scss';
+
+const styles = classNames.bind(styleIdentifiers);
+
+export interface StateProps {};
+
+export interface DispatchProps {};
+
+export interface OwnProps {
+   onSubmit: Function;
+};
+
+export type {{pascalCase name}}Props = StateProps & DispatchProps & OwnProps;
+
+const {{pascalCase name}} = (props: {{pascalCase name}}Props) => {
+  const { handleSubmit, submitting, valid } = props;
+  
+  // mapStateToProps
+  const content = useSelector((state: StoreState) => state.content.raw);
+
+  return (
+    <form className={styles('{{dashCase name}}')} onSubmit={handleSubmit}>
+      <Field
+        component={Input}
+        name="email"
+        type="email"
+        label="Email"
+        validate={composeValidators(required, email)}
+      />
+      <Button disabled={submitting || !valid} label="Submit" type="submit" />
+    </form>
+  );
+}
+
+export default {{pascalCase name}}

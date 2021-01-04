@@ -1,0 +1,22 @@
+@import '~styles/mixins';
+
+.Main {
+  background: #4a90e2;
+
+  min-height: 100vh;
+  cursor: url('./assets/cursor-auto.png'), auto;
+}
+
+a:hover,
+button:hover {
+  cursor: url('./assets/cursor-hand.png'), pointer;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  width: 100%;
+  background-color: white;
+  border-bottom: solid 3px black;
+}

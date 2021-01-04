@@ -1,0 +1,325 @@
+@import '~styles/mixins';
+
+$size_rounded: $rounded_preview_size;
+
+$space_from_label: 8px;
+
+.UploadZone {
+  margin-top: 30px;
+  color: $color_dark;
+
+  &.profile {
+    text-align: center;
+  }
+
+  &.no-margin {
+    margin-top: 0px;
+  }
+
+  .button-delete {
+    @include middle;
+    padding: 4px;
+  }
+
+  .content {
+    cursor: pointer;
+  }
+
+  .preview-wrapper {
+    margin-top: $space_from_label;
+    &.no-margin {
+      margin-top: 0;
+    }
+    .label {
+      opacity: 0.4;
+      text-transform: uppercase;
+      font-size: 10px;
+      margin-bottom: 5px;
+    }
+
+    &.video {
+      display: flex;
+
+      .preview {
+        margin: 0;
+        max-width: none;
+      }
+
+      .remove {
+        flex-shrink: 0;
+        background-color: #f8f8f9;
+        border: 1px solid #e8e8e8;
+        width: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .link-wrapper {
+    width: 100%;
+    text-align: center;
+    background-color: #f8f8f9;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #e8e8e8;
+    color: #8c96a3;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  $preview_max_height: 500px;
+  .preview {
+    // very light background if it does not cover
+    background-color: #efefef;
+    max-width: 100%;
+    // broken image
+    min-height: 50px;
+    // avoid a very long preview
+    max-height: $preview_max_height;
+    position: relative;
+    font-size: 0;
+    text-align: center;
+    // margin: auto;
+    margin-bottom: 20px;
+
+    &.rounded {
+      border-radius: 100%;
+      overflow: hidden;
+      width: $size_rounded;
+      height: $size_rounded;
+
+      .button {
+        padding: 4px 0 0 0 !important;
+      }
+
+      .delete {
+        border-radius: 100%;
+      }
+    }
+
+    img {
+      max-width: 100%;
+      max-height: $preview_max_height;
+      object-fit: cover;
+    }
+
+    .delete {
+      cursor: pointer;
+      @include absolute-fill;
+      background: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: all 300ms;
+
+      .button {
+        @include center_align;
+        color: white;
+        font-size: 16px;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .progress-bar {
+    margin-top: 10px;
+    position: relative;
+
+    // font style
+    font-weight: bold;
+    font-size: 12px;
+    color: $color_dark;
+
+    // border
+    border: 1px solid $color_border;
+    border-radius: $border_radius;
+    overflow: hidden;
+
+    height: 18px;
+
+    // centered
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .progress {
+      @include transition(all);
+      z-index: 1;
+      background-color: $color-green;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 0;
+      // if text included
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: white;
+
+      // Another solution is to use clip-path: inset(0 0 0 $progress_%);
+      // https://codepen.io/jeshb/pen/PzGVNW
+    }
+
+    .text {
+      z-index: 2;
+    }
+  }
+
+  .Dropzone {
+    cursor: pointer;
+    background-color: $color-grey-background;
+    border: 1px solid $color_border;
+    margin: auto;
+    margin-top: $space_from_label;
+    padding: 20px;
+
+    min-height: 160px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    border-radius: 2px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &.small {
+      padding: 20px 0;
+    }
+
+    &.no-label {
+      margin-top: 0;
+    }
+
+    .dropzone-content {
+      // max-width: 50%;
+    }
+
+    .info {
+      font-size: 18px;
+      font-weight: 900;
+      line-height: 1.11;
+
+      padding: 8px 0px 16px 0px;
+
+      margin: auto;
+
+      &.small {
+        font-size: 12px;
+      }
+
+      &.with-preview {
+        font-size: 14px;
+      }
+    }
+
+    .subinfo {
+      font-size: 14px;
+      padding: 0 10px;
+      color: $color-title-grey;
+
+      &.small {
+        font-size: 12px;
+      }
+    }
+
+    .icon {
+      font-size: 34px;
+    }
+
+    &.error {
+      border-color: $color-red;
+    }
+
+    &.active {
+      background-color: rgb(220, 220, 220);
+      border-color: $color_dark_grey;
+    }
+
+    &.accept {
+      border-color: $color_green;
+      color: $color_green;
+    }
+
+    &.reject {
+      border-color: $color_error;
+      color: $color_error;
+    }
+
+    &.disabled {
+      cursor: not-allowed;
+    }
+
+    &.drop-profile {
+      width: $size_rounded;
+      height: $size_rounded;
+      min-height: 0;
+      border-radius: 100%;
+      padding: 0;
+      position: relative;
+
+      &:before {
+        background-color: rgba(89, 95, 111, 0.1);
+        @include absolute-fill;
+        border-radius: 100%;
+        content: '';
+      }
+
+      img {
+        position: absolute;
+        width: 25%;
+        @include center_align;
+      }
+    }
+  }
+
+  .file {
+    margin-top: $space_from_label;
+    border: 1px solid $color_border;
+    padding: 8px 10px;
+    text-align: center;
+    background-color: $color-grey-background;
+
+    .remove {
+      cursor: pointer;
+    }
+  }
+
+  // New version
+  .file-pdf-open {
+    display: flex;
+    margin-top: $space_from_label;
+    align-items: center;
+    font-size: 14px;
+    justify-content: space-between;
+
+    .file {
+      border: none;
+      padding: 0;
+      margin-top: 0;
+      text-align: center;
+      background-color: transparent;
+      display: flex;
+
+      .action {
+        cursor: pointer;
+        margin-left: 10px;
+        border: 1px solid $color_border;
+        padding: 8px 16px;
+        text-align: center;
+        background-color: $color-grey-background;
+
+        &.remove {
+          color: $color-red;
+        }
+      }
+    }
+  }
+}

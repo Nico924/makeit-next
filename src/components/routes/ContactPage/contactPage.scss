@@ -1,0 +1,159 @@
+@import '~styles/mixins';
+@import '~styles/tom';
+
+$general_section_padding: 100px;
+$general_container_width: 1080px;
+$big_container_width: 1440px;
+$general_col_width: 48%;
+
+.contact-page {
+  @include base;
+
+  section {
+    padding: $general_section_padding 0;
+    text-align: left;
+    border-bottom: $border_width solid black;
+    position: relative;
+    width: 100%;
+    // display: block;
+
+    @include medium {
+      padding: $general_section_padding 30px;
+    }
+
+    @include tablet {
+      padding: 70px 0;
+    }
+  }
+
+  .left_wrapper,
+  .right_wrapper {
+    width: $general_col_width;
+    margin: 0 15px;
+    position: relative;
+
+    @include medium {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    @include tablet {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  .contain_wrapper {
+    @include container;
+    display: flex;
+
+    @media only screen and(min-width: 1000px) and(max-width: 1350px) {
+      display: block;
+      .left_wrapper {
+        margin: 0 auto;
+      }
+    }
+
+    @include medium {
+      display: block;
+    }
+
+    @include tablet {
+      display: block !important;
+    }
+  }
+
+  .image_wrapper {
+    width: 100%;
+    margin-top: 100px;
+    @include medium {
+      display: none;
+    }
+    img {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  .form {
+    margin: 0 auto;
+    background-color: $color-light-grey;
+    border: solid 3px black;
+    border-radius: $border_radius;
+    box-shadow: $box_shadow;
+    padding: 30px;
+    position: absolute;
+    bottom: -70%;
+    z-index: 3;
+    max-width: 600px;
+
+    @media only screen and(min-width: 1000px) and(max-width: 1350px) {
+      position: relative;
+      margin: 0 auto;
+    }
+
+    @include medium {
+      position: relative;
+      margin: 0 auto;
+    }
+  }
+
+  .half_carre_pink {
+    position: absolute;
+    left: 0;
+    top: 20%;
+
+    @include medium {
+      top: 10%;
+      display: none;
+    }
+  }
+
+  .section2 {
+    padding-top: 450px;
+    background-color: white;
+
+    @include medium {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    @include tablet {
+      padding: 70px 0;
+    }
+
+    .contain_wrapper {
+      .info_wrapper {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: $color-dark-blue;
+        padding: 50px;
+        border: solid 3px black;
+
+        border-radius: $border_radius;
+
+        @include medium {
+          padding: 30px;
+        }
+        .info_item {
+          width: 33%;
+
+          @include medium {
+            width: 48%;
+            margin-bottom: 50px;
+          }
+
+          @include phone {
+            width: 100%;
+          }
+
+          .info_icon {
+            padding-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@import '~styles/mixins';
+
+.CustomButton {
+  color: black;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  font-weight: normal;
+  border: $border_width solid black;
+  min-height: 60px;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.07);
+  padding: 10px 40px;
+  border-radius: $border_radius_button;
+  box-shadow: none;
+
+  &:hover {
+    box-shadow: 7px 7px 0 rgba(0, 0, 0, 1) !important;
+  }
+
+  span {
+    padding: 0 !important;
+  }
+
+  .textButton {
+    font-size: 16px;
+  }
+
+  &.external {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @include phone {
+    font-size: 16px;
+  }
+
+  &.aqua {
+    background-color: $color-aqua;
+  }
+
+  &.grey {
+    background-color: $color-light-grey;
+  }
+
+  &.pink,
+  &.red {
+    background-color: $color-pink;
+  }
+
+  &.yellow {
+    background-color: $color-yellow;
+  }
+
+  &.white {
+    background-color: $color-white-break;
+  }
+}

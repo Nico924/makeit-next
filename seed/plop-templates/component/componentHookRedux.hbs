@@ -1,0 +1,36 @@
+import React, { useState, useEffect } from 'react';
+
+// Redux part
+import { useSelector, useDispatch } from 'react-redux';
+import { StoreState } from 'store/rootReducer';
+
+// Import actions here
+
+import classNames from 'classnames/bind';
+import TextItem from 'components/items/TextItem';
+import styleIdentifiers from './{{camelCase name}}.scss';
+
+const styles = classNames.bind(styleIdentifiers);
+
+export interface StateProps {}
+
+export interface DispatchProps {}
+
+export interface OwnProps {}
+
+export type {{pascalCase name}}Props = StateProps & DispatchProps & OwnProps;
+
+const {{pascalCase name}} = (props: {{pascalCase name}}Props) => {
+  // mapStateToProps
+  const lg = useSelector((state: StoreState) => state.content.lg);
+  // Allow to dispatch actions
+  const dispatch = useDispatch();
+
+  return (
+    <div className={styles('{{dashCase name}}')}>
+      <TextItem path="{{pascalCase name}} Component" />
+    </div>
+  );
+};
+
+export default {{pascalCase name}};

@@ -1,0 +1,33 @@
+@import "~styles/mixins";
+
+.TagsInput {
+  .button {
+    cursor: pointer;
+  }
+
+  .tag-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    .tag-item {
+      display: flex;
+      align-items: center;
+      background-color: black;
+      color: white;
+      font-size: 12px;
+      padding: 2px 5px;
+      margin: 2px 2px 2px 0px;
+      border-radius: 3px;
+
+      .icon {
+        margin-left: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .input-value {
+    display: flex;
+    align-items: center;
+  }
+}

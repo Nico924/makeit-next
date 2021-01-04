@@ -1,0 +1,26 @@
+@mixin modalTransition {
+  .wrapper,
+  .preview {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  .background {
+    opacity: 1;
+  }
+
+  &.success,
+  &.error {
+    .wrapper {
+      margin-top: $top-success-error;
+
+      &.center {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@mixin modalProject {
+  // to complete in project
+}

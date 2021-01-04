@@ -1,0 +1,97 @@
+@import "reset";
+@import "mixins";
+// Load from parent
+@import "~styles/fonts";
+
+html,
+body {
+  margin: 0;
+  word-break: break-word;
+  width: 100%;
+  padding: 0; //base on 16px;
+  font-weight: 400;
+  font-size: 1rem;
+  color: $color_dark;
+  overflow: auto;
+  font-family: $font;
+  -webkit-font-smoothing: antialiased;
+}
+
+:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+a {
+  color: $color_link;
+}
+
+pre,
+.text {
+  white-space: pre-wrap;
+}
+
+b {
+  font-weight: bold;
+}
+
+i {
+  font-style: italic;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+ol,
+ul {
+  padding-left: 30px;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer; //clear fix
+}
+
+figure {
+  margin: 0;
+}
+
+input,
+textarea,
+button {
+  border-radius: 0px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  display: block;
+  box-shadow: none;
+  font-weight: 400;
+  font-family: $font;
+}
+
+
+:global .grid-row {
+  @include grid;
+}
+
+// At the end to override
+@import "~styles/main";

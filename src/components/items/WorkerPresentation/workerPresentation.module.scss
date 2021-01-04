@@ -1,0 +1,136 @@
+@import '~styles/mixins';
+
+.WorkerPresentation {
+  border: $border_width solid black;
+  overflow: hidden;
+
+  .title-container {
+    background-color: white;
+    border-bottom: $border_width solid black;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    padding: 10px;
+  }
+
+  .picture {
+    width: 100%;
+    display: grid;
+    background-color: $color-grey;
+    min-height: 200px;
+    max-height: 600px;
+    overflow: hidden;
+    position: relative;
+
+    @include tablet {
+      height: auto;
+      max-height: 400px;
+    }
+
+    @include phone {
+      height: auto;
+      max-height: 300px;
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      height: auto;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .up {
+      font-size: 20px;
+      background-color: white;
+      position: absolute;
+      border-bottom: $border_width solid black;
+      font-weight: bold;
+      font-style: italic;
+      padding: 10px 25px;
+      text-transform: capitalize;
+
+      &.left {
+        border-right: $border_width solid black;
+        left: 0;
+      }
+
+      &.right {
+        right: 0;
+        border-left: $border_width solid black;
+      }
+    }
+  }
+
+  .text {
+    border-top: $border_width solid black;
+    padding: 15px 20px 20px;
+    background: white;
+    font-weight: bold;
+    line-height: 1.6;
+
+    .text-side {
+      display: none;
+    }
+
+    &.with-link {
+      padding: 0;
+
+      & > * {
+        display: flex;
+      }
+
+      .text-container {
+        padding: 15px 18px 15px;
+        border-right: $border_width solid black;
+        width: calc(100% - 60px);
+        display: flex;
+        align-items: center;
+      }
+
+      .link {
+        width: 60px;
+        min-height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        background-color: $color-yellow;
+      }
+    }
+  }
+
+  a {
+    @include linkHref;
+  }
+
+  @include phone {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column-reverse;
+
+    .text {
+      border-top: $border_width solid black;
+      padding: 15px;
+
+      .text-side {
+        display: block;
+        color: $color-pink;
+        float: left;
+        margin-right: 5px;
+        text-transform: uppercase;
+        font-style: italic;
+      }
+
+      &.hide-mobile {
+        display: none;
+      }
+    }
+
+    .picture {
+      .up {
+        display: none;
+      }
+    }
+  }
+}

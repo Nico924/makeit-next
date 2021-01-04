@@ -1,0 +1,200 @@
+@import '~styles/mixins';
+
+.PrivacyPolicy {
+  padding-top: $height_header;
+  margin-top: -$height_header;
+  background-color: $color-link;
+  border-bottom: 3px solid #000;
+
+  .section1 {
+    background-color: $color-link;
+    border-bottom: solid 3px black;
+    padding: 100px 0;
+    position: relative;
+
+    .points {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+
+      @include medium {
+        display: none;
+      }
+    }
+
+    .contain {
+      margin: 0 auto;
+      max-width: $max-size-app;
+      position: relative;
+      padding: 0;
+    }
+
+    .section_heading {
+      max-width: 600px;
+
+      hr.line {
+        width: 100px;
+        height: 10px;
+        border: solid 3px black;
+        background-color: white;
+        border-radius: 10px;
+        position: absolute;
+        left: 0;
+        top: 60px;
+
+        @include medium {
+          top: -50px;
+        }
+
+        @include tablet {
+          top: -50px;
+        }
+      }
+    }
+
+    h1 {
+      color: white;
+      font-size: 48px;
+      font-style: italic;
+      font-weight: 900;
+      padding-left: 150px;
+
+      @include medium {
+        padding: 0;
+      }
+    }
+
+    @include medium {
+      padding: 100px 15px;
+    }
+  }
+
+  .container {
+    background-color: white;
+    position: relative;
+
+    .carre-pink {
+      position: absolute;
+      left: 0;
+      top: 2%;
+    }
+  }
+
+  .contain {
+    margin: 0 auto;
+    max-width: $max-size-app;
+    width: 90%;
+    display: flex;
+    padding: 75px 0;
+
+    @include medium {
+      flex-wrap: wrap;
+    }
+
+    .menu {
+      min-width: 350px;
+      margin-right: 50px;
+
+      @include medium {
+        width: 100%;
+        margin-bottom: 50px;
+        margin-right: 0;
+        min-width: initial;
+      }
+
+      .menu-card {
+        position: sticky;
+        top: 20px;
+        background-color: white;
+        border: solid 3px black;
+        border-radius: 7px;
+      }
+
+      .menu-container {
+        border-radius: 7px;
+        & > * {
+          border: none;
+        }
+      }
+
+      .title-container {
+        display: flex;
+        padding: 15px;
+        font-size: 14px;
+        font-weight: bold;
+        align-items: center;
+        @include transition(all);
+
+        h2 {
+          font-size: 45px;
+          font-style: italic;
+          font-weight: 900;
+          margin: 0;
+        }
+
+        h3 {
+          font-size: 24px;
+          margin: 0;
+        }
+
+        .title {
+          h4 {
+            font-size: 12px;
+            margin: 0;
+          }
+        }
+
+        .indicator {
+          background-color: white;
+          border: 2px solid black;
+          width: 14px;
+          height: 14px;
+          border-radius: 14px;
+          margin-right: 10px;
+          flex-shrink: 0;
+        }
+
+        &.active {
+          background-color: $color-light-grey;
+
+          .indicator {
+            background-color: $color-pink;
+          }
+        }
+      }
+    }
+
+    .content {
+      @include medium {
+        width: 100%;
+      }
+
+      .content-item {
+        padding-top: 20px;
+
+        &:first-child {
+          padding-top: 0;
+        }
+
+        .title {
+          margin: 0;
+          font-size: 24px;
+          line-height: 1.5;
+          color: black;
+        }
+
+        .text {
+          line-height: 2;
+          font-size: 16px;
+          letter-spacing: 0.7px;
+          color: black;
+
+          h4 {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}

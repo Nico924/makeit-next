@@ -1,0 +1,51 @@
+@import "~styles/mixins";
+
+.ThankYouAgenda {
+  border-bottom: $border_width solid black;
+
+  .content {
+    max-width: $max-size-content;
+    margin: 0 auto;
+    padding: 50px 20px 100px 20px;
+    text-align: center;
+
+    img {
+      max-width: 100%;
+    }
+
+    .text {
+      font-size: 16px;
+      color: white;
+      letter-spacing: 0.3px;
+      line-height: 2;
+      text-align: center;
+      font-weight: bold;
+      max-width: 480px;
+      font-style: italic;
+      margin: 30px auto;
+      margin-bottom: 0;
+    }
+
+    .button {
+      width: auto;
+      margin-right: auto;
+      margin-left: auto;
+
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+
+      &>* {
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+    }
+
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+}

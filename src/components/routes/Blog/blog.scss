@@ -1,0 +1,228 @@
+@import '~styles/mixins';
+
+.Blog {
+  border-bottom: $border_width solid black;
+
+  p {
+    margin: 0;
+  }
+
+  section {
+    & > * {
+      max-width: $max-size-blog;
+      margin: 0 auto;
+    }
+
+    @include phone {
+      padding: 20px;
+    }
+  }
+
+  .top {
+    padding: 80px 20px 0;
+    color: white;
+
+    @include phone {
+      border-top: $border_width solid black;
+      padding-bottom: 20px;
+    }
+
+    .content-title {
+      width: 100%;
+    }
+
+    .title {
+      position: relative;
+      font-size: 48px;
+      font-weight: 900;
+      line-height: 1.42;
+      width: 80%;
+      font-style: italic;
+
+      .think {
+        position: absolute;
+        right: -40px;
+        top: -50px;
+      }
+
+      .badge {
+        position: absolute;
+        top: 50px;
+        right: -15%;
+      }
+    }
+
+    .subtitle {
+      line-height: 2;
+      font-size: 20px;
+      margin-top: 20px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      max-width: 600px;
+    }
+
+    margin-bottom: 60px;
+
+    @include phone {
+      margin-bottom: 0px;
+      padding-top: 20px;
+
+      .title {
+        font-size: 37px;
+        width: 100%;
+
+        .think,
+        .star {
+          display: none;
+        }
+      }
+
+      .subtitle {
+        font-size: 16px;
+        margin: 15px 0;
+      }
+    }
+  }
+
+  .search {
+    border-top: $border_width solid black;
+    border-bottom: $border_width solid black;
+    background-color: $color-aqua;
+    width: 100%;
+    max-width: none;
+    padding: 0 20px;
+
+    &.sticky {
+      position: fixed;
+      top: 0;
+      z-index: 10;
+      transition: 0.3s all;
+
+      @include phone {
+        position: inherit;
+      }
+    }
+
+    .item-container {
+      padding: 35px 0;
+      display: flex;
+      max-width: $max-size-blog;
+      margin: 0 auto;
+      flex-wrap: wrap;
+
+      .item {
+        background-color: white;
+        @include border;
+        border-radius: $border_radius;
+        padding: 17px 20px;
+        margin-right: 20px;
+        display: flex;
+        transition: all 0.3s;
+
+        @include tablet {
+          margin: 10px auto;
+        }
+
+        &:hover {
+          box-shadow: $box_shadow;
+        }
+
+        &.active {
+          box-shadow: $box_shadow;
+        }
+
+        .indic {
+          height: 15px;
+          width: 15px;
+          border: 2px solid black;
+          border-radius: 15px;
+          margin-right: 18px;
+        }
+
+        .text {
+          font-weight: bold;
+          font-size: 14px;
+          letter-spacing: 0.2px;
+        }
+      }
+
+      @include phone {
+        padding: 0 20px;
+        display: block;
+      }
+    }
+  }
+
+  .blog {
+    background: white;
+
+    .list-container {
+      max-width: none;
+      padding: 0 20px;
+    }
+
+    .blog-list {
+      padding: 60px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      min-height: 300px;
+      max-width: $max-size-blog;
+      margin: 0 auto;
+
+      @include medium {
+        display: block;
+      }
+
+      & > * {
+        &:not(.newsletter) {
+          width: calc((100% / 2) - 20px);
+
+          @include medium {
+            width: 100%;
+          }
+        }
+
+        margin-bottom: 40px;
+      }
+    }
+
+    @include phone {
+      padding: 20px 0 0 0;
+      padding-top: 0;
+
+      .list-container {
+        padding: 0;
+      }
+
+      .blog-list {
+        padding: 40px 0 20px 0;
+        display: block;
+
+        & > * {
+          &:not(.newsletter) {
+            margin: 0px 20px 20px 20px;
+            width: calc(100% - 40px);
+          }
+
+          &.no-margin {
+            margin-bottom: 0px;
+
+            @include tablet {
+              & > * {
+                border-bottom: $border_width solid black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .newsletter {
+    @include medium {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+  }
+}

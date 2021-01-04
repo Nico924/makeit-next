@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="202px" height="393px" viewBox="0 0 202 393" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>Group 81</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="215" cy="106.205837" r="25"></circle>
+        <filter x="-12.0%" y="-12.0%" width="124.0%" height="124.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="-12" dy="-10" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <circle id="path-3" cx="25" cy="106.205837" r="25"></circle>
+        <filter x="-12.0%" y="-12.0%" width="124.0%" height="124.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="-12" dy="-10" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <circle id="path-5" cx="205" cy="206.205837" r="25"></circle>
+        <filter x="-12.0%" y="-12.0%" width="124.0%" height="124.0%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="-12" dy="-10" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <circle id="path-7" cx="120" cy="45.2058366" r="20"></circle>
+        <filter x="-15.0%" y="-15.0%" width="130.0%" height="130.0%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="-12" dy="-10" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <circle id="path-9" cx="35" cy="206.205837" r="25"></circle>
+        <filter x="-12.0%" y="-12.0%" width="124.0%" height="124.0%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="-12" dy="-10" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <circle id="path-11" cx="120" cy="151.205837" r="50"></circle>
+        <filter x="-6.0%" y="-6.0%" width="112.0%" height="112.0%" filterUnits="objectBoundingBox" id="filter-12">
+            <feOffset dx="-12" dy="-10" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="v3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="About" transform="translate(0.000000, -5057.000000)">
+            <g id="Group-81" transform="translate(-67.000000, 5059.000000)">
+                <g id="Group-2" transform="translate(85.500000, 38.500000) scale(-1, 1) translate(-85.500000, -38.500000) " fill="#FFFFFF" fill-rule="nonzero" stroke="#000000" stroke-width="3">
+                    <path d="M34.3246522,77 C115.09544,77 155.480834,77 155.480834,77 C167.748512,76.1266952 171,68.2318136 171,54.0227248 C171,44.2536822 163.60145,36.6297024 155.480834,33.0428223 C147.966137,29.7235772 136.045502,28.0426584 128.413497,28.0426584 C128.413497,28.0426584 125.503953,-7.10542736e-15 95.7929405,-7.10542736e-15 C75.985599,-7.10542736e-15 65.1358929,11.0142741 63.2438223,33.0428223 C45.9989067,29.036312 32.7790255,30.241408 23.5841787,36.6581106 C14.3893318,43.0748131 11.1035176,52.1379235 13.7267361,63.8474417 C3.0848587,63.9434197 -1.36930115,68.3276058 0.364256567,77 C0.364256567,77 11.6843884,77 34.3246522,77 Z" id="Path-2"></path>
+                </g>
+                <g id="Group-79" transform="translate(27.000000, 110.000000)">
+                    <path d="M26.5840302,106.971325 L36.4027494,205.158518 L120,239.306572 L203.597251,205.158518 L213.41597,106.971325 L120,46.9884395 L26.5840302,106.971325 Z" id="Rectangle" stroke="#000000" stroke-width="3"></path>
+                    <g id="Group-77" transform="translate(94.000000, 196.205837)" stroke="#000000" stroke-width="3">
+                        <path d="M15.7085235,1.5 L1.77995203,82.5 L50.220048,82.5 L36.2914765,1.5 L15.7085235,1.5 Z" id="Rectangle" fill="#E3E3E3"></path>
+                        <line x1="12" y1="20" x2="40.5422768" y2="20" id="Path-53"></line>
+                        <line x1="9" y1="41" x2="44" y2="41" id="Path-53"></line>
+                        <line x1="5.5" y1="60.5" x2="46.5" y2="60.5" id="Path-53"></line>
+                    </g>
+                    <g id="Group-75" transform="translate(25.000000, 39.205837)" stroke="#000000" stroke-width="3">
+                        <line x1="190" y1="67" x2="95" y2="113.210835" id="Path-46"></line>
+                        <line x1="0" y1="67" x2="95" y2="113.210835" id="Path-47"></line>
+                        <line x1="95" y1="-2.27373675e-13" x2="95" y2="113.210835" id="Path-48"></line>
+                        <line x1="10" y1="167" x2="95" y2="113.210835" id="Path-49"></line>
+                        <line x1="180" y1="167" x2="95" y2="112" id="Path-50"></line>
+                    </g>
+                    <g id="Group-76" transform="translate(222.500000, 242.705837) scale(-1, 1) translate(-222.500000, -242.705837) translate(205.000000, 206.205837)" stroke="#000000" stroke-linecap="round" stroke-width="3">
+                        <line x1="35" y1="0" x2="0" y2="73.0000004" id="Path-51"></line>
+                        <line x1="35" y1="9.09494702e-13" x2="22.7955665" y2="73.0000004" id="Path-52"></line>
+                    </g>
+                    <g id="Oval">
+                        <use fill="#E3E3E3" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <circle stroke="#000000" stroke-width="3" stroke-linejoin="square" cx="215" cy="106.205837" r="23.5"></circle>
+                    </g>
+                    <g id="Oval">
+                        <use fill="#E3E3E3" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <circle stroke="#000000" stroke-width="3" stroke-linejoin="square" cx="25" cy="106.205837" r="23.5"></circle>
+                    </g>
+                    <g id="Oval">
+                        <use fill="#E3E3E3" fill-rule="evenodd" xlink:href="#path-5"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                        <circle stroke="#000000" stroke-width="3" stroke-linejoin="square" cx="205" cy="206.205837" r="23.5"></circle>
+                    </g>
+                    <g id="Group-78" transform="translate(116.000000, 0.000000)">
+                        <line x1="4" y1="27.2821214" x2="4" y2="0" id="Path-54" stroke="#000000" stroke-width="3" stroke-linecap="round"></line>
+                        <rect id="Rectangle" stroke="#000000" stroke-width="3" fill="#D8D8D8" x="1.5" y="2.70583658" width="21" height="12"></rect>
+                        <rect id="Rectangle" stroke="#000000" stroke-width="3" fill="#D8D8D8" x="4.5" y="5.70583658" width="3" height="6"></rect>
+                        <rect id="Rectangle" fill="#FAD843" x="9" y="4.20583658" width="6" height="9"></rect>
+                        <rect id="Rectangle" fill="#F1A4AB" x="15" y="4.20583658" width="6" height="9"></rect>
+                    </g>
+                    <g id="Oval">
+                        <use fill="#E3E3E3" fill-rule="evenodd" xlink:href="#path-7"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                        <circle stroke="#000000" stroke-width="3" stroke-linejoin="square" cx="120" cy="45.2058366" r="18.5"></circle>
+                    </g>
+                    <g id="Oval">
+                        <use fill="#E3E3E3" fill-rule="evenodd" xlink:href="#path-9"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                        <circle stroke="#000000" stroke-width="3" stroke-linejoin="square" cx="35" cy="206.205837" r="23.5"></circle>
+                    </g>
+                    <g id="Oval">
+                        <use fill="#E3E3E3" fill-rule="evenodd" xlink:href="#path-11"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"></use>
+                        <circle stroke="#000000" stroke-width="3" stroke-linejoin="square" cx="120" cy="151.205837" r="48.5"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

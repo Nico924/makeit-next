@@ -1,0 +1,131 @@
+@import "~styles/mixins";
+@import "~styles/items/headListing";
+@import "~styles/items/checkedBox";
+
+.CustomTable {
+  position: relative;
+
+  .head {
+    @include headListing;
+  }
+
+  .no-result,
+  .loading {
+    padding: 20px;
+    //background-color:$color-grey-background;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .pages {
+    font-size: 12px;
+    margin-top: 15px;
+    text-align: right;
+
+    li {
+      @include middle;
+      list-style: none;
+    }
+
+    a {
+      outline: none;
+    }
+
+    .page {
+      a {
+        border: 1px solid $color_border;
+        @include ball(25px);
+        background-color: white;
+        border-radius: $border_radius;
+
+        &:hover {
+          cursor: pointer;
+          background-color: $color-grey-background;
+        }
+      }
+
+      &.active {
+        font-weight: bold;
+      }
+
+      margin: 0 4px;
+    }
+
+    .disabled {
+      a {
+        cursor: default;
+      }
+
+      opacity: 0.5;
+    }
+  }
+
+  .listing {
+    @include card;
+
+    &.no-shadow {
+      box-shadow: none;
+    }
+
+    .box-wrapper {
+      @include checkedBox;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    .sortable-head {
+      width: 100%;
+      cursor: pointer;
+      padding: 13px 0;
+      text-align: left;
+      padding-right: 30px;
+      position: relative;
+      display: inline-block;
+
+      .arrow {
+        @include v_align;
+        right: 8px;
+        
+        &.inverted {
+          transform: translateY(-50%) rotate(180deg);
+        }
+      }
+    }
+
+    .not-sortable-head {
+      padding: $table_cell_spacing;
+    }
+
+    th {
+      text-align: left;
+      font-size: 12px;
+      color: $color-grey-font;
+      text-transform: uppercase;
+      vertical-align: middle;
+      //opacity: 0.6;
+      user-select: none;
+    }
+
+    td,
+    th {
+      vertical-align: middle;
+    }
+
+    tbody {
+
+      tr {
+        border-top: 1px solid $color_border;
+
+      }
+    }
+  }
+
+  .buttons {
+    margin-top: 20px;
+    text-align: right;
+  }
+}

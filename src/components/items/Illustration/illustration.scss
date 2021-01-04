@@ -1,0 +1,11 @@
+@import "~styles/mixins";
+
+.Illustration {
+  img{
+    width: 100%;
+    height: 100%;
+  }
+  @include phone{
+    display: none;
+  }
+}

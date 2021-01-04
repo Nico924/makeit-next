@@ -1,0 +1,72 @@
+@import '~styles/mixins';
+
+.CustomRadio {
+  [type='radio'] {
+    margin: 0;
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  [type='radio'] + .single {
+    cursor: pointer;
+  }
+
+  [disabled] + .single {
+    cursor: not-allowed;
+  }
+
+  [type='radio']:checked + .single {
+    background-color: $color_radio_checked;
+    border-color: $color_radio_checked;
+    color: #fff;
+  }
+
+  .value-container {
+    margin-top: $form_element_vertical_spacing;
+  }
+
+  label {
+    display: inline-block;
+  }
+  img + .label {
+    margin-top: 5px;
+  }
+
+  &:not(.classic) {
+    .single {
+      width: 84px;
+      box-shadow: 0 3px 8px 0 rgba(0, 0, 48, 0.18);
+      border-radius: $border_radius;
+      margin: 4px;
+      padding: 13px 16px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  &.united {
+    .single {
+      width: auto;
+      box-shadow: none;
+      margin: 0;
+      border-radius: 0;
+      border: 1px solid $color_border;
+      border-left: none;
+    }
+    label:first-child .single {
+      border-top-left-radius: $border_radius;
+      border-bottom-left-radius: $border_radius;
+      border-left: 1px solid $color_border;
+      &.active {
+        border-left-color: $color_radio_checked;
+      }
+    }
+    label:last-child .single {
+      border-top-right-radius: $border_radius;
+      border-bottom-right-radius: $border_radius;
+    }
+  }
+}

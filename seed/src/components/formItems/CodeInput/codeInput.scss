@@ -1,0 +1,16 @@
+@import '~styles/mixins';
+
+.code-input {
+  text-align: center;
+  input {
+    display: inline-block;
+    -moz-appearance: textfield;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      appearance: none;
+    }
+  }
+  .code.has-label {
+    margin-top: 4px;
+  }
+}

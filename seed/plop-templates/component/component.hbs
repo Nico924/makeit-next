@@ -1,0 +1,26 @@
+import React, { Component } from 'react';
+import classNames from 'classnames/bind';
+import styleIdentifiers from './{{camelCase name}}.scss';
+import TextItem from 'components/items/TextItem';
+
+const styles = classNames.bind(styleIdentifiers);
+
+export interface StateProps {};
+
+export interface DispatchProps {};
+
+export interface OwnProps {};
+
+export type {{pascalCase name}}Props = StateProps & DispatchProps & OwnProps;
+
+interface {{pascalCase name}}State {};
+
+export default class {{pascalCase name}} extends Component<{{pascalCase name}}Props, {{pascalCase name}}State> {
+  render() {
+    return (
+      <div className={styles('{{pascalCase name}}')}>
+        <TextItem path="{{pascalCase name}} generated" />
+      </div>
+    );
+  }
+}

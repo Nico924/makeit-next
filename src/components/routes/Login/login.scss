@@ -1,0 +1,12 @@
+@import "~styles/mixins";
+
+.Login {
+  padding: 60px 0px;
+
+  h1 {
+    @include mainTitle;
+  }
+
+  max-width: 500px;
+  margin:auto;
+}

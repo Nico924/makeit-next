@@ -1,0 +1,10 @@
+@import "~styles/mixins";
+
+.RellaxItem {
+  &.full{
+    svg{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

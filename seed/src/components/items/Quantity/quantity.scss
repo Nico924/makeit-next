@@ -1,0 +1,8 @@
+@import '~styles/mixins';
+
+.quantity {
+  .suffix,
+  .prefix {
+    font-size: 85%;
+  }
+}

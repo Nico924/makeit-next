@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="92px" height="67px" viewBox="0 0 92 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>Group 31</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="software" transform="translate(-1079.000000, -1689.000000)" stroke="#000000">
+            <g id="Group-7" transform="translate(1005.000000, 1652.000000)">
+                <g id="Group-31" transform="translate(120.000000, 70.500000) rotate(-270.000000) translate(-120.000000, -70.500000) translate(87.000000, 25.000000)">
+                    <rect id="Rectangle" stroke-width="3" fill="#FAD843" x="1.5" y="1.5" width="55" height="88" rx="7"></rect>
+                    <path d="M57.5,40.2675919 L57.5,50.7324081 L64.7226499,55.5475081 C64.8047837,55.6022639 64.9012875,55.6314829 65,55.6314829 C65.2761424,55.6314829 65.5,55.4076253 65.5,55.1314829 L65.5,35.8685171 C65.5,35.7698046 65.470781,35.6733008 65.4160251,35.591167 C65.2628489,35.3614026 64.9524142,35.2993157 64.7226499,35.4524919 L57.5,40.2675919 Z" id="Rectangle" fill="#000000"></path>
+                    <g id="Group-29" transform="translate(29.000000, 46.000000) rotate(-90.000000) translate(-29.000000, -46.000000) translate(13.000000, 40.000000)" stroke-linecap="round" stroke-width="2">
+                        <path d="M7.15353973,4.08562073e-14 L1.02152583,4.78885949 C0.586250816,5.128792 0.508960446,5.75722186 0.848892954,6.19249687 C0.901595302,6.2599809 0.962746747,6.32041664 1.03084652,6.37232091 L7.15353973,11.0389134 L7.15353973,11.0389134" id="Path-5"></path>
+                        <path d="M31.1535397,4.08562073e-14 L25.0215258,4.78885949 C24.5862508,5.128792 24.5089604,5.75722186 24.848893,6.19249687 C24.9015953,6.2599809 24.9627467,6.32041664 25.0308465,6.37232091 L31.1535397,11.0389134 L31.1535397,11.0389134" id="Path-5" transform="translate(27.576770, 5.519457) rotate(-180.000000) translate(-27.576770, -5.519457) "></path>
+                        <line x1="19.870394" y1="0" x2="11" y2="11.0389134" id="Path-6"></line>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

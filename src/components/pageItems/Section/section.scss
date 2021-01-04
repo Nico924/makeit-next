@@ -1,0 +1,23 @@
+@import '~styles/mixins';
+
+.Section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  @include tablet {
+    padding: 70px 0;
+  }
+
+  .contain_wrapper {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    position: relative;
+
+    @include medium {
+      width: 100%;
+      padding: 0 20px;
+    }
+  }
+}

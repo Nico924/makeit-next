@@ -1,0 +1,40 @@
+@import "~styles/mixins";
+
+.SwitchInput {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  margin-top: $form_spacing;
+
+  &.no-margin {
+    margin-top: 0px;
+  }
+
+  &.right {
+    flex-direction: row;
+  }
+
+  &.center {
+    justify-content: center;
+  }
+
+  &.wide {
+    justify-content: space-between;
+  }
+
+  .label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    user-select: none;
+    margin-right: 20px;
+  }
+
+  &.left {
+    .label {
+      margin-left: 20px;
+      margin-right: 0;
+    }
+  }
+}

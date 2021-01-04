@@ -1,0 +1,28 @@
+@import "~styles/mixins";
+
+.VideoArticleItem {
+  height: calc(100vw - 50px);
+  max-height: 500px;
+  position: relative;
+  border: $border_width solid black;
+  margin: 50px 0;
+  border-radius: $border_radius;
+  @include boxShadow;
+
+  iframe {
+    border-radius: $border_radius_less_width;
+  }
+
+  .play {
+    position: absolute;
+    @include center_align;
+
+    img {
+      border: none !important;
+    }
+  }
+
+  @include phone {
+    margin: 20px 0;
+  }
+}

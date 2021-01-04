@@ -1,0 +1,29 @@
+@import "~styles/mixins";
+
+.ContactForm {
+  margin-top: 50px;
+
+  .half {
+    display: flex;
+    justify-content: space-between;
+
+
+    &>* {
+      margin-bottom: 20px;
+      width: calc(50% - 10px);
+      box-shadow: 3px 3px 0 0 rgba(0, 0, 0, .07);
+    }
+
+    @include phone {
+      flex-direction: column;
+
+      &>* {
+        width: 100%
+      }
+    }
+  }
+
+  .button {
+    margin-top: 20px;
+  }
+}

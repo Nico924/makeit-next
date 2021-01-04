@@ -1,0 +1,208 @@
+@import '~styles/mixins';
+
+.CustomDropdown {
+  position: relative;
+  display: inline-block;
+
+  &:focus {
+    outline: none;
+  }
+
+  $decal: 5px;
+  $color_arrow: $default_color_dropdown_arrow;
+  $size_arrow: $dropdown_size_arrow;
+  $decal_arrow: 1px;
+
+  .dropdown-selector {
+    cursor: pointer;
+    //so it wraps only the content
+    z-index: 3;
+
+    .arrow {
+      opacity: 0;
+      position: absolute;
+      top: 100%;
+      z-index: 3;
+      //box-shadow: 0 9px 15px 0 rgba(0, 0, 0, 0.36);
+      @include transition(opacity);
+
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &.active .arrow {
+      opacity: 1;
+    }
+
+    .dropdown-selector-content {
+      position: relative;
+    }
+  }
+
+  .dropdown-content {
+    text-transform: none;
+
+    width: auto;
+    @include transition(all);
+
+    position: absolute;
+    right: 0px;
+
+    min-width: 100px;
+    z-index: 2;
+    opacity: 0;
+    border-radius: $border_radius;
+    background-color: white;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.08);
+    pointer-events: none;
+
+    &.active,
+    &.debug {
+      pointer-events: all;
+      opacity: 1;
+    }
+
+    &.center {
+      right: auto;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &.fixed-mobile {
+    .dropdown-content {
+      @include phone {
+        position: fixed !important;
+        left: 50% !important;
+        top: 50% !important;
+        transform: translate(-50%, -50%) !important;
+      }
+    }
+  }
+
+  &.bottom {
+    .dropdown-selector .arrow {
+      @include arrow('top', $color_arrow, $size_arrow);
+      &.dark {
+        @include arrow('top', $color-dark, $size_arrow);
+      }
+    }
+
+    .dropdown-content {
+      top: calc(100% + #{$size_arrow - $decal_arrow});
+    }
+
+    &.no-triangle .dropdown-content {
+      top: 100%;
+    }
+
+    // With decal
+    &.decal {
+      &.no-triangle .dropdown-content,
+      .dropdown-selector .arrow {
+        top: calc(100% + #{$decal});
+      }
+      .dropdown-content {
+        top: calc(100% + #{$decal + $size_arrow - $decal_arrow});
+      }
+    }
+  }
+
+  &.top {
+    .dropdown-selector .arrow {
+      top: auto;
+      bottom: 100%;
+      @include arrow('bottom', $color_arrow, $size_arrow);
+
+      &.dark {
+        @include arrow('bottom', $color-dark, $size_arrow);
+      }
+    }
+
+    .dropdown-content {
+      top: auto;
+      bottom: calc(100% + #{$size_arrow - $decal_arrow});
+    }
+
+    &.no-triangle .dropdown-content {
+      bottom: 100%;
+    }
+    // With decal
+    &.decal {
+      &.no-triangle .dropdown-content,
+      .dropdown-selector .arrow {
+        bottom: calc(100% + #{$decal});
+      }
+      .dropdown-content {
+        top: auto;
+        bottom: calc(100% + #{$decal + $size_arrow - $decal_arrow});
+      }
+    }
+  }
+
+  &.left {
+    .dropdown-selector .arrow {
+      @include v_align;
+      left: auto;
+      right: 100%;
+      @include arrow('right', $color_arrow, $size_arrow);
+
+      &.dark {
+        @include arrow('right', $color-dark, $size_arrow);
+      }
+    }
+
+    .dropdown-content {
+      left: auto;
+      right: calc(100% + #{$size_arrow - $decal_arrow});
+      @include v_align;
+    }
+
+    &.no-triangle .dropdown-content {
+      right: 100%;
+    }
+
+    // With decal
+    &.decal {
+      &.no-triangle .dropdown-content,
+      .dropdown-selector .arrow {
+        right: calc(100% + #{$decal});
+      }
+      .dropdown-content {
+        right: calc(100% + #{$decal + $size_arrow - $decal_arrow});
+      }
+    }
+  }
+
+  &.right {
+    .dropdown-selector .arrow {
+      @include v_align;
+      left: 100%;
+      @include arrow('left', $color_arrow, $size_arrow);
+
+      &.dark {
+        @include arrow('left', $color-dark, $size_arrow);
+      }
+    }
+
+    .dropdown-content {
+      left: calc(100% + #{$size_arrow - $decal_arrow});
+      @include v_align;
+    }
+
+    &.no-triangle .dropdown-content {
+      left: 100%;
+    }
+
+    // With decal
+    &.decal {
+      &.no-triangle .dropdown-content,
+      .dropdown-selector .arrow {
+        left: calc(100% + #{$decal});
+      }
+      .dropdown-content {
+        left: calc(100% + #{$decal + $size_arrow - $decal_arrow});
+      }
+    }
+  }
+}

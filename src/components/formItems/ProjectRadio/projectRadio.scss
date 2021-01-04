@@ -1,0 +1,69 @@
+@import "~styles/mixins";
+
+.ProjectRadio {
+  margin-top: $form_spacing;
+  padding: 12px;
+  background-color: #fff;
+  border: 3px solid #000;
+  border-radius: 6px;
+  color: black;
+
+  .label {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    @include tablet {
+      font-size: 16px;
+    }
+
+    @include phone {
+      font-size: 14px;
+    }
+  }
+
+  .container-item {
+    margin-top: 20px;
+
+    .item {
+      margin-bottom: 15px;
+      line-height: 0.9;
+      letter-spacing: 0.3px;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      cursor: pointer;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .box {
+        height: 16px;
+        width: 16px;
+        background-color: $color-light-grey;
+        border-radius: 16px;
+        border: 3px solid black;
+        margin-right: 20px;
+
+        &.check {
+          background-color: $color-aqua;
+        }
+      }
+    }
+  }
+}
+
+.container-input {
+  position: relative;
+
+  .error {
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    color: $color_error;
+    letter-spacing: 1px;
+    margin-top: 4px;
+  }
+}

@@ -1,0 +1,28 @@
+import { put, takeLatest, all, call } from 'redux-saga/effects';
+
+// Apis from parent
+import { api } from 'store/apis';
+// Action type
+import { StoreAction } from 'store/utils/actions';
+import { genericCrudSagas, apiCall } from 'store/utils/sagas';
+
+import { config } from 'config/general';
+
+import actions from './actions';
+import selectors from './selectors';
+
+const treatmentOut = values => {
+  const output = {
+    ...values,
+  };
+
+  return output;
+}
+
+function* {{camelCase name}}Watchers() {
+  yield all([...genericCrudSagas(actions, '{{camelCase name}}')]);
+}
+
+export default function* saga() {
+  yield call({{camelCase name}}Watchers);
+}

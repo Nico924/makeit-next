@@ -1,0 +1,85 @@
+@import "~styles/mixins";
+
+.CostRiskTable {
+  display: flex;
+  justify-content: center;
+
+  .container {
+    display: flex;
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  table {
+    width: 100%;
+    background-color: white;
+    color: black;
+    border-radius: $border_radius;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    overflow: hidden;
+    border-collapse: separate;
+    @include border;
+    @include tablet {
+      font-size: 18px;
+    }
+
+    @include phone {
+      font-size: 14px;
+    }
+
+    th {
+      padding: 30px;
+      text-decoration: none;
+      @include border("left");
+      @include tablet {
+        padding: 15px;
+      }
+
+      &:first-child {
+        border: none;
+      }
+    }
+
+    td {
+      padding: 25px 50px;
+      text-decoration: none;
+      @include border("left");
+      @include border("top");
+      @include tablet {
+        padding: 15px 30px;
+      }
+      @include phone {
+        padding: 7px 20px;
+      }
+
+      &:first-child {
+        border-left: none;
+        @include tablet {
+          width: 45%;
+        }
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        @include tablet {
+          width: 27%;
+        }
+      }
+
+      &.medium {
+        color: $color-dark-blue;
+      }
+
+      &.low {
+        color: $color-aqua;
+      }
+
+      &.high {
+        color: $color-pink;
+      }
+    }
+  }
+}

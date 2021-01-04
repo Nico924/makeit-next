@@ -1,0 +1,77 @@
+@import "~styles/mixins";
+
+.Card {
+  position: relative;
+
+  @include card;
+  .head{
+    font-size:20px;
+    font-weight: 900;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &.link {
+      cursor: pointer;
+      &:hover{
+        background:rgba(0,0,0,0.03);
+      }
+    }
+
+    .head-content {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      .subtitle {
+        text-transform: uppercase;
+        color: $color-title-grey;
+        font-size: 11px;
+        font-weight: 300;
+        padding-left: 30px;
+      }
+    }
+
+    &.small{
+      font-size:16px;
+    }
+    padding:12px 24px;
+    border-bottom:1px solid $color_border;
+
+    &.with-border-bottom-bottom {
+      border-bottom: none;
+    }
+
+    .info-tooltip{
+      @include middle;
+      margin-left:10px;
+    }
+
+    .infos-right {
+      color: #8c96a3;
+      font-size: 12px;
+      font-weight: 300;
+    }
+  }
+  .content{
+    padding:24px;
+    padding-bottom:30px;
+    font-size:16px;
+    position: relative;
+    &.no-padding {
+      padding: 0;
+    }
+  }
+
+  .bottom {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+
+    &:hover {
+      background-color: $color-grey-background;
+    }
+  }
+}

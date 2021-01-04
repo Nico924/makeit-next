@@ -1,0 +1,13 @@
+import {
+  createActionStructure,
+  createAsyncStructure,
+  createResourceStructure,
+} from 'store/utils/actions';
+
+import constants from './constants';
+
+const actions = {
+  ...createResourceStructure(`${constants.prefix}`),
+};
+
+export default actions;

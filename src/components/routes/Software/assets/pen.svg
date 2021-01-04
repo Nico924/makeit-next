@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>Crayon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="software" transform="translate(-197.000000, -4120.000000)" fill-rule="nonzero" stroke="#000000" stroke-width="0.693600015">
+            <g id="Group-12" transform="translate(0.000000, 3717.000000)">
+                <g id="Group-9" transform="translate(195.000000, 402.000000)">
+                    <g id="Group-8">
+                        <g id="Crayon" transform="translate(13.500000, 13.500000) rotate(-315.000000) translate(-13.500000, -13.500000) translate(10.000000, -1.000000)">
+                            <polyline id="Path-15" fill="#F1A4AB" points="0.46240001 4.39280009 2.04962181 0 4.08060075 0 5.54880012 4.39280009"></polyline>
+                            <rect id="Combined-Shape" fill="#FAD843" x="0.346800007" y="5.66075533" width="5.31760011" height="19.4208004"></rect>
+                            <rect id="Combined-Shape-Copy" fill="#F1A4AB" x="0.346800007" y="4.27720009" width="5.31760011" height="1.38720003"></rect>
+                            <rect id="Combined-Shape-Copy-2" fill="#FAD843" x="0.346800007" y="5.66075533" width="5.31760011" height="1.38720003"></rect>
+                            <ellipse id="Oval" fill="#F1A4AB" cx="3.00560006" cy="25.3127557" rx="2.65880006" ry="2.54320005"></ellipse>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

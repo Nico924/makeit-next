@@ -1,0 +1,8 @@
+@import '~styles/mixins';
+
+.ColorPicker {
+  margin-top: $form_spacing;
+  .no-margin {
+    margin-top: 0px;
+  }
+}

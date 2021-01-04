@@ -1,0 +1,8 @@
+@import '~styles/mixins';
+
+.FacebookAuth {
+  @include socialButton;
+
+  color: white;
+  background-color: #3b5998;
+}

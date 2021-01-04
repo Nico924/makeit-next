@@ -1,0 +1,62 @@
+@import "~styles/mixins";
+
+.blurb {
+  border-radius: 12px;
+  background-color: white;
+  border: 3px solid black;
+
+  margin-top: 30px;
+  padding: 30px;
+
+  &.half {
+    width: calc(50% - 15px);
+
+    @include phone {
+      width: 100%;
+    }
+  }
+
+  &.fourth {
+    width: calc(25% - 15px);
+
+    @include medium {
+      width: 48%;
+    }
+
+    @include phone {
+      width: 100%;
+    }
+  }
+
+  &.horizontal {
+    display: flex;
+
+    img {
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+  }
+
+  img {
+    height: 80px;
+    margin-bottom: 30px;
+  }
+
+  .text {
+    color: black;
+    font-size: 14px;
+    margin-bottom: 0;
+    letter-spacing: 0.3px;
+    line-height: 2;
+    text-align: center;
+    font-weight: bold;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    &.left {
+      text-align: left;
+    }
+  }
+}

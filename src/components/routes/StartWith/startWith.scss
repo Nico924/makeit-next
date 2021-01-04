@@ -1,0 +1,199 @@
+@import "~styles/mixins";
+
+.StartWith {
+  ul {
+    list-style-image: url("./assets/oval.svg");
+
+    li {
+      padding-left: 10px;
+    }
+  }
+
+  .button {
+    width: auto;
+    // display: inline-block;
+  }
+
+  section {
+    display: flex;
+    justify-content: center;
+    @include border("bottom");
+    width: 100%;
+
+    .section-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .content,
+    .section-container,
+    .table-container,
+    .contain-wrapper {
+      .title {
+        @include sectionTitle;
+      }
+
+      .text {
+        @include sectionText;
+      }
+    }
+  }
+
+  .first {
+    padding-top: $height_header;
+    margin-top: -$height_header;
+  }
+
+  .third,
+  .seventh {
+    background-color: $color-aqua;
+  }
+
+  .fourth,
+  .eigth {
+    background-color: $color-pink;
+  }
+
+  .third,
+  .fourth {
+    .after_table {
+      margin-top: 50px;
+      @include max_width(650px);
+
+      img {
+        width: 75px;
+      }
+
+      .text {
+        width: calc(100%-100px);
+        text-align: left;
+
+        @include phone {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .fourth,
+  .fifth,
+  .sixth {
+    button {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .first,
+  .sixth,
+  .ninth {
+    background-color: $color-white-break;
+  }
+
+  .sixth {
+    .text {
+      @include max_width(520px);
+    }
+
+    .workshop_card {
+      width: 47%;
+      text-align: center;
+      position: relative;
+
+      @include tablet {
+        width: 100%;
+        margin-bottom: 50px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .best_value {
+        position: absolute;
+        right: -100px;
+        top: -30px;
+
+        @include tablet {
+          display: none;
+        }
+      }
+
+      &:first-child {
+        .card_heading {
+          background-color: $color-dark-blue;
+        }
+      }
+
+      &:last-child {
+        .card_heading {
+          background-color: $color-aqua;
+        }
+      }
+
+      .card_wrapper {
+        border-radius: 8px;
+        border: solid 3px #000000;
+        background-color: #fff;
+
+        .card_heading {
+          border-bottom: 3px solid #000;
+          padding: 25px;
+
+          h3 {
+            margin: 0;
+            color: #fff;
+            @include font-size(24px);
+            font-style: italic;
+            text-transform: uppercase;
+            letter-spacing: 2.18px;
+          }
+        }
+
+        .card_body {
+          padding: 30px 20px;
+        }
+      }
+
+      .card_button {
+        text-align: center;
+      }
+    }
+  }
+
+  .tenth {
+    .text {
+      @include max_width(480px);
+    }
+
+    .form {
+      @include max_width(620px);
+
+      input,
+      textarea,
+      label {
+        border-radius: 7px !important;
+      }
+    }
+  }
+
+  .half_img_half_content {
+
+    .workerImage,
+    .content,
+    .video,
+    .image {
+      width: 47%;
+
+      @include tablet {
+        width: 100%;
+      }
+    }
+  }
+
+  .section_heading {
+    margin-bottom: 35px;
+  }
+}

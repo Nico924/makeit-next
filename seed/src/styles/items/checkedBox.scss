@@ -1,0 +1,22 @@
+
+@mixin checkedBox {
+  width: 50px;
+  text-align: center;
+
+  .box {
+    display: inline-block;
+    cursor: pointer;
+    @include ball(18px);
+    position: relative;
+    border: 2px solid $color_border;
+    border-radius: 2px;
+
+    &.checked {
+      background-color: $color_dark;
+    }
+  }
+
+  &.small {
+    width: 20px;
+  }
+}

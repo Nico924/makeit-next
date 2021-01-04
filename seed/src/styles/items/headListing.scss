@@ -1,0 +1,37 @@
+@mixin headListing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+  h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 900;
+  }
+
+  .subhead {
+    color: #616b77;
+    margin-top: 5px;
+
+    :first-child {
+      margin-left: 2px;
+      margin-right: 6px;
+    }
+  }
+
+  .actions {
+    >* {
+      @include middle;
+      margin-left: 16px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    button {
+      min-width: 100px;
+    }
+  }
+}

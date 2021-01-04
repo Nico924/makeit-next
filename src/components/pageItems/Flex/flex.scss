@@ -1,0 +1,26 @@
+@import '~styles/mixins';
+
+.Flex {
+  display: flex;
+  flex-wrap: wrap;
+
+  &.j-space-between {
+    justify-content: space-between;
+  }
+
+  &.j-center {
+    justify-content: center;
+  }
+
+  &.a-center {
+    align-items: center;
+  }
+
+  &.a-end {
+    align-items: flex-end;
+  }
+
+  //   &.a-flex-start {
+  //     align-items: flex-start;
+  //   }
+}

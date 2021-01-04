@@ -1,0 +1,19 @@
+import React, { useState, useEffect } from 'react';
+
+import classNames from 'classnames/bind';
+import TextItem from 'components/items/TextItem';
+import styleIdentifiers from './{{camelCase name}}.scss';
+
+const styles = classNames.bind(styleIdentifiers);
+
+export interface {{pascalCase name}} {}
+
+const {{pascalCase name}} = (props: {{pascalCase name}}Props) => {
+  return (
+    <div className={styles('{{dashCase name}}')}>
+      <TextItem path="{{pascalCase name}} Component" />
+    </div>
+  );
+};
+
+export default {{pascalCase name}};

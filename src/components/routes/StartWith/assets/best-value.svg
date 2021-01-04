@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="151" height="144" viewBox="0 0 151 144">
+    <defs>
+        <path id="b" d="M72.455 131.975l-12.231 10.002a6.4 6.4 0 0 1-10.241-3.328l-4.017-15.28a5.6 5.6 0 0 0-5.735-4.168l-15.774.902a6.4 6.4 0 0 1-6.33-8.711l5.733-14.723a5.6 5.6 0 0 0-2.191-6.743L8.378 81.384a6.4 6.4 0 0 1 0-10.768l13.29-8.542a5.6 5.6 0 0 0 2.192-6.743l-5.732-14.723a6.4 6.4 0 0 1 6.329-8.711l15.774.902a5.6 5.6 0 0 0 5.735-4.168l4.017-15.28a6.4 6.4 0 0 1 10.241-3.328l12.231 10.002a5.6 5.6 0 0 0 7.09 0l12.231-10.002a6.4 6.4 0 0 1 10.241 3.328l4.017 15.28a5.6 5.6 0 0 0 5.735 4.168l15.774-.902a6.4 6.4 0 0 1 6.33 8.711l-5.733 14.723a5.6 5.6 0 0 0 2.191 6.743l13.291 8.542a6.4 6.4 0 0 1 0 10.768l-13.29 8.542a5.6 5.6 0 0 0-2.192 6.743l5.732 14.723a6.4 6.4 0 0 1-6.329 8.711l-15.774-.902a5.6 5.6 0 0 0-5.735 4.168l-4.017 15.28a6.4 6.4 0 0 1-10.241 3.328l-12.231-10.002a5.6 5.6 0 0 0-7.09 0z"/>
+        <filter id="a" width="102.7%" height="98.6%" x=".6%" y="2.7%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" operator="dilate" radius="1.5" result="shadowSpreadOuter1"/>
+            <feOffset dx="6" dy="6" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"/>
+            <feColorMatrix in="shadowOffsetOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0688122736 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g fill-rule="nonzero" transform="translate(-3 -7)">
+            <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+            <use fill="#F1A4AB" stroke="#000" stroke-width="3" xlink:href="#b"/>
+        </g>
+        <text fill="#FFF" font-family="Chivo-BoldItalic, Chivo Bold" font-size="22" font-style="italic" font-weight="bold" letter-spacing=".367" transform="translate(-3 -7)">
+            <tspan x="48.347" y="72.4">BEST</tspan> <tspan x="38" y="96">VALUE</tspan> <tspan x="106.999" y="96" letter-spacing=".351">!</tspan>
+        </text>
+    </g>
+</svg>

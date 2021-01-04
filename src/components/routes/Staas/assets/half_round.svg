@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="261px" height="374px" viewBox="0 0 261 374" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="v3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="StaaS" transform="translate(0.000000, -1102.000000)" fill="#4A90E2" fill-rule="nonzero" stroke="#000000" stroke-width="3">
+            <g id="Group-6" transform="translate(-110.000000, 542.000000)">
+                <path d="M229.5,593 C348.517364,593 445,690.378067 445,810.5 L444.996,811 L326.998193,811.000811 C326.999397,810.799032 327,810.597109 327,810.395045 C327,756.021248 283.347763,711.942576 229.5,711.942576 C175.652237,711.942576 132,756.021248 132,810.395045 L132.005,811 L14.0005613,811.001795 C14.0001872,810.834574 14,810.667309 14,810.5 C14,690.378067 110.482636,593 229.5,593 Z" id="Combined-Shape" transform="translate(229.500000, 702.000897) rotate(-315.000000) translate(-229.500000, -702.000897) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

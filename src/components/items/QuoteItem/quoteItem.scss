@@ -1,0 +1,99 @@
+@import "~styles/mixins";
+
+$size_separator: 14px;
+
+.QuoteItem {
+  display: flex;
+  align-items: center;
+
+  .head {
+    width: 60px;
+    margin-right: 25px;
+    animation: rotateSmile;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  .content {
+    padding: 20px 50px;
+    background-color: white;
+    border: $border_width solid black;
+    text-transform: uppercase;
+    overflow: hidden;
+    font-size: 0;
+    white-space: nowrap;
+
+    .anime {
+      font-weight: bold;
+      letter-spacing: 0.2px;
+      line-height: 2;
+      font-size: 18px;
+      position: relative;
+      display: inline-block;
+      padding-right: 50px;
+      animation: infiniteText;
+      animation-duration: 35s;
+      animation-delay: 7s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+
+      .separator {
+        position: absolute;
+        background-color: black;
+        height: $size_separator;
+        width: $size_separator;
+        border: 2px solid black;
+        border-radius: $size_separator;
+        background-color: $color-pink;
+        @include v_align;
+        right: calc(25px - (#{$size_separator} / 2));
+
+        &.first {
+          right: 0;
+          left: calc(- 25px - (#{$size_separator} / 2));
+        }
+
+        &.color {
+          background-color: $color-aqua;
+        }
+      }
+    }
+  }
+
+  @include phone {
+    border-bottom: $border_width solid black;
+    border-left: $border_width solid black;
+
+    .head {
+      width: 40px;
+      margin: 0 15px;
+    }
+
+    .content {
+      padding: 15px 20px;
+      border-top: none;
+      border-bottom: none;
+    }
+  }
+}
+
+@keyframes rotateSmile {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes infiniteText {
+  0% {
+    transform: translateX(0)
+  }
+
+  100% {
+    transform: translateX(-100%)
+  }
+}

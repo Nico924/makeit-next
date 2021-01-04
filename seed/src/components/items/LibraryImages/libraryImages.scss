@@ -1,0 +1,133 @@
+@import '~styles/mixins';
+
+.LibraryImages {
+  padding: 20px;
+  height: 70vh;
+
+  .title {
+    font-weight: bold;
+    border-bottom: 1px solid rgba($color: $color-grey, $alpha: 0.4);
+  }
+
+  .container {
+    position: relative;
+    height: calc(100% - 2px);
+  }
+
+  .selected-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: white;
+    border: 1px solid rgba($color: $color-grey, $alpha: 0.4);
+    border-top: none;
+    max-width: 40%;
+    padding: 10px;
+    border-bottom-left-radius: 4px;
+
+    img {
+      width: 100%;
+      display: flex;
+    }
+
+    .selected-title {
+      padding-top: 5px;
+      width: 100%;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      font-size: 13px;
+    }
+
+    .selected-action {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .action-item {
+        width: 40px;
+        padding-top: 5px;
+        cursor: pointer;
+
+        &.success {
+          color: $color_success;
+        }
+
+        &.remove {
+          color: $color_error;
+        }
+      }
+    }
+  }
+
+  .container-item {
+    padding-top: 10px;
+    height: 100%;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $color_scroll_bar;
+      border-radius: $border_radius;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: $color_border;
+      border-radius: $border_radius;
+    }
+  }
+
+  .loading-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    .loading {
+      max-width: 40px;
+    }
+  }
+
+  .library-item {
+    border-radius: 4px;
+    display: flex;
+    width: 100%;
+    @include transition(all);
+    cursor: pointer;
+    align-items: center;
+    height: 22px;
+    border-bottom: 1px solid rgba($color: $color-grey, $alpha: 0.15);
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &:hover {
+      background-color: rgba($color: $color-grey, $alpha: 0.6);
+    }
+
+    .image {
+      width: 18px;
+      height: 18px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-left: 5px;
+      margin-right: 10px;
+    }
+
+    .label {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="534px" height="462px" viewBox="0 0 534 462" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="528" height="417"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-807.000000, -86.000000)">
+            <g id="Group-2" transform="translate(807.000000, 88.000000)">
+                <g id="Window-Text-Copy-20" transform="translate(0.000000, 37.000000)">
+                    <g id="Window-Body"></g>
+                    <rect id="Window-Background" stroke="#000000" stroke-width="3" fill="#FFFFFF" fill-rule="nonzero" x="1.5" y="1.5" width="531" height="420"></rect>
+                    <g id="Group" transform="translate(3.000000, 3.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#F1A4AB" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+                <g id="debit-card-copy-2" transform="translate(105.000000, 110.000000)">
+                    <path d="M44.6945431,220.021605 L1.46665289,108.064744 C-2.87203462,96.8260646 2.74064599,84.201595 14.0120291,79.870999 L218.047504,1.46321229 C229.312611,-2.86529685 241.966769,2.73421597 246.305457,13.9791561 L289.533347,125.936017 C293.872035,137.174697 288.259354,149.799166 276.987971,154.129762 L72.958772,232.537549 C61.6873883,236.866058 49.0395065,231.260284 44.6945431,220.021605 Z" id="Path" stroke="#000000" stroke-width="2.8" fill="#254B76"></path>
+                    <path d="M0,142.133055 L0,21.8669456 C0,9.79116969 9.77627516,0 21.8336813,0 L240.166319,0 C252.223725,0 262,9.79116969 262,21.8669456 L262,142.133055 C262,154.20883 252.223725,164 240.166319,164 L21.8336813,164 C9.77627516,164 0,154.20883 0,142.133055 Z" id="Path" stroke="#000000" stroke-width="2.8" fill="#4A90E2"></path>
+                    <polygon id="Path" fill="#FFFFFF" points="22 87 44 87 44 98 22 98"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="22 120 44 120 44 131 22 131"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="120 120 142 120 142 131 120 131"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="55 87 77 87 77 98 55 98"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="87 87 109 87 109 98 87 98"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="120 87 142 87 142 98 120 98"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="224 22 235 22 235 38 224 38"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="202 22 213 22 213 38 202 38"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="180 22 191 22 191 38 180 38"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="158 22 169 22 169 38 158 38"></polygon>
+                    <polygon id="Path" stroke="#000000" stroke-width="3" fill="#64C1BE" points="219 262 317 262 317 317 219 317"></polygon>
+                    <path d="M22,57.1995792 L22,30.8004214 C22,25.9381938 25.9383822,22 30.8008418,22 L57.201263,22 C62.0637232,22 66,25.9381938 66,30.8004214 L66,57.1995792 C66,62.0618062 62.0637232,66 57.201263,66 L30.8008418,66 C25.9383822,66 22,62.0618062 22,57.1995792 Z" id="Path" stroke="#000000" stroke-width="2.4" fill="#FAD843"></path>
+                    <path d="M289.494218,261.93385 L289.494218,262 L218.451891,262 L214.478138,255.653264 C200.10152,232.678458 199.526372,203.670179 212.986935,180.146116 L168.202746,131.360415 C159.667544,122.033492 159.977078,107.654658 168.907564,98.7057405 C178.143401,89.4498234 193.143271,89.422674 202.412571,98.6451762 L263.410989,159.556987 C276.085931,154.975995 285.098429,152.84612 289.249439,141.944047 C291.870513,135.018892 290.358671,128.317719 283.669914,111.120692 C280.039884,101.787759 274.50473,86.7475279 267.064453,66 C279.210272,73.7630765 289.408912,81.7414162 297.660374,89.935019 C310.037568,102.225423 317,118.93912 317,136.373325 L317,261.93385 L289.494218,261.93385 Z" id="Combined-Shape" stroke="#000000" stroke-width="3" fill="#FAD843"></path>
+                </g>
+                <g id="Group-8-Copy" transform="translate(230.000000, 0.000000)" stroke="#000000">
+                    <g id="Group-3" fill="#64C1BE" fill-rule="nonzero" stroke-width="2.8">
+                        <circle id="Oval" cx="37" cy="37" r="37"></circle>
+                    </g>
+                    <g id="Group-7" transform="translate(22.000000, 20.000000)" fill="#FFFFFF" stroke-width="2.6">
+                        <polygon id="V" points="11.9057617 23.7935094 26.6632109 0 33.9897461 1.61816406 12.6650781 34.9648438 6.29307813 34.9648438 0 11.9648437 7.11376953 10.3549805"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,80 @@
+@import "~styles/mixins";
+
+.card-item {
+  margin-bottom: 40px;
+  z-index: 5;
+  position: relative;
+
+  @include phone {
+    margin-bottom: 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    box-shadow: none;
+  }
+
+  .link-bottom {
+    position: absolute;
+    height: 60px;
+    width: 1px;
+    border-left: 3px dashed black;
+    z-index: 0;
+    right: 40px;
+    bottom: -60px;
+
+    @include phone {
+      display: none;
+    }
+  }
+
+  .link-right {
+    position: absolute;
+    width: 60px;
+    height: 1px;
+    border-top: 3px dashed black;
+    z-index: 0;
+    top: 30px;
+    right: 0;
+
+    @include phone {
+      display: none;
+    }
+  }
+
+  .title-card {
+    display: none;
+
+    @include phone {
+      display: block;
+      font-weight: bold;
+    }
+  }
+}
+
+.card-machine {
+  padding: 0;
+}
+
+.button {
+  display: flex;
+
+}
+
+.card {
+  z-index: 5;
+
+  &>* {
+    border: none;
+  }
+
+  align-items: flex-start;
+  display: flex;
+
+  @include phone {
+    display: block;
+
+    img {
+      margin-bottom: 15px;
+    }
+  }
+}

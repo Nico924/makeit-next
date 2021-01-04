@@ -1,0 +1,24 @@
+@import "~styles/mixins";
+
+.TagItem {
+  background-color: white;
+  @include border;
+  border-radius: $border_radius;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+
+  .indic {
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    border: 2px solid black;
+    margin-right: 18px;
+  }
+
+  .name {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+  }
+}

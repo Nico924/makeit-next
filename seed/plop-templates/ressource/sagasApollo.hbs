@@ -1,0 +1,146 @@
+import { put, takeEvery, all, call } from 'redux-saga/effects';
+
+import gql from 'graphql-tag';
+
+// Action type
+import { StoreAction } from 'store/utils/actions';
+
+import { genericApolloSaga } from 'store/utils/apollo';
+
+import { config, zeus } from 'config/general';
+
+import { deepOmit } from 'store/utils/helper';
+import actions from './actions';
+import selectors from './selectors';
+import * as models from './models';
+
+const { Zeus, $ } = zeus;
+
+export const treatmentOut = values => {
+  const output = {
+    ...values,
+  };
+
+  return deepOmit(output, ['_id', '__typename', 'createdAt', 'updatedAt']);
+};
+
+function* list(action: StoreAction) {
+  action.payload = action.payload || {};
+  const payload = action.payload;
+
+  const search = payload.data || {};
+
+  const zeusQuery = Zeus.query({
+    {{camelCase name}}sSearchMany: [search, models.{{camelCase name}}ListModel],
+  });
+
+  payload.query = gql`
+    ${zeusQuery}
+  `;
+
+  yield call(genericApolloSaga('{{camelCase name}}sSearchMany', actions.list.result.action), action);
+}
+
+function* detail(action) {
+  action.payload = action.payload || {};
+  const payload = action.payload;
+
+  const search = { id: payload.id };
+
+  const zeusQuery = Zeus.query({
+    {{camelCase name}}sGetOne: [search, models.{{camelCase name}}Model],
+  });
+
+  payload.query = gql`
+    ${zeusQuery}
+  `;
+
+  yield call(genericApolloSaga('{{camelCase name}}sGetOne', actions.detail.result.action), action);
+}
+
+/**
+ * MUTATIONS
+ */
+
+function* add(action: StoreAction) {
+  action.payload = action.payload || {};
+  const payload = action.payload;
+
+  const zeusMutation = Zeus.mutation({
+    {{camelCase name}}sAddOne: [
+      {
+        input: $`input`,
+      },
+      models.{{camelCase name}}Model,
+    ],
+  });
+
+  payload.mutation = gql`
+    ${zeusMutation}
+  `;
+
+  payload.data = {
+    input: payload.data && treatmentOut(payload.data.input),
+  };
+
+  yield call(genericApolloSaga('{{camelCase name}}sAddOne', actions.add.result.action), action);
+}
+
+function* update(action: StoreAction) {
+  action.payload = action.payload || {};
+  const payload = action.payload;
+
+  const zeusMutation = Zeus.mutation({
+    {{camelCase name}}sEditOne: [
+      {
+        id: payload.id,
+        input: $`input`,
+      },
+      models.{{camelCase name}}Model,
+    ],
+  });
+
+  payload.mutation = gql`
+    ${zeusMutation}
+  `;
+
+  payload.data = {
+    input: payload.data && treatmentOut(payload.data.input),
+  };
+
+  yield call(genericApolloSaga('{{camelCase name}}sEditOne', actions.update.result.action), action);
+}
+
+function* delete{{camelCase name}}(action: StoreAction) {
+  action.payload = action.payload || {};
+  const payload = action.payload;
+
+  const zeusMutation = Zeus.mutation({
+    {{camelCase name}}sDeleteOne: [
+      {
+        id: payload.id,
+      },
+      models.{{camelCase name}}Model,
+    ],
+  });
+
+  payload.mutation = gql`
+    ${zeusMutation}
+  `;
+
+  yield call(genericApolloSaga('{{camelCase name}}sDeleteOne', actions.delete.result.action), action);
+}
+
+function* {{camelCase name}}Watchers() {
+  yield all([
+    takeEvery(actions.list.request.constant, list),
+    takeEvery(actions.detail.request.constant, detail),
+    takeEvery(actions.add.request.constant, add),
+    takeEvery(actions.update.request.constant, update),
+    takeEvery(actions.delete.request.constant, delete{{camelCase name}}),
+  ]);
+}
+
+export default function* saga() {
+  yield call({{camelCase name}}Watchers);
+}

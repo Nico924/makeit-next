@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>Triangle</title>
+    <desc>Created with Sketch.</desc>
+    <g id="v3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Sourcing" transform="translate(-497.000000, -534.000000)" fill="#FAD843" fill-rule="nonzero" stroke="#000000" stroke-width="2.5">
+            <g id="Group-8" transform="translate(195.000000, 243.000000)">
+                <g id="Group-7">
+                    <g id="Group-2" transform="translate(140.000000, 268.000000)">
+                        <g id="Group" transform="translate(40.000000, 22.000000)">
+                            <path d="M133.527041,4.11864109 L139.158412,15.582505 C139.645421,16.5739161 139.236523,17.7724124 138.245111,18.2594214 C137.9707,18.3942202 137.669036,18.4643128 137.363304,18.4643128 L126.10056,18.4643128 C124.995991,18.4643128 124.10056,17.5688823 124.10056,16.4643128 C124.10056,16.15858 124.170653,15.8569168 124.305452,15.582505 L129.936823,4.11864109 C130.423832,3.12722995 131.622329,2.71833122 132.61374,3.20534019 C133.010802,3.40038847 133.331992,3.72157853 133.527041,4.11864109 Z" id="Triangle" transform="translate(131.732156, 10.732156) scale(-1, 1) rotate(-90.000000) translate(-131.732156, -10.732156) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

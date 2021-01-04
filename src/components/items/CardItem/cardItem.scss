@@ -1,0 +1,155 @@
+@import '~styles/mixins';
+
+.CardItem {
+  border: $border_width solid black;
+  -webkit-box-shadow: $box-shadow;
+  -moz-box-shadow: $box-shadow;
+  box-shadow: $box-shadow;
+  border-radius: $border_radius;
+  z-index: 9;
+
+  .title-container {
+    height: 50px;
+    background-color: $color-yellow;
+    display: flex;
+    position: relative;
+    z-index: 2;
+    border-top-left-radius: $border_radius_less_width;
+    border-top-right-radius: $border_radius_less_width;
+
+    &.reverse-title {
+      flex-direction: row-reverse;
+
+      .close {
+        border-left: $border_width solid black;
+        border-right: none;
+      }
+    }
+
+    .close {
+      min-width: 50px;
+      height: 100%;
+      border: $border_width solid black;
+      border-top: none;
+      border-left: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &.pointer {
+        cursor: url('./assets/pointer.png'), pointer;
+      }
+
+      &:not(.close-mobile) {
+        @include phone {
+          display: none;
+        }
+      }
+    }
+
+    .title {
+      border-bottom: $border_width solid black;
+      width: 100%;
+      letter-spacing: 0.2px;
+      padding: 0 10px;
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      .text-container {
+        width: calc(100% - 20px);
+        text-align: center;
+        @include v_align;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.onlyTitleMobile {
+          display: none;
+
+          @include phone {
+            display: block;
+          }
+        }
+
+        .text {
+          padding: 0 10px;
+          background-color: $color-yellow;
+        }
+      }
+
+      .line-container {
+        width: 100%;
+
+        .line {
+          width: 100%;
+          height: 6px;
+          position: relative;
+
+          &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            top: 2px;
+            left: 0;
+            background-color: black;
+          }
+        }
+
+        @include phone {
+          & > * {
+            display: none;
+
+            &:first-child {
+              display: block;
+
+              &:after {
+                height: 1px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    background-color: white;
+    position: relative;
+    height: calc(100% - 50px);
+    border-bottom-left-radius: $border_radius_less_width;
+    border-bottom-right-radius: $border_radius_less_width;
+
+    &.text {
+      padding: 20px;
+
+      & > * {
+        padding: 0;
+        font-size: 16px;
+        letter-spacing: 0.6px;
+        text-align: left;
+      }
+    }
+
+    &.no_padding {
+      padding: 0px;
+    }
+
+    & > * {
+      padding: 20px 10px;
+      text-align: center;
+      border-top: $border_width solid black;
+      font-size: 18px;
+      letter-spacing: 0.6px;
+
+      &:first-child {
+        border: none;
+      }
+    }
+
+    // a{
+    //   @include linkHref;
+    // }
+  }
+}

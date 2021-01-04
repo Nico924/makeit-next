@@ -1,0 +1,23 @@
+import React, { useState, useEffect } from 'react';
+
+const use{{pascalCase name}} = (): any => {
+  const [value, setValue] = useState(null);
+
+  useEffect((): Function => {
+    const handleValueChange = (newValue): void => {
+      setValue(newValue);
+    };
+
+    //subscribe function
+    window.addEventListener('keydown', handleValueChange);
+
+    return (): void => {
+      //unsubscribe function
+      window.removeEventListener('keydown', handleUserKeyPress);
+    };
+  }, [value]); // Only re-subscribe if value changes
+
+  return value;
+};
+
+export { use{{pascalCase name}}; }

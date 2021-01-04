@@ -1,0 +1,81 @@
+@import '~styles/mixins';
+
+.QuoteArticleItem {
+  display: flex;
+  padding: 40px;
+  background-color: $color-link;
+  border: $border_width solid black;
+  margin: 40px 0;
+  align-items: flex-start;
+  border-radius: $border_radius;
+
+  .illu {
+    margin-right: 40px;
+
+    .img {
+      height: 50px;
+      width: 70px;
+      margin-top: 10px;
+
+      img {
+        border: none !important;
+      }
+    }
+  }
+
+  .child {
+    font-size: 18px !important;
+    font-style: italic;
+    letter-spacing: 0.3px !important;
+    line-height: 2;
+    color: white !important;
+    margin: 0;
+    text-align: justify;
+
+    p {
+      color: white;
+    }
+
+    a {
+      font-weight: 400 !important;
+
+      &:before {
+        border-color: white !important;
+      }
+
+      &:hover {
+        span {
+          color: $color-pink !important;
+        }
+
+        &::before {
+          border-color: rgba($color: $color-pink, $alpha: 0.5) !important;
+        }
+      }
+
+      span {
+        color: white !important;
+        background: none !important;
+      }
+    }
+  }
+
+  @include tablet {
+    .child {
+      font-size: 16px !important;
+    }
+  }
+
+  @include phone {
+    margin: 20px 0;
+    padding: 20px;
+
+    .illu {
+      margin: 0;
+    }
+
+    .child {
+      font-size: 14px !important;
+    }
+  }
+}

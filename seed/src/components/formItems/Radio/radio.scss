@@ -1,0 +1,57 @@
+@import '~styles/mixins';
+
+.radio {
+  .row-container {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    margin-top: 10px;
+
+    $dim: 20px;
+    $dim_inside: 12px;
+    .circle {
+      border-radius: 50%;
+      height: $dim;
+      width: $dim;
+      border: $border_width solid $color_border;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: white;
+    }
+    .inside-circle {
+      border-radius: 50%;
+      height: $dim_inside;
+      width: $dim_inside;
+      background-color: $color_primary;
+      display: none;
+    }
+
+    &.active {
+      .inside-circle {
+        display: block;
+      }
+    }
+
+    .text {
+      font-size: 14px;
+      padding-left: 6px;
+      font-weight: bold;
+    }
+  }
+  .items-wrapper {
+    &.inlined {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      .row-container {
+        padding: 7px 0;
+        margin-top: 0px;
+        margin-right: 10px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="82px" height="82px" viewBox="0 0 82 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>Group 6 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-2.6%" y="-3.2%" width="105.3%" height="106.4%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="7" dy="7" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="v3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="About" transform="translate(-765.000000, -9834.000000)">
+            <g id="Group-50" transform="translate(195.000000, 9456.000000)">
+                <g id="Group-10" transform="translate(540.000000, 377.000000)">
+                    <g id="Warning-Small" filter="url(#filter-1)" transform="translate(0.000000, 0.172161)">
+                        <g id="Group-6-Copy" transform="translate(30.000000, 0.827839)">
+                            <g id="Alert-Message-Copy" fill-rule="nonzero">
+                                <rect id="Rectangle" stroke="#000000" stroke-width="3" fill="#FAD843" x="1.5" y="1.5" width="72" height="72" rx="4"></rect>
+                                <path d="M18.5,73.5 L18.5,45.5 L24.5,45.5 L24.5,1.5 L4,1.5 C2.61928813,1.5 1.5,2.61928813 1.5,4 L1.5,71 C1.5,72.3807119 2.61928813,73.5 4,73.5 L18.5,73.5 Z" id="Combined-Shape" stroke="#000000" stroke-width="3" fill="#FFFFFF"></path>
+                                <path d="M25,63.0097656 C29.4351872,61.0929847 31.8254311,59.2809964 32.1707317,57.5738007 C32.1707317,57.5738007 32.1707317,22.0097656 32.1707317,22 C32.1707317,16.0065104 37.9045827,13.0065104 49.3722847,13 C61.1240949,13 67,16.0032552 67,22.0097656 C67,22 67,55.0097656 67,55.0097656 C67,60.343099 63.9268293,63.0097656 57.7804878,63.0097656 L25,63.0097656 Z" id="Path" fill="#FFFFFF"></path>
+                                <rect id="Rectangle" fill="#000000" x="12" y="44" width="6" height="3"></rect>
+                                <rect id="Rectangle-Copy-2" fill="#000000" x="9" y="60" width="9" height="3"></rect>
+                                <g id="Group" transform="translate(47.000000, 22.000000)" fill="#000000">
+                                    <rect id="Rectangle" x="0" y="0" width="5" height="25"></rect>
+                                    <rect id="Rectangle" x="0" y="27" width="5" height="5"></rect>
+                                </g>
+                            </g>
+                            <circle id="Oval" fill="#000000" cx="13.195122" cy="17.195122" r="2.19512195"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

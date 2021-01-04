@@ -1,0 +1,24 @@
+app: ${file(../package.json):name}
+service: frontend
+provider:
+  name: aws
+  stage: ${opt:stage,'dev'}
+  runtime: nodejs10.x
+  region: eu-central-1
+  environment: ${self:custom.environment}
+
+plugins:
+  - serverless-webpack
+  - serverless-offline
+custom:
+  stage: ${opt:stage, self:provider.stage}
+  webpack:
+    webpackConfig: ./config/webpack/ssr/slsServer.js
+
+functions:
+  frontend:
+    handler: serverless.default
+    memorySize: 2048 # optional, in MB, default is 1024
+    events:
+      - http: GET {proxy+}
+      - http: GET /

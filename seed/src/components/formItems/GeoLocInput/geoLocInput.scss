@@ -1,0 +1,48 @@
+@import '~styles/mixins';
+
+.geoloc-input {
+  position: relative;
+
+  .geo-list {
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    color: $color-font;
+    z-index: 4;
+    top: 100%;
+    left: 0;
+
+    .item {
+      padding: 7px 10px;
+      cursor: pointer;
+      font-size: 13px;
+      border-bottom: 1px solid rgba(238, 132, 82, 0.2);
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
+
+.value-container {
+  display: flex;
+  min-height: $input_min_height;
+  align-items: center;
+
+  .value {
+    padding: 5px 0;
+    line-height: 1.4;
+    flex: 1;
+  }
+
+  .icon {
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+  }
+}

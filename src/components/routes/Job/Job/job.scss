@@ -1,0 +1,282 @@
+@import "~styles/mixins";
+
+.Job {
+  border-bottom: $border_width solid black;
+
+  p {
+    margin: 0;
+  }
+
+  section {
+    &>* {
+      max-width: $max-size-blog;
+      margin: 0 auto;
+    }
+
+    @include phone {
+      padding: 20px;
+    }
+  }
+
+  .top {
+    padding: 80px 20px 0;
+    color: white;
+
+    a {
+      color: white;
+      text-decoration: underline;
+
+      &:hover {
+        color: $color-pink;
+
+        &::before {
+          border-color: rgba($color: $color-pink, $alpha: 0.5) !important;
+        }
+      }
+    }
+
+    @include phone {
+      border-top: $border_width solid black;
+      padding-bottom: 20px;
+    }
+
+    .content-title {
+      width: 100%;
+    }
+
+    .content-subtitle {
+      width: 100%;
+      display: flex;
+
+      .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        min-width: 200px;
+
+        img {
+          margin-left: 15px;
+        }
+
+        &:first-child {
+          margin-right: 30px
+        }
+      }
+
+      @include phone {
+        flex-direction: column;
+
+        .button {
+          margin-top: 20px;
+
+          &:first-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    .title {
+      position: relative;
+      font-size: 48px;
+      font-weight: bold;
+      line-height: 1.42;
+
+      .title-text {
+        width: 80%;
+      }
+
+      .square {
+        position: absolute;
+        right: 20%;
+        top: 0px;
+      }
+
+      .star {
+        position: absolute;
+        top: -75px;
+        right: 30%;
+      }
+
+      @include phone {
+        .title-text {
+          width: 100%;
+        }
+      }
+    }
+
+    margin-bottom: 60px;
+
+    @include phone {
+      margin-bottom: 0px;
+      padding-top: 20px;
+
+      .title {
+        font-size: 37px;
+        width: 100%;
+
+        .think,
+        .star {
+          display: none;
+        }
+      }
+
+      .subtitle {
+        font-size: 16px;
+        margin: 15px 0;
+      }
+    }
+  }
+
+  .search {
+    border-top: $border_width solid black;
+    border-bottom: $border_width solid black;
+    background-color: $color-aqua;
+    width: 100%;
+    max-width: none;
+    padding: 0 20px;
+
+    &.sticky {
+      position: fixed;
+      top: 0;
+      z-index: 10;
+      transition: 0.3s all;
+
+      @include phone {
+        position: inherit;
+      }
+    }
+
+    .item-container {
+      padding: 35px 0 15px;
+      display: flex;
+      max-width: $max-size-blog;
+      margin: 0 auto;
+      flex-wrap: wrap;
+
+      .item {
+        background-color: white;
+        border: $border_width solid black;
+        padding: 17px 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        transition: all 0.3s;
+        border-radius: $border_radius;
+
+        &:hover {
+          box-shadow: 7px 7px 0 rgba(0, 0, 0, .07);
+        }
+
+        &.active {
+          transform: translate(7px, 7px);
+          box-shadow: -7px -7px 0 rgba(0, 0, 0, .07);
+        }
+
+        .indic {
+          height: 15px;
+          width: 15px;
+          border: 2px solid black;
+          border-radius: 15px;
+          margin-right: 18px;
+        }
+
+        .text {
+          font-weight: bold;
+          font-size: 14px;
+          letter-spacing: 0.2px;
+        }
+      }
+
+      @include phone {
+        padding: 0 20px;
+        display: block;
+
+        .item {
+          margin: 15px 0;
+        }
+      }
+    }
+  }
+
+  .blog {
+    background: white;
+
+    .list-container {
+      max-width: none;
+      padding: 0 20px;
+    }
+
+    .blog-list {
+      padding: 60px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      min-height: 300px;
+      max-width: $max-size-blog;
+      margin: 0 auto;
+
+      &>* {
+        &:not(.newsletter) {
+          width: calc((100% / 2) - 20px);
+        }
+
+        margin-bottom: 40px;
+      }
+    }
+
+    @include phone {
+      padding: 20px 0 0 0;
+      padding-top: 0;
+
+      .list-container {
+        padding: 0;
+      }
+
+      .blog-list {
+        padding: 40px 0 20px 0;
+        display: block;
+
+        &>* {
+          &:not(.newsletter) {
+            margin: 0px 20px 20px 20px;
+            width: calc(100% - 40px);
+          }
+
+          &.no-margin {
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+
+  .apply {
+    background-color: $color-pink;
+    border-top: $border_width solid black;
+    padding: 90px 30px;
+
+    .apply-container {
+      max-width: $max-size-blog;
+
+      .title {
+        color: white;
+        font-size: 48px;
+        text-align: center;
+        font-weight: bold;
+        line-height: 1.4;
+        letter-spacing: 0.3px;
+        margin-bottom: 30px;
+      }
+
+      .form-container {
+        padding: 0 100px;
+
+        @include phone {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+@import "~styles/mixins";
+@import "~styles/tom";
+
+.ThanksSourcing {
+  section {
+    border-bottom: 3px solid black;
+    position: relative;
+
+    &::before {
+      content: url(./assets/pinkCarre.svg);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &:after {
+      content: url(./assets/multiplyGreenPoint.svg);
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+  h1 {
+    font-size: 55px;
+    font-weight: 900;
+    margin-bottom: 20px;
+  }
+
+  p {
+    line-height: 38px;
+  }
+
+  img {
+    margin-left: auto;
+  }
+  .button_icon {
+    position: relative;
+    padding-right: 65px;
+    width: auto;
+    &::after {
+      content: url(../Sourcing/assets/btnIcon.svg);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 25px;
+    }
+    span {
+      @include text_color($color-white);
+      font-weight: 700;
+    }
+  }
+  .container {
+    display: flex;
+
+    @include medium {
+      display: block;
+    }
+  }
+  .left,
+  .right {
+    width: 50%;
+    @include medium {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+  }
+
+  .right {
+    display: inline-flex;
+    img {
+      margin-left: auto;
+      max-width: 100%;
+
+      @include medium {
+        margin: 0 auto;
+      }
+    }
+  }
+}
