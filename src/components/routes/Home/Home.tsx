@@ -217,7 +217,7 @@ const Home = (props: HomeProps) => {
         <SeoHandler path="web.home.seo" />
         <section className={styles('section1')}>
           <div className={styles('yellow_point')}>
-            <Image layout="fill" src={yellowPoint} alt="yellowPoint" />
+            <Image width={250} height={340} src={yellowPoint} alt="yellowPoint" />
           </div>
           <div className={styles('contain_wrapper')}>
             <div className={styles('section_heading')}>
@@ -271,7 +271,7 @@ const Home = (props: HomeProps) => {
           />
 
           <div className={styles('half_round_pink')}>
-            <Image layout="fill" src={halfRoundPink} alt="shape" />
+            <Image width={134} height={334} src={halfRoundPink} alt="shape" />
           </div>
           <div className={styles('contain_wrapper')}>
             <div className={styles('section_heading')}>
@@ -353,7 +353,8 @@ const Home = (props: HomeProps) => {
           </div>
           <div className={styles('half_carre_yellow')}>
             <Image
-              layout="fill"
+              width={183}
+              height={371}
               src={halfCarreYellow}
               alt="shape"
               className={styles('half_carre_yellow')}
