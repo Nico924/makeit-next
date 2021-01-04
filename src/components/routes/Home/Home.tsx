@@ -14,7 +14,7 @@ import Header from 'components/global/Header';
 import get from 'lodash/get';
 import find from 'lodash/find';
 
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import gsap from 'gsap';
 import Image from 'next/image';
 import Footer from 'components/global/Footer';
@@ -159,7 +159,7 @@ const Home = (props: HomeProps) => {
   // };
 
   useEffect(() => {
-    // gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger);
     setGsapLib(gsap);
   }, []);
 

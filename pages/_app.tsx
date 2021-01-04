@@ -11,6 +11,7 @@ import App, { AppContext } from 'next/app';
 import { bootup } from 'store/bootup';
 import React from 'react';
 import { configNextStore } from 'store/setup';
+import Head from 'next/head';
 import { wrapper } from '../lib/store';
 
 function MyApp({ Component, pageProps, router, state }) {
@@ -23,6 +24,18 @@ function MyApp({ Component, pageProps, router, state }) {
           <Component {...pageProps} />
           <Modals />
           <SideMenus />
+          <Head>
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+            <link
+              rel="preload"
+              as="style"
+              href="https://fonts.googleapis.com/css?family=Chivo:300,300i,400,400i,700,700i,900,900i&display=swap"
+            />
+            <link
+              href="https://fonts.googleapis.com/css?family=Chivo:300,300i,400,400i,700,700i,900,900i&display=swap"
+              rel="stylesheet"
+            />
+          </Head>
         </IconContext.Provider>
       </PersistGate>
     </Provider>
