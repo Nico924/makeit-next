@@ -114,7 +114,7 @@ $general_col_width: 48%;
       text-align: center;
       font-size: 0;
 
-      @include medium {
+      @include breakpoint(1150px) {
         display: none;
       }
 

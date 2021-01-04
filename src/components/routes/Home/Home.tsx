@@ -239,7 +239,7 @@ const Home = (props: HomeProps) => {
             <div className={styles('invisible-rainbow')} />
             <div ref={rainbowRef} className={styles('rainbow')}>
               <div>
-                <Image layout="fixed" height={400} width={1200} src={rainbow} alt="smile" />
+                <Image layout="fixed" height={400} width={1150} src={rainbow} alt="smile" />
               </div>
             </div>
             <div className={styles('parkplace')} ref={startup3Ref}>
