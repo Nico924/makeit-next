@@ -763,14 +763,14 @@ $general_col_width: 48%;
               position: relative;
               width: 142px;
               margin: 0 auto;
-              // cursor: url('./assets/pointer.png'), pointer;
+              cursor: url('/assets/pointer.png'), pointer;
 
               img {
                 width: 100%;
               }
 
               &::after {
-                // content: url(../Staas/assets/expend_btn.svg);
+                content: url(../Staas/assets/expend_btn.svg);
                 top: -5%;
                 left: 8%;
                 position: absolute;

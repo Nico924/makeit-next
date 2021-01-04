@@ -12,6 +12,7 @@ import { bootup } from 'store/bootup';
 import React from 'react';
 import { configNextStore } from 'store/setup';
 import Head from 'next/head';
+import Favicon from 'react-favicon';
 import { wrapper } from '../lib/store';
 
 function MyApp({ Component, pageProps, router, state }) {
@@ -24,6 +25,7 @@ function MyApp({ Component, pageProps, router, state }) {
           <Component {...pageProps} />
           <Modals />
           <SideMenus />
+          <Favicon url="/favicon/favicon.ico" />
           <Head>
             <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
             <link
