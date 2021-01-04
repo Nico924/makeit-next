@@ -483,7 +483,7 @@ const Home = (props: HomeProps) => {
                   <Zoom bottom delay={500}>
                     <div className={styles('box_contain')} onClick={() => displayStartupBox('3')}>
                       <div className={styles('startup')}>
-                        <Image layout="fill" className={styles('startup')} src={box4} alt="Illu" />
+                        <Image layout="fill" src={box4} alt="Illu" />
                       </div>
                     </div>
                   </Zoom>
@@ -527,7 +527,7 @@ const Home = (props: HomeProps) => {
                   <Zoom bottom delay={500}>
                     <div className={styles('box_contain')} onClick={() => displayStartupBox('4')}>
                       <div className={styles('startup')}>
-                        <Image layout="fill" className={styles('startup')} src={box5} alt="Illu" />
+                        <Image layout="fill" src={box5} alt="Illu" />
                       </div>
                     </div>
                   </Zoom>
@@ -566,7 +566,7 @@ const Home = (props: HomeProps) => {
                   <Zoom bottom delay={250}>
                     <div className={styles('box_contain')} onClick={() => displayStartupBox('5')}>
                       <div className={styles('startup')}>
-                        <Image layout="fill" className={styles('startup')} src={box6} alt="Illu" />
+                        <Image layout="fill" src={box6} alt="Illu" />
                       </div>
                     </div>
                   </Zoom>
@@ -605,7 +605,7 @@ const Home = (props: HomeProps) => {
                   <Zoom bottom>
                     <div className={styles('box_contain')} onClick={() => displayStartupBox('6')}>
                       <div className={styles('startup')}>
-                        <Image layout="fill" className={styles('startup')} src={box7} alt="Illu" />
+                        <Image layout="fill" src={box7} alt="Illu" />
                       </div>
                     </div>
                   </Zoom>

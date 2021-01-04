@@ -13,10 +13,10 @@ import React from 'react';
 import { configNextStore } from 'store/setup';
 import Head from 'next/head';
 import Favicon from 'react-favicon';
-import { wrapper } from '../lib/store';
+import { useStore, wrapper } from '../lib/store';
 
 function MyApp({ Component, pageProps, router, state }) {
-  const store = configNextStore(state);
+  const store = useStore(state);
 
   const render = () => (
     <Provider store={store}>

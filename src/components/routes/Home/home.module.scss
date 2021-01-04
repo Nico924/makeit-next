@@ -765,10 +765,6 @@ $general_col_width: 48%;
               margin: 0 auto;
               cursor: url('/assets/pointer.png'), pointer;
 
-              img {
-                width: 100%;
-              }
-
               &::after {
                 content: url(../Staas/assets/expend_btn.svg);
                 top: -5%;
@@ -795,13 +791,13 @@ $general_col_width: 48%;
                 transition: 0.3s;
               }
 
-              img {
+              .startup {
                 transform: translateY(-3%);
                 transition: 0.3s;
               }
             }
 
-            img {
+            .startup {
               transition: 0.7s;
             }
 
